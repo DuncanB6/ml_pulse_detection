@@ -23,7 +23,7 @@ def preprocess_data(X, y):
     return X, y
 
 
-def train_model(X_train, y_train, X_val, y_val):
+def train_model(X_train, y_train):
 
     # Build a 1D CNN model
     model = Sequential()
@@ -71,6 +71,6 @@ if __name__ == "__main__":
 
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-    model = train_model(X_train, y_train, X_test, y_test)
+    model = train_model(X_train, y_train)
 
     test_model(model, X_test, y_test)
