@@ -1,3 +1,16 @@
+"""
+A script to train and test a 1D CNN ML model on capstone pulse time series data. Predicts whether or not a pulse is present in the signal.
+
+To do:
+- Data augmentation
+- Model tuning
+- Pulse detection (BPM)
+
+Duncan Boyd
+duncan@wapta.ca
+Feb 24, 2025
+"""
+
 import numpy as np
 from tensorflow import keras
 from keras.models import Sequential
