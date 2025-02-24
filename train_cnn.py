@@ -52,18 +52,12 @@ def train_model(X_train, y_train):
 
     return model
 
-def test_model(model, X_test, y_test):
-
-    # Evaluate the model on test data
-    test_loss, test_acc = model.evaluate(X_test, y_test)
-    print(f"\n\nFinal test accuracy: {test_acc:.4f}\nFinal test loss: {test_loss:.4f}")
-
-    return
 
 if __name__ == "__main__":
 
     X, y = build_dataset()
 
+    # check to make sure data formatting has not changed
     assert(NUM_SAMPLES == X.shape[0])
     assert(SEQUENCE_LENGTH == X.shape[1])
 
@@ -73,4 +67,5 @@ if __name__ == "__main__":
 
     model = train_model(X_train, y_train)
 
-    test_model(model, X_test, y_test)
+    test_loss, test_acc = model.evaluate(X_test, y_test)
+    print(f"\n\nFinal test accuracy: {test_acc:.4f}\nFinal test loss: {test_loss:.4f}")
