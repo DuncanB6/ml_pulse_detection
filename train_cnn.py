@@ -3,6 +3,7 @@ A script to train and test a 1D CNN ML model on capstone pulse time series data.
 
 To do:
 - Data augmentation
+- Tune data preprocessing
 - Model tuning
 - Pulse detection (BPM)
 
