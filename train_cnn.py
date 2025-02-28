@@ -3,7 +3,7 @@ A script to train and test a 1D CNN ML model on capstone pulse time series data.
 
 To do:
 - Data augmentation
-- Tune data preprocessing
+- Understand data preprocessing
 - Model tuning
 - Pulse detection (BPM)
 
@@ -23,8 +23,8 @@ from sklearn.preprocessing import StandardScaler
 from load_data import build_dataset
 
 NUM_FEATURES = 1
-SEQUENCE_LENGTH = 400
-NUM_SAMPLES = 715
+SEQUENCE_LENGTH = 240
+NUM_SAMPLES = 385
 
 def preprocess_data(X, y):
 
@@ -43,7 +43,7 @@ def train_model(X_train, y_train):
     model = Sequential()
 
     # 1D Convolutional Layer
-    model.add(Conv1D(filters=64, kernel_size=3, activation='relu', input_shape=(400, 1)))
+    model.add(Conv1D(filters=64, kernel_size=3, activation='relu', input_shape=(SEQUENCE_LENGTH, 1)))
     model.add(MaxPooling1D(pool_size=2))
 
     # Additional convolutional and pooling layers can be added here
@@ -77,7 +77,7 @@ if __name__ == "__main__":
 
     X, y = preprocess_data(X, y)
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=33)
 
     model = train_model(X_train, y_train)
 

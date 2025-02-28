@@ -9,9 +9,10 @@ Feb 24, 2025
 import os
 import h5py
 import numpy as np
+from tqdm import tqdm
 
 DATA_FOLDER = 'data'
-DATA_LENGTH = 400
+DATA_LENGTH = 240
 
 def load_data_from_file(file_path, X, y):
 
@@ -35,7 +36,7 @@ def build_dataset():
     X = np.empty((0, DATA_LENGTH))
     y = np.array([])
 
-    for file_path in file_paths:
+    for file_path in tqdm(file_paths, desc="Loading files", unit="file"):
         X, y = load_data_from_file(file_path, X, y)
 
     return X, y
