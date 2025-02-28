@@ -4,6 +4,7 @@ A script to train and test a 1D CNN ML model on capstone pulse time series data.
 To do:
 - Model tuning
 - Make sure data is labelled well
+- Modify code to automatically detect num samples and sequence length
 - Pulse detection (BPM)
 
 Duncan Boyd
@@ -30,7 +31,7 @@ from load_data import build_dataset
 
 NUM_FEATURES = 1
 SEQUENCE_LENGTH = 240
-NUM_SAMPLES = 385
+NUM_SAMPLES = 701
 
 
 def preprocess_data(X, y):
@@ -61,29 +62,24 @@ def preprocess_data(X, y):
 
 def train_model(X_train, y_train):
 
-    # Build a 1D CNN model
     model = Sequential()
 
-    # 1D Convolutional Layer
+    # 1D convolutional layer
     model.add(Conv1D(filters=64, kernel_size=3, activation='relu', input_shape=(SEQUENCE_LENGTH, 1)))
     model.add(MaxPooling1D(pool_size=2))
 
-    # Additional convolutional and pooling layers can be added here
+    # additional convolutional and pooling layers can be added here
     model.add(Conv1D(filters=128, kernel_size=3, activation='relu'))
     model.add(MaxPooling1D(pool_size=2))
 
-    # Flattening the output from convolution layers before feeding to Dense layers
+    # flatten and dense layers
     model.add(Flatten())
-
-    # Fully connected layers (Dense)
     model.add(Dense(128, activation='relu'))
     model.add(Dense(1, activation='sigmoid'))  # Output layer for binary classification
 
-    # Compile the model
+    # compile and fit the model
     model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy'])
-
     model.summary()
-
     model.fit(X_train, y_train, epochs=15, batch_size=32)
 
     return model
@@ -93,15 +89,13 @@ def augment_data(X, y):
 
     augmented_X = []
     augmented_y = []
-
-    print(X.shape)
     
     for series, label in zip(X, y):
         augmented_X.append(series)
         augmented_y.append(label)
         
         # randomly scale the data
-        scale_factor = np.random.uniform(0.8, 1.2)
+        scale_factor = np.random.uniform(0.5, 2.0)
         augmented_X.append(series * scale_factor)
         augmented_y.append(label)
 
@@ -116,7 +110,6 @@ def augment_data(X, y):
 
     augmented_X = np.asarray(augmented_X)
     augmented_y = np.asarray(augmented_y)
-    print(augmented_X.shape)
 
     return augmented_X, augmented_y
 
@@ -131,9 +124,9 @@ if __name__ == "__main__":
 
     X, y = preprocess_data(X, y)
 
-    X, y = augment_data(X, y)
-
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=33)
+
+    X, y = augment_data(X_train, y_train)
 
     model = train_model(X_train, y_train)
 
