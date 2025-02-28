@@ -2,9 +2,8 @@
 A script to train and test a 1D CNN ML model on capstone pulse time series data. Predicts whether or not a pulse is present in the signal.
 
 To do:
-- Data augmentation
-- Understand data preprocessing
 - Model tuning
+- Make sure data is labelled well
 - Pulse detection (BPM)
 
 Duncan Boyd
@@ -24,6 +23,7 @@ from numpy.polynomial.polynomial import Polynomial
 from sklearn import preprocessing
 from matplotlib import pyplot as plt
 import random
+from scipy.interpolate import interp1d
 
 from load_data import build_dataset
 
@@ -84,9 +84,41 @@ def train_model(X_train, y_train):
 
     model.summary()
 
-    model.fit(X_train, y_train, epochs=10, batch_size=32)
+    model.fit(X_train, y_train, epochs=15, batch_size=32)
 
     return model
+
+
+def augment_data(X, y):
+
+    augmented_X = []
+    augmented_y = []
+
+    print(X.shape)
+    
+    for series, label in zip(X, y):
+        augmented_X.append(series)
+        augmented_y.append(label)
+        
+        # randomly scale the data
+        scale_factor = np.random.uniform(0.8, 1.2)
+        augmented_X.append(series * scale_factor)
+        augmented_y.append(label)
+
+        # randomly stretch data along the x axis
+        stretch_factor = np.random.uniform(1.0, 2.0)
+        x_stretched = np.linspace(0, len(series), int(len(series) * stretch_factor))
+        interpolator = interp1d(list(range(0, len(series))), series, kind='linear', fill_value="extrapolate")
+        stretched_series = interpolator(x_stretched)
+        offset = random.randint(0, len(stretched_series) - len(series)) # pick a random segment of the stretched section
+        augmented_X.append(stretched_series[offset:offset+SEQUENCE_LENGTH])
+        augmented_y.append(label)
+
+    augmented_X = np.asarray(augmented_X)
+    augmented_y = np.asarray(augmented_y)
+    print(augmented_X.shape)
+
+    return augmented_X, augmented_y
 
 
 if __name__ == "__main__":
@@ -99,6 +131,8 @@ if __name__ == "__main__":
 
     X, y = preprocess_data(X, y)
 
+    X, y = augment_data(X, y)
+
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=33)
 
     model = train_model(X_train, y_train)
@@ -107,10 +141,9 @@ if __name__ == "__main__":
     print(f"\n\nFinal test accuracy: {test_acc:.4f}\nFinal test loss: {test_loss:.4f}")
 
     y_pred = model.predict(X_test)
-    print(y_pred)
 
     while (1):
-        rand_sample = random.randint(0, X_test.shape[0])
+        rand_sample = random.randint(0, X_test.shape[0] - 1)
         plt.figure()
         plt.plot(X_test[rand_sample])
         plt.title(f"Prediction: {y_pred[rand_sample]}\nActual: {y_test[rand_sample]}\n{'Correct' if abs(y_pred[rand_sample] - y_test[rand_sample]) < 0.5 else "Incorrect"}")
