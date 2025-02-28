@@ -23,6 +23,7 @@ import scipy.signal as signal
 from numpy.polynomial.polynomial import Polynomial
 from sklearn import preprocessing
 from matplotlib import pyplot as plt
+import random
 
 from load_data import build_dataset
 
@@ -104,3 +105,13 @@ if __name__ == "__main__":
 
     test_loss, test_acc = model.evaluate(X_test, y_test)
     print(f"\n\nFinal test accuracy: {test_acc:.4f}\nFinal test loss: {test_loss:.4f}")
+
+    y_pred = model.predict(X_test)
+    print(y_pred)
+
+    while (1):
+        rand_sample = random.randint(0, X_test.shape[0])
+        plt.figure()
+        plt.plot(X_test[rand_sample])
+        plt.title(f"Prediction: {y_pred[rand_sample]}\nActual: {y_test[rand_sample]}\n{'Correct' if abs(y_pred[rand_sample] - y_test[rand_sample]) < 0.5 else "Incorrect"}")
+        plt.show()
