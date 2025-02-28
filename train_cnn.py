@@ -19,20 +19,41 @@ from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Lambda
 from keras.optimizers import Adam
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+import scipy.signal as signal
+from numpy.polynomial.polynomial import Polynomial
+from sklearn import preprocessing
+from matplotlib import pyplot as plt
 
 from load_data import build_dataset
+
 
 NUM_FEATURES = 1
 SEQUENCE_LENGTH = 240
 NUM_SAMPLES = 385
 
+
 def preprocess_data(X, y):
 
-    # Data normalization (standardization)
-    scaler = StandardScaler()
-    X = X.reshape(-1, NUM_FEATURES)  # Reshaping for fitting scaler
-    X = scaler.fit_transform(X)  # Standardize each feature
-    X = X.reshape(NUM_SAMPLES, SEQUENCE_LENGTH, NUM_FEATURES)  # Reshaping back to (num_samples, sequence_length, num_features)
+    for ii in range(X.shape[0]):
+        # set the lowest value in the series to 0
+        ppg_data = X[ii]
+        min_val = min(ppg_data)
+        ppg_data = [x - min_val for x in ppg_data]
+
+        # apply a band pass filter to the data
+        nyquist = 0.5 * 60
+        low = 0.5 / nyquist # lowest heartrate of 0.5Hz/30BPM
+        high = 5 / nyquist # highest heartrate of 5Hz/300BPM
+        b, a = signal.butter(1, [low, high], btype='band')
+        ppg_data = signal.filtfilt(b, a, ppg_data)
+
+        # remove baseline drift with a polynomial fit
+        p = Polynomial.fit(range(len(ppg_data)), ppg_data, 4)
+        midline = p(range(len(ppg_data)))
+        ppg_data = ppg_data - midline
+
+        # normalize data
+        X[ii] = preprocessing.normalize([ppg_data])
 
     return X, y
 
