@@ -3,20 +3,19 @@ A script to train and test a 1D CNN ML model on capstone pulse time series data.
 
 To do:
 - Model tuning
-    - number of conv layers
-    - conv layers:
-        - kernel size
-        - activation
-        - filters
-    - number of dense layers
-    - dense layers:
-        - activation
-        - size
-    - optimizer
-    - loss
+    - sweep params:
+        - # conv layers (1 - 7, 1 increments)
+        - dense layer points (32 - 1024, power of 2 increments)
+        - dropout rate (0.2 - 0.5, 0.05 increments)
+        - l2 decay rate (0 - 0.1, 0.001 increments)
+- Add cross validation
 - Make sure data is labelled well
 - Modify code to automatically detect num samples and sequence length
-- Pulse detection (BPM)
+
+To explore:
+- skip connections
+- BPM prediction
+- https://www.hackster.io/news/easy-tinyml-on-esp32-and-arduino-a9dbc509f26c
 
 Duncan Boyd
 duncan@wapta.ca
@@ -28,8 +27,10 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # suppress a TF warning about CPU use
 
 import numpy as np
 from keras.models import Sequential
-from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Input
+from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Input, Dropout
 from keras.optimizers import Adam
+from keras.regularizers import l2
+from keras.callbacks import EarlyStopping
 from sklearn.model_selection import train_test_split
 import scipy.signal as signal
 from numpy.polynomial.polynomial import Polynomial
@@ -92,12 +93,15 @@ def train_model(X_train, y_train, X_val, y_val):
 
     # flatten and dense layers
     model.add(Flatten())
-    model.add(Dense(128, activation='relu'))
+    model.add(Dense(256, activation='relu', kernel_regularizer=l2(0.01)))
+    model.add(Dropout(0.3))
+    model.add(Dense(128, activation='relu', kernel_regularizer=l2(0.01)))
     model.add(Dense(1, activation='sigmoid'))  # output layer for binary classification
 
     # compile and fit the model
     model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy'])
-    model.fit(X_train, y_train, epochs=15, batch_size=32, validation_data=(X_val, y_val))
+    callback = EarlyStopping(patience=5, restore_best_weights=True)
+    model.fit(X_train, y_train, epochs=200, batch_size=32, validation_data=(X_val, y_val), callbacks=callback)
 
     return model
 
