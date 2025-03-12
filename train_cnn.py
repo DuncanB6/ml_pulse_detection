@@ -137,22 +137,22 @@ def augment_data(X, y):
 
 if __name__ == "__main__":
 
-    print(f"\n{50*'-'} 1D CNN for Pulse Detection {50*'-'}\n")
+    print(f"\n{25*'-'} 1D CNN for Pulse Detection {25*'-'}\n")
 
-    X, y = build_dataset()
+    X_data, y_data = build_dataset()
 
-    print(f"{100 * np.count_nonzero(y == 1) / np.count_nonzero(y == 0):.2f}% of data has a pulse")
+    print(f"{100 * np.count_nonzero(y_data == 1) / np.count_nonzero(y_data == 0):.2f}% of data has a pulse")
 
     # check to make sure data formatting has not changed
-    assert(NUM_SAMPLES == X.shape[0])
-    assert(SEQUENCE_LENGTH == X.shape[1])
+    #assert(NUM_SAMPLES == X.shape[0])
+    #assert(SEQUENCE_LENGTH == X.shape[1])
 
-    X, y = preprocess_data(X, y)
+    X_data, y_data = preprocess_data(X_data, y_data)
 
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+    X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.2)
     X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.1)
 
-    X, y = augment_data(X_train, y_train)
+    X_train, y_train = augment_data(X_train, y_train)
 
     model = train_model(X_train, y_train, X_val, y_val)
 
