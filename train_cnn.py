@@ -42,11 +42,6 @@ from scipy.interpolate import interp1d
 from load_data import build_dataset
 
 
-NUM_FEATURES = 1
-SEQUENCE_LENGTH = 240
-NUM_SAMPLES = 701
-
-
 def preprocess_data(X, y):
 
     for ii in range(X.shape[0]):
@@ -77,7 +72,7 @@ def train_model(X_train, y_train, X_val, y_val):
 
     model = Sequential()
 
-    model.add(Input((SEQUENCE_LENGTH, 1)))
+    model.add(Input((X_train.shape[1], 1)))
 
     # 1D convolutional layers
     model.add(Conv1D(filters=64, kernel_size=3, activation='relu'))
@@ -126,7 +121,7 @@ def augment_data(X, y):
         interpolator = interp1d(list(range(0, len(series))), series, kind='linear', fill_value="extrapolate")
         stretched_series = interpolator(x_stretched)
         offset = random.randint(0, len(stretched_series) - len(series)) # pick a random segment of the stretched section
-        augmented_X.append(stretched_series[offset:offset+SEQUENCE_LENGTH])
+        augmented_X.append(stretched_series[offset:offset+X.shape[1]])
         augmented_y.append(label)
 
     augmented_X = np.asarray(augmented_X)
@@ -141,14 +136,10 @@ if __name__ == "__main__":
 
     X_data, y_data = build_dataset()
 
-    print(f"{100 * np.count_nonzero(y_data == 1) / np.count_nonzero(y_data == 0):.2f}% of data has a pulse")
-
-    # check to make sure data formatting has not changed
-    #assert(NUM_SAMPLES == X.shape[0])
-    #assert(SEQUENCE_LENGTH == X.shape[1])
+    print(f"Data loaded, {100 * np.count_nonzero(y_data == 1) / np.count_nonzero(y_data == 0):.2f}% of data has a pulse")
 
     X_data, y_data = preprocess_data(X_data, y_data)
-
+    
     X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.2)
     X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.1)
 
