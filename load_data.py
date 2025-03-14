@@ -9,7 +9,6 @@ Feb 24, 2025
 import os
 import h5py
 import numpy as np
-from tqdm import tqdm
 
 DATA_FOLDER = 'data'
 
@@ -34,7 +33,7 @@ def build_dataset():
     X_data = []
     y_data = []
 
-    for file_path in tqdm(file_paths, desc="Loading files", unit="file"):
+    for file_path in file_paths:
         X_data, y_data = load_data_from_file(file_path, X_data, y_data)
 
     X_data = np.asarray(X_data).astype(np.float64)

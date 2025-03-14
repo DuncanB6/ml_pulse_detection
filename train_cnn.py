@@ -24,6 +24,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # suppress a TF warning about CPU use
 
 import numpy as np
+import logging
 from keras.models import Sequential
 from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Input, Dropout
 from keras.optimizers import Adam
@@ -36,9 +37,11 @@ from sklearn import preprocessing
 from matplotlib import pyplot as plt
 import random
 from scipy.interpolate import interp1d
+from datetime import datetime
 
 from load_data import build_dataset
 
+SPEED_MODE = False # train with a single epoch for debugging
 
 def preprocess_data(X, y):
 
@@ -94,7 +97,8 @@ def train_model(X_train, y_train, X_val, y_val):
     # compile and fit the model
     model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy'])
     callback = EarlyStopping(patience=5, restore_best_weights=True)
-    model.fit(X_train, y_train, epochs=200, batch_size=32, validation_data=(X_val, y_val), callbacks=callback)
+    history = model.fit(X_train, y_train, epochs=(1 if SPEED_MODE else 200), batch_size=32, validation_data=(X_val, y_val), callbacks=callback)
+    logger.info(f"Model trained for {len(history.epoch)} epochs")
 
     return model
 
@@ -130,23 +134,27 @@ def augment_data(X, y):
 
 if __name__ == "__main__":
 
-    print(f"\n{25*'-'} 1D CNN for Pulse Detection {25*'-'}\n")
+    log_filename = os.path.join('logging', f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_filename), logging.StreamHandler()])
+    logger = logging.getLogger()
+
+    logger.info(f"1D CNN for Pulse Detection")
 
     X_data, y_data = build_dataset()
-
-    print(f"Data loaded, {100 * np.count_nonzero(y_data == 1) / np.count_nonzero(y_data == 0):.2f}% of data has a pulse")
+    logger.info(f"Data loaded, {100 * np.count_nonzero(y_data == 1) / np.count_nonzero(y_data == 0):.2f}% of data has a pulse")
 
     X_data, y_data = preprocess_data(X_data, y_data)
-    
-    X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.2)
-    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.1)
-
+    X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.3)
+    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2)
     X_train, y_train = augment_data(X_train, y_train)
+    logger.info(f"Data processed, divided, and augmented: train: {len(X_train)} | test: {len(X_test)} | val: {len(X_val)}")
 
     model = train_model(X_train, y_train, X_val, y_val)
 
     test_loss, test_acc = model.evaluate(X_test, y_test)
-    print(f"\n\nFinal test accuracy: {test_acc:.4f}\nFinal test loss: {test_loss:.4f}")
+    logger.info(f"Final test accuracy is {test_acc:.4f} and final test loss is {test_loss:.4f}")
+
+    logger.info(f"Model training complete")
 
     while (1):
         rand_sample = random.randint(0, X_test.shape[0] - 1)
