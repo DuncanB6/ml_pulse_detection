@@ -9,6 +9,7 @@ To do:
         - dropout rate (0.2 - 0.5, 0.05 increments)
         - l2 decay rate (0 - 0.1, 0.001 increments)
 - Add cross validation
+- Add model saving
 
 To explore:
 - skip connections
@@ -25,7 +26,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2' # suppress a TF warning about CPU use
 
 import numpy as np
 import logging
-from keras.models import Sequential
+from keras.models import Sequential, load_model
 from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Input, Dropout
 from keras.optimizers import Adam
 from keras.regularizers import l2
@@ -41,7 +42,10 @@ from datetime import datetime
 
 from load_data import build_dataset
 
-SPEED_MODE = False # train with a single epoch for debugging
+SPEED_MODE = True # train with a single epoch for debugging
+LOGGING_DIR = 'logging'
+MODELS_DIR = 'models'
+SAVE_MODEL = False
 
 def preprocess_data(X, y):
 
@@ -134,7 +138,7 @@ def augment_data(X, y):
 
 if __name__ == "__main__":
 
-    log_filename = os.path.join('logging', f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
+    log_filename = os.path.join(LOGGING_DIR, f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_filename), logging.StreamHandler()])
     logger = logging.getLogger()
 
@@ -152,18 +156,11 @@ if __name__ == "__main__":
     model = train_model(X_train, y_train, X_val, y_val)
 
     test_loss, test_acc = model.evaluate(X_test, y_test)
-    logger.info(f"Final test accuracy is {test_acc:.4f} and final test loss is {test_loss:.4f}")
+    logger.info(f"Final test accuracy is {100*test_acc:.2f}% and final test loss is {test_loss:.4f}")
 
-    logger.info(f"Model training complete")
+    if SAVE_MODEL:
+        model_filename = os.path.join(MODELS_DIR, f'model_{int(100*test_acc)}_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.keras')
+        model.save(model_filename)
+        logging.info(f"Model saved as: {model_filename}")
 
-    while (1):
-        rand_sample = random.randint(0, X_test.shape[0] - 1)
-        X_test_sample = np.asarray([X_test[rand_sample]])
-        y_test_sample = y_test[rand_sample]
-
-        y_pred = model.predict(X_test_sample)[0]
-
-        plt.figure()
-        plt.plot(X_test_sample[0])
-        plt.title(f"Prediction: {y_pred[0]:.2f}\nActual: {y_test_sample}\n{'Correct' if abs(y_pred - y_test_sample) < 0.5 else "Incorrect"}")
-        plt.show()
+    logger.info(f"Done!")
