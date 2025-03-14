@@ -1,5 +1,5 @@
 """
-A script to train and test a 1D CNN ML model on capstone pulse time series data. Predicts whether or not a pulse is present in the signal.
+A script to train and test a 1D CNN ML model on capstone pulse time series data. Predicts whether or not a pulse is present in a 4 second signal.
 
 To do:
 - Model tuning
@@ -9,7 +9,6 @@ To do:
         - dropout rate (0.2 - 0.5, 0.05 increments)
         - l2 decay rate (0 - 0.1, 0.001 increments)
 - Add cross validation
-- Add model saving
 
 To explore:
 - skip connections
@@ -35,6 +34,7 @@ from sklearn.model_selection import train_test_split
 import scipy.signal as signal
 from numpy.polynomial.polynomial import Polynomial
 from sklearn import preprocessing
+from sklearn.model_selection import KFold
 from matplotlib import pyplot as plt
 import random
 from scipy.interpolate import interp1d
@@ -48,8 +48,12 @@ MODELS_DIR = 'models'
 SAVE_MODEL = False
 
 def preprocess_data(X, y):
+    """
+    Preprocessing borrowed from our capstone projects preprocessing, reduces noise and normalizes.
+    """
 
     for ii in range(X.shape[0]):
+
         # set the lowest value in the series to 0
         ppg_data = X[ii]
         min_val = min(ppg_data)
@@ -148,8 +152,8 @@ if __name__ == "__main__":
     logger.info(f"Data loaded, {100 * np.count_nonzero(y_data == 1) / np.count_nonzero(y_data == 0):.2f}% of data has a pulse")
 
     X_data, y_data = preprocess_data(X_data, y_data)
-    X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.3)
-    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2)
+    X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.3) # split test data
+    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2) # split val data
     X_train, y_train = augment_data(X_train, y_train)
     logger.info(f"Data processed, divided, and augmented: train: {len(X_train)} | test: {len(X_test)} | val: {len(X_val)}")
 
