@@ -108,7 +108,7 @@ def train_model(X_train, y_train, X_val, y_val, model_cfg:ModelConfig):
     # compile and fit the model
     model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy'])
     callback = EarlyStopping(patience=5, restore_best_weights=True)
-    history = model.fit(X_train, y_train, epochs=(1 if SPEED_MODE else 200), batch_size=32, validation_data=(X_val, y_val), callbacks=callback)
+    history = model.fit(X_train, y_train, epochs=(1 if SPEED_MODE else 200), batch_size=32, validation_data=(X_val, y_val), callbacks=callback, verbose=0)
 
     return model, history
 
@@ -141,11 +141,7 @@ def augment_data(X, y):
 
     return augmented_X, augmented_y
 
-def model_trial(model_cfg):
-
-    log_filename = os.path.join(LOGGING_DIR, f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_filename), logging.StreamHandler()])
-    logger = logging.getLogger()
+def model_trial(model_cfg, logger):
 
     logger.info(f"1D CNN for Pulse Detection")
 
@@ -183,15 +179,19 @@ def model_trial(model_cfg):
         model.save(model_filename)
         logging.info(f"Model saved as: {model_filename}")
 
-    logger.info(f"Done!")
+    logger.info(f"Done!\n\n")
 
     return mean_acc
 
 if __name__ == "__main__":
 
+    log_filename = os.path.join(LOGGING_DIR, f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
+    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_filename), logging.StreamHandler()])
+    logger = logging.getLogger()
+
     model_cfg = ModelConfig()
 
-    conv_sweep = list(range(1, 7+1))
+    conv_sweep = list(range(1, 6+1))
     print(conv_sweep)
     dense_sweep = [32 * (2 ** i) for i in range(6)]
     print(dense_sweep)
@@ -202,9 +202,22 @@ if __name__ == "__main__":
     l2_sweep = np.round(l2_sweep, 2)
     print(l2_sweep)
 
-    try:
-        mean_acc = model_trial(model_cfg)
-    except KeyboardInterrupt as e:
-        logging.exception("Interrupted by user!")
-    except Exception as e:
-        logging.exception("Exception occured!")
+    logging.info("Sweeping convolution layers")
+    conv_accs = {}
+    for val in conv_sweep:
+        model_cfg.conv_layers = val
+
+        logging.info(f"Trying {model_cfg.conv_layers} layers")
+
+        try:
+            mean_acc = model_trial(model_cfg, logger)
+        except KeyboardInterrupt as e:
+            logging.exception("Interrupted by user!")
+            exit()
+        except Exception as e:
+            logging.exception("Exception occured!")
+            break
+
+        conv_accs[val] = mean_acc
+
+    logger.info(f"Extra Done!\n\n")
