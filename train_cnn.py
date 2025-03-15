@@ -107,9 +107,8 @@ def train_model(X_train, y_train, X_val, y_val):
     model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy'])
     callback = EarlyStopping(patience=5, restore_best_weights=True)
     history = model.fit(X_train, y_train, epochs=(1 if SPEED_MODE else 200), batch_size=32, validation_data=(X_val, y_val), callbacks=callback)
-    logger.info(f"Model trained for {len(history.epoch)} epochs")
 
-    return model
+    return model, history
 
 
 def augment_data(X, y):
@@ -140,7 +139,7 @@ def augment_data(X, y):
 
     return augmented_X, augmented_y
 
-def main():
+def model_trial():
 
     log_filename = os.path.join(LOGGING_DIR, f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_filename), logging.StreamHandler()])
@@ -166,7 +165,8 @@ def main():
         X_train, y_train = augment_data(X_train, y_train)
         logger.info(f"Data processed, divided, and augmented: train: {len(X_train)} | test: {len(X_test)} | val: {len(X_val)}")
 
-        model = train_model(X_train, y_train, X_val, y_val)
+        model, history = train_model(X_train, y_train, X_val, y_val)
+        logger.info(f"Model trained for {len(history.epoch)} epochs")
 
         test_loss, test_acc = model.evaluate(X_test, y_test)
         logger.info(f"Test accuracy is {100*test_acc:.2f}% and final test loss is {test_loss:.4f}")
@@ -187,7 +187,7 @@ def main():
 if __name__ == "__main__":
 
     try:
-        main()
+        model_trial()
     except KeyboardInterrupt as e:
         logging.exception("Interrupted by user!")
     except Exception as e:
