@@ -8,7 +8,6 @@ To do:
         - dense layer points (32 - 1024, power of 2 increments)
         - dropout rate (0.2 - 0.5, 0.05 increments)
         - l2 decay rate (0 - 0.1, 0.001 increments)
-- Add cross validation
 
 To explore:
 - skip connections
