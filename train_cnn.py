@@ -39,6 +39,7 @@ from matplotlib import pyplot as plt
 import random
 from scipy.interpolate import interp1d
 from datetime import datetime
+import statistics as stats
 
 from load_data import build_dataset
 
@@ -139,8 +140,7 @@ def augment_data(X, y):
 
     return augmented_X, augmented_y
 
-
-if __name__ == "__main__":
+def main():
 
     log_filename = os.path.join(LOGGING_DIR, f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_filename), logging.StreamHandler()])
@@ -152,15 +152,28 @@ if __name__ == "__main__":
     logger.info(f"Data loaded, {100 * np.count_nonzero(y_data == 1) / np.count_nonzero(y_data == 0):.2f}% of data has a pulse")
 
     X_data, y_data = preprocess_data(X_data, y_data)
-    X_train, X_test, y_train, y_test = train_test_split(X_data, y_data, test_size=0.3) # split test data
-    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2) # split val data
-    X_train, y_train = augment_data(X_train, y_train)
-    logger.info(f"Data processed, divided, and augmented: train: {len(X_train)} | test: {len(X_test)} | val: {len(X_val)}")
 
-    model = train_model(X_train, y_train, X_val, y_val)
+    model_accuracies = []
+    kf = KFold(n_splits=2 if SPEED_MODE else 5)
+    for i, (train_index, test_index) in enumerate(kf.split(X_data)):
+        logging.info(f"Fold {i}")
+        X_train = X_data[train_index]
+        y_train = y_data[train_index]
+        X_test = X_data[test_index]
+        y_test = y_data[test_index]
 
-    test_loss, test_acc = model.evaluate(X_test, y_test)
-    logger.info(f"Final test accuracy is {100*test_acc:.2f}% and final test loss is {test_loss:.4f}")
+        X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2) # split val data
+        X_train, y_train = augment_data(X_train, y_train)
+        logger.info(f"Data processed, divided, and augmented: train: {len(X_train)} | test: {len(X_test)} | val: {len(X_val)}")
+
+        model = train_model(X_train, y_train, X_val, y_val)
+
+        test_loss, test_acc = model.evaluate(X_test, y_test)
+        logger.info(f"Test accuracy is {100*test_acc:.2f}% and final test loss is {test_loss:.4f}")
+
+        model_accuracies.append(test_acc)
+
+    logger.info(f"Mean accuracy is {100*stats.mean(model_accuracies):.2f}%")
 
     if SAVE_MODEL:
         model_filename = os.path.join(MODELS_DIR, f'model_{int(100*test_acc)}_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.keras')
@@ -168,3 +181,14 @@ if __name__ == "__main__":
         logging.info(f"Model saved as: {model_filename}")
 
     logger.info(f"Done!")
+
+    return
+
+if __name__ == "__main__":
+
+    try:
+        main()
+    except KeyboardInterrupt as e:
+        logging.exception("Interrupted by user!")
+    except Exception as e:
+        logging.exception("Exception occured!")
