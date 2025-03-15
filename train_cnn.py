@@ -3,7 +3,6 @@ A script to train and test a 1D CNN ML model on capstone pulse time series data.
 
 To do:
 - Run on PC
-- Make function for sweeps
 
 To explore:
 - skip connections
