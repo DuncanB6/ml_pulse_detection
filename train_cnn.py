@@ -47,6 +47,13 @@ LOGGING_DIR = 'logging'
 MODELS_DIR = 'models'
 SAVE_MODEL = False
 
+class ModelConfig:
+    def __init__(self, conv_layers, dense_points, dropout_rate, l2_decay):
+        self.conv_layers = conv_layers
+        self.dense_points = dense_points
+        self.dropout_rate = dropout_rate
+        self.l2_decay = l2_decay
+
 def preprocess_data(X, y):
     """
     Preprocessing borrowed from our capstone projects preprocessing, reduces noise and normalizes.
@@ -77,33 +84,30 @@ def preprocess_data(X, y):
     return X, y
 
 
-def train_model(X_train, y_train, X_val, y_val):
+def train_model(X_train, y_train, X_val, y_val, model_cfg:ModelConfig):
 
     model = Sequential()
 
     model.add(Input((X_train.shape[1], 1)))
 
     # 1D convolutional layers
-    model.add(Conv1D(filters=64, kernel_size=3, activation='relu'))
-    model.add(MaxPooling1D(pool_size=2))
-    model.add(Conv1D(filters=128, kernel_size=3, activation='relu'))
-    model.add(MaxPooling1D(pool_size=2))
-    model.add(Conv1D(filters=256, kernel_size=3, activation='relu'))
-    model.add(MaxPooling1D(pool_size=2))
-    model.add(Conv1D(filters=512, kernel_size=3, activation='relu'))
-    model.add(MaxPooling1D(pool_size=2))
-    model.add(Conv1D(filters=1024, kernel_size=3, activation='relu'))
-    model.add(MaxPooling1D(pool_size=2))
+    filters = 64
+    for ii in range(model_cfg.conv_layers):
+        model.add(Conv1D(filters=filters, kernel_size=3, activation='relu'))
+        model.add(MaxPooling1D(pool_size=2))
+        filters *= 2
 
     # flatten and dense layers
     model.add(Flatten())
-    model.add(Dense(256, activation='relu', kernel_regularizer=l2(0.01)))
-    model.add(Dropout(0.3))
-    model.add(Dense(128, activation='relu', kernel_regularizer=l2(0.01)))
+    model.add(Dense(2*model_cfg.dense_points, activation='relu', kernel_regularizer=l2(model_cfg.l2_decay)))
+    model.add(Dropout(model_cfg.dropout_rate))
+    model.add(Dense(model_cfg.dense_points, activation='relu', kernel_regularizer=l2(model_cfg.l2_decay)))
+
     model.add(Dense(1, activation='sigmoid'))  # output layer for binary classification
 
     # compile and fit the model
     model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy'])
+    model.summary()
     callback = EarlyStopping(patience=5, restore_best_weights=True)
     history = model.fit(X_train, y_train, epochs=(1 if SPEED_MODE else 200), batch_size=32, validation_data=(X_val, y_val), callbacks=callback)
 
@@ -138,7 +142,7 @@ def augment_data(X, y):
 
     return augmented_X, augmented_y
 
-def model_trial():
+def model_trial(model_cfg):
 
     log_filename = os.path.join(LOGGING_DIR, f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', handlers=[logging.FileHandler(log_filename), logging.StreamHandler()])
@@ -164,7 +168,7 @@ def model_trial():
         X_train, y_train = augment_data(X_train, y_train)
         logger.info(f"Data processed, divided, and augmented: train: {len(X_train)} | test: {len(X_test)} | val: {len(X_val)}")
 
-        model, history = train_model(X_train, y_train, X_val, y_val)
+        model, history = train_model(X_train, y_train, X_val, y_val, model_cfg)
         logger.info(f"Model trained for {len(history.epoch)} epochs")
 
         test_loss, test_acc = model.evaluate(X_test, y_test)
@@ -172,7 +176,8 @@ def model_trial():
 
         model_accuracies.append(test_acc)
 
-    logger.info(f"Mean accuracy is {100*stats.mean(model_accuracies):.2f}%")
+    mean_acc = stats.mean(model_accuracies)
+    logger.info(f"Mean accuracy is {100*mean_acc}%")
 
     if SAVE_MODEL:
         model_filename = os.path.join(MODELS_DIR, f'model_{int(100*test_acc)}_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.keras')
@@ -181,12 +186,14 @@ def model_trial():
 
     logger.info(f"Done!")
 
-    return
+    return mean_acc
 
 if __name__ == "__main__":
 
+    model_cfg = ModelConfig(conv_layers=3, dense_points=32, dropout_rate=0.2, l2_decay=0)
+
     try:
-        model_trial()
+        model_trial(model_cfg)
     except KeyboardInterrupt as e:
         logging.exception("Interrupted by user!")
     except Exception as e:
