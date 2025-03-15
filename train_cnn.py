@@ -218,6 +218,8 @@ if __name__ == "__main__":
 
         conv_accs[val] = mean_acc
 
+    logging.info(f"Conv Layers Sweep Results:\n{conv_accs}")
+
     plt.plot(list(conv_accs.keys()), list(conv_accs.values()))
     plt.title("Accuracy vs. # Conv Layers")
     fig_path = os.path.join(FIGURES_DIR, "conv_layers_sweep.png")
