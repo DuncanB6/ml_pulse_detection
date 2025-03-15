@@ -45,6 +45,7 @@ from load_data import build_dataset
 SPEED_MODE = True # train with a single epoch for debugging
 LOGGING_DIR = 'logging'
 MODELS_DIR = 'models'
+FIGURES_DIR = 'figures'
 SAVE_MODEL = False
 
 class ModelConfig:
@@ -166,7 +167,7 @@ def model_trial(model_cfg, logger):
         model, history = train_model(X_train, y_train, X_val, y_val, model_cfg)
         logger.info(f"Model trained for {len(history.epoch)} epochs")
 
-        test_loss, test_acc = model.evaluate(X_test, y_test)
+        test_loss, test_acc = model.evaluate(X_test, y_test, verbose=0)
         logger.info(f"Test accuracy is {100*test_acc:.2f}% and final test loss is {test_loss:.4f}")
 
         model_accuracies.append(test_acc)
@@ -191,16 +192,13 @@ if __name__ == "__main__":
 
     model_cfg = ModelConfig()
 
-    conv_sweep = list(range(1, 6+1))
-    print(conv_sweep)
-    dense_sweep = [32 * (2 ** i) for i in range(6)]
-    print(dense_sweep)
+    # configure sweeps
+    conv_sweep = list(range(1, 6+1)) # 1 - 6, 1 increments
+    dense_sweep = [32 * (2 ** i) for i in range(6)] # 32 - 1024, power of 2 increments
     dropout_sweep = list(np.arange(0.2, 0.500001, 0.05))
-    dropout_sweep = np.round(dropout_sweep, 2)
-    print(dropout_sweep)
+    dropout_sweep = np.round(dropout_sweep, 2) # 0.2 - 0.5, 0.05 increments
     l2_sweep = list(np.arange(0, 0.100001, 0.01))
-    l2_sweep = np.round(l2_sweep, 2)
-    print(l2_sweep)
+    l2_sweep = np.round(l2_sweep, 2) # 0 - 0.1, 0.01 increments
 
     logging.info("Sweeping convolution layers")
     conv_accs = {}
@@ -219,5 +217,10 @@ if __name__ == "__main__":
             break
 
         conv_accs[val] = mean_acc
+
+    plt.plot(list(conv_accs.keys()), list(conv_accs.values()))
+    plt.title("Accuracy vs. # Conv Layers")
+    fig_path = os.path.join(FIGURES_DIR, "conv_layers_sweep.png")
+    plt.savefig(fig_path)
 
     logger.info(f"Extra Done!\n\n")

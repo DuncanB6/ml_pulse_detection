@@ -1,3 +1,4 @@
 logging/*.log
 models/*.keras
+figures/*.png
 test.py
