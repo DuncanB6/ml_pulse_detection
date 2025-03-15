@@ -7,7 +7,7 @@ To do:
         - # conv layers (1 - 7, 1 increments)
         - dense layer points (32 - 1024, power of 2 increments)
         - dropout rate (0.2 - 0.5, 0.05 increments)
-        - l2 decay rate (0 - 0.1, 0.001 increments)
+        - l2 decay rate (0 - 0.1, 0.01 increments)
 
 To explore:
 - skip connections
@@ -48,7 +48,7 @@ MODELS_DIR = 'models'
 SAVE_MODEL = False
 
 class ModelConfig:
-    def __init__(self, conv_layers, dense_points, dropout_rate, l2_decay):
+    def __init__(self, conv_layers=3, dense_points=64, dropout_rate=0.3, l2_decay=0.02):
         self.conv_layers = conv_layers
         self.dense_points = dense_points
         self.dropout_rate = dropout_rate
@@ -107,7 +107,6 @@ def train_model(X_train, y_train, X_val, y_val, model_cfg:ModelConfig):
 
     # compile and fit the model
     model.compile(optimizer=Adam(), loss='binary_crossentropy', metrics=['accuracy'])
-    model.summary()
     callback = EarlyStopping(patience=5, restore_best_weights=True)
     history = model.fit(X_train, y_train, epochs=(1 if SPEED_MODE else 200), batch_size=32, validation_data=(X_val, y_val), callbacks=callback)
 
@@ -177,7 +176,7 @@ def model_trial(model_cfg):
         model_accuracies.append(test_acc)
 
     mean_acc = stats.mean(model_accuracies)
-    logger.info(f"Mean accuracy is {100*mean_acc}%")
+    logger.info(f"Mean accuracy is {100*mean_acc:.2f}%")
 
     if SAVE_MODEL:
         model_filename = os.path.join(MODELS_DIR, f'model_{int(100*test_acc)}_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.keras')
@@ -190,10 +189,21 @@ def model_trial(model_cfg):
 
 if __name__ == "__main__":
 
-    model_cfg = ModelConfig(conv_layers=3, dense_points=32, dropout_rate=0.2, l2_decay=0)
+    model_cfg = ModelConfig()
+
+    conv_sweep = list(range(1, 7+1))
+    print(conv_sweep)
+    dense_sweep = [32 * (2 ** i) for i in range(6)]
+    print(dense_sweep)
+    dropout_sweep = list(np.arange(0.2, 0.500001, 0.05))
+    dropout_sweep = np.round(dropout_sweep, 2)
+    print(dropout_sweep)
+    l2_sweep = list(np.arange(0, 0.100001, 0.01))
+    l2_sweep = np.round(l2_sweep, 2)
+    print(l2_sweep)
 
     try:
-        model_trial(model_cfg)
+        mean_acc = model_trial(model_cfg)
     except KeyboardInterrupt as e:
         logging.exception("Interrupted by user!")
     except Exception as e:
