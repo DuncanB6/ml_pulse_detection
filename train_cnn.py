@@ -48,7 +48,7 @@ MODELS_DIR = 'models'
 SAVE_MODEL = False
 
 class ModelConfig:
-    def __init__(self, conv_layers=3, dense_points=64, dropout_rate=0.3, l2_decay=0.02):
+    def __init__(self, conv_layers=3, dense_points=128, dropout_rate=0.3, l2_decay=0.01):
         self.conv_layers = conv_layers
         self.dense_points = dense_points
         self.dropout_rate = dropout_rate
