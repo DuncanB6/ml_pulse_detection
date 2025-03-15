@@ -2,12 +2,8 @@
 A script to train and test a 1D CNN ML model on capstone pulse time series data. Predicts whether or not a pulse is present in a 4 second signal.
 
 To do:
-- Model tuning
-    - sweep params:
-        - # conv layers (1 - 7, 1 increments)
-        - dense layer points (32 - 1024, power of 2 increments)
-        - dropout rate (0.2 - 0.5, 0.05 increments)
-        - l2 decay rate (0 - 0.1, 0.01 increments)
+- Run on PC
+- Make function for sweeps
 
 To explore:
 - skip connections
@@ -39,6 +35,7 @@ import random
 from scipy.interpolate import interp1d
 from datetime import datetime
 import statistics as stats
+import csv
 
 from load_data import build_dataset
 
@@ -46,6 +43,7 @@ SPEED_MODE = True # train with a single epoch for debugging
 LOGGING_DIR = 'logging'
 MODELS_DIR = 'models'
 FIGURES_DIR = 'figures'
+RESULTS_DIR = 'results'
 SAVE_MODEL = False
 
 class ModelConfig:
@@ -184,6 +182,50 @@ def model_trial(model_cfg, logger):
 
     return mean_acc
 
+def sweep_param(param, sweep, logger, csv_path):
+
+    model_cfg = ModelConfig()
+
+    logging.info(f"Sweeping {param}")
+    sweep_accs = {}
+    for val in sweep:
+
+        if param == 'conv_layers':
+            model_cfg.conv_layers = val
+        elif param == 'dense_points':
+            model_cfg.dense_points = val
+        elif param == 'dropout_rate':
+            model_cfg.dropout_rate = val
+        elif param == 'l2_rate':
+            model_cfg.l2_decay = val
+
+        logging.info(f"Trying {val}")
+
+        try:
+            mean_acc = model_trial(model_cfg, logger)
+        except KeyboardInterrupt as e:
+            logging.exception("Interrupted by user!")
+            exit()
+        except Exception as e:
+            logging.exception("Exception occured!")
+            break
+
+        sweep_accs[val] = mean_acc
+        
+        with open(csv_path, mode='a', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow([datetime.now(), model_cfg.conv_layers, model_cfg.dense_points, model_cfg.dropout_rate, model_cfg.l2_decay, mean_acc])
+
+
+    logging.info(f"{param} Sweep Results:\n{sweep_accs}\n\n")
+
+    plt.plot(list(sweep_accs.keys()), list(sweep_accs.values()))
+    plt.title(f"Accuracy vs. # {param}")
+    fig_path = os.path.join(FIGURES_DIR, f"{param}_sweep.png")
+    plt.savefig(fig_path)
+
+    return
+
 if __name__ == "__main__":
 
     log_filename = os.path.join(LOGGING_DIR, f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log')
@@ -200,29 +242,17 @@ if __name__ == "__main__":
     l2_sweep = list(np.arange(0, 0.100001, 0.01))
     l2_sweep = np.round(l2_sweep, 2) # 0 - 0.1, 0.01 increments
 
-    logging.info("Sweeping convolution layers")
-    conv_accs = {}
-    for val in conv_sweep:
-        model_cfg.conv_layers = val
+    headers = ['Time', 'Conv Layers', 'Dense_layers', 'Dropout Rate', 'L2 Rate', 'Accuracy']
 
-        logging.info(f"Trying {model_cfg.conv_layers} layers")
+    csv_path = os.path.join(RESULTS_DIR, f'results_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.csv')
+    if not os.path.exists(csv_path):
+        with open(csv_path, mode='w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerow(headers)
 
-        try:
-            mean_acc = model_trial(model_cfg, logger)
-        except KeyboardInterrupt as e:
-            logging.exception("Interrupted by user!")
-            exit()
-        except Exception as e:
-            logging.exception("Exception occured!")
-            break
-
-        conv_accs[val] = mean_acc
-
-    logging.info(f"Conv Layers Sweep Results:\n{conv_accs}")
-
-    plt.plot(list(conv_accs.keys()), list(conv_accs.values()))
-    plt.title("Accuracy vs. # Conv Layers")
-    fig_path = os.path.join(FIGURES_DIR, "conv_layers_sweep.png")
-    plt.savefig(fig_path)
+    sweep_param('conv_layers', conv_sweep, logger, csv_path)
+    sweep_param('dense_points', dense_sweep, logger, csv_path)
+    sweep_param('dropout_rate', dropout_sweep, logger, csv_path)
+    sweep_param('l2_rate', l2_sweep, logger, csv_path)
 
     logger.info(f"Extra Done!\n\n")
