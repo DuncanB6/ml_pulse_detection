@@ -39,7 +39,7 @@ import csv
 
 from load_data import build_dataset
 
-SPEED_MODE = True  # train with a single epoch for debugging
+SPEED_MODE = False  # train with a single epoch for debugging
 LOGGING_DIR = "logging"
 MODELS_DIR = "models"
 FIGURES_DIR = "figures"
@@ -268,6 +268,7 @@ def sweep_param(param, sweep, logger, csv_path):
 
     logging.info(f"{param} Sweep Results:\n{sweep_accs}\n\n")
 
+    plt.clf()
     plt.plot(list(sweep_accs.keys()), list(sweep_accs.values()))
     plt.title(f"Accuracy vs. # {param}")
     fig_path = os.path.join(FIGURES_DIR, f"{param}_sweep.png")
