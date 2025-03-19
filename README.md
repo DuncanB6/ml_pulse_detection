@@ -16,7 +16,7 @@ conda activate ml_pulse
 - Sweep and find hyperparams
 - Modify to only load data once
 - Add script for running model only once
-- Investigate large variation in results
+- Investigate large variation in results 
 
 ## To Explore
 
