@@ -1,14 +1,6 @@
 """
 A script to train and test a 1D CNN ML model on capstone pulse time series data. Predicts whether or not a pulse is present in a 4 second signal.
 
-To do:
-- Run on PC
-
-To explore:
-- skip connections
-- BPM prediction
-- https://www.hackster.io/news/easy-tinyml-on-esp32-and-arduino-a9dbc509f26c
-
 Duncan Boyd
 duncan@wapta.ca
 Feb 24, 2025
