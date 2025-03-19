@@ -21,7 +21,7 @@ def load_data_from_file(file_path, X_data: list, y_data: list):
             ppg_data = file[f"{series_name}/ppg_data"][:]
             X_data.append(ppg_data)
 
-            pulse_label = file[f"{series_name}/pulse_label"][()].decode()
+            pulse_label = file[f"{series_name}/pulse_label"][()]
             y_data.append(1 if pulse_label == "T" else 0)
 
             # hr_label = file[f"{series_name}/hr_label"][()] # unused for now

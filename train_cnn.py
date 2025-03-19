@@ -91,16 +91,25 @@ def train_model(X_train, y_train, X_val, y_val, model_cfg: ModelConfig):
 
     model = Sequential()
 
-    model.add(Input((X_train.shape[1], 1)))
-
-    # 1D convolutional layers
     filters = 64
-    for ii in range(model_cfg.conv_layers):
+    # Define the first Conv1D layer with input shape
+    model.add(
+        Conv1D(
+            filters=filters,
+            kernel_size=3,
+            activation="relu",
+            input_shape=(X_train.shape[1], 1),
+        )
+    )
+    model.add(MaxPooling1D(pool_size=2))
+
+    # Add additional Conv1D and MaxPooling1D layers as defined in model_cfg
+    for ii in range(1, model_cfg.conv_layers):
+        filters *= 2
         model.add(Conv1D(filters=filters, kernel_size=3, activation="relu"))
         model.add(MaxPooling1D(pool_size=2))
-        filters *= 2
 
-    # flatten and dense layers
+    # Flatten and dense layers
     model.add(Flatten())
     model.add(
         Dense(
@@ -118,18 +127,23 @@ def train_model(X_train, y_train, X_val, y_val, model_cfg: ModelConfig):
         )
     )
 
-    model.add(Dense(1, activation="sigmoid"))  # output layer for binary classification
+    # Output layer for binary classification
+    model.add(Dense(1, activation="sigmoid"))
 
-    # compile and fit the model
+    # Compile and fit the model
     model.compile(optimizer=Adam(), loss="binary_crossentropy", metrics=["accuracy"])
+
+    # Early stopping callback
     callback = EarlyStopping(patience=5, restore_best_weights=True)
+
+    # Fit the model with training and validation data
     history = model.fit(
         X_train,
         y_train,
         epochs=(1 if SPEED_MODE else 200),
         batch_size=32,
         validation_data=(X_val, y_val),
-        callbacks=callback,
+        callbacks=[callback],
         verbose=0,
     )
 
@@ -181,7 +195,7 @@ def model_trial(model_cfg, logger):
     X_data, y_data = preprocess_data(X_data, y_data)
 
     model_accuracies = []
-    kf = KFold(n_splits=2 if SPEED_MODE else 5)
+    kf = KFold(n_splits=2 if SPEED_MODE else 10)
     for i, (train_index, test_index) in enumerate(kf.split(X_data)):
         logging.info(f"Fold {i}")
         X_train = X_data[train_index]
@@ -196,6 +210,11 @@ def model_trial(model_cfg, logger):
         logger.info(
             f"Data processed, divided, and augmented: train: {len(X_train)} | test: {len(X_test)} | val: {len(X_val)}"
         )
+
+        # add an axis for proper input shape
+        X_train = np.expand_dims(X_train, axis=-1)
+        X_test = np.expand_dims(X_test, axis=-1)
+        X_val = np.expand_dims(X_val, axis=-1)
 
         model, history = train_model(X_train, y_train, X_val, y_val, model_cfg)
         logger.info(f"Model trained for {len(history.epoch)} epochs")
