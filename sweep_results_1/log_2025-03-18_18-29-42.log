@@ -1,0 +1,1433 @@
+2025-03-18 18:29:42,744 - INFO - Sweeping conv_layers
+2025-03-18 18:29:42,744 - INFO - Trying 1
+2025-03-18 18:29:42,744 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:29:42,963 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:29:43,526 - INFO - Fold 0
+2025-03-18 18:29:43,604 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:29:50,102 - INFO - Model trained for 20 epochs
+2025-03-18 18:29:50,133 - INFO - Test accuracy is 2.82% and final test loss is 1.1414
+2025-03-18 18:29:50,133 - INFO - Fold 1
+2025-03-18 18:29:50,211 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:29:53,416 - INFO - Model trained for 12 epochs
+2025-03-18 18:29:53,447 - INFO - Test accuracy is 21.43% and final test loss is 0.9185
+2025-03-18 18:29:53,447 - INFO - Fold 2
+2025-03-18 18:29:53,510 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:29:57,510 - INFO - Model trained for 16 epochs
+2025-03-18 18:29:57,526 - INFO - Test accuracy is 95.71% and final test loss is 0.5645
+2025-03-18 18:29:57,526 - INFO - Fold 3
+2025-03-18 18:29:57,588 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:00,355 - INFO - Model trained for 9 epochs
+2025-03-18 18:30:00,355 - INFO - Test accuracy is 65.71% and final test loss is 0.6600
+2025-03-18 18:30:00,355 - INFO - Fold 4
+2025-03-18 18:30:00,418 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:03,887 - INFO - Model trained for 13 epochs
+2025-03-18 18:30:03,887 - INFO - Test accuracy is 5.71% and final test loss is 1.0603
+2025-03-18 18:30:03,887 - INFO - Fold 5
+2025-03-18 18:30:03,949 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:07,575 - INFO - Model trained for 13 epochs
+2025-03-18 18:30:07,575 - INFO - Test accuracy is 62.86% and final test loss is 0.6614
+2025-03-18 18:30:07,575 - INFO - Fold 6
+2025-03-18 18:30:07,637 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:11,090 - INFO - Model trained for 12 epochs
+2025-03-18 18:30:11,090 - INFO - Test accuracy is 82.86% and final test loss is 0.5865
+2025-03-18 18:30:11,090 - INFO - Fold 7
+2025-03-18 18:30:11,169 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:14,717 - INFO - Model trained for 13 epochs
+2025-03-18 18:30:14,717 - INFO - Test accuracy is 74.29% and final test loss is 0.6127
+2025-03-18 18:30:14,717 - INFO - Fold 8
+2025-03-18 18:30:14,780 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:19,499 - INFO - Model trained for 18 epochs
+2025-03-18 18:30:19,499 - INFO - Test accuracy is 100.00% and final test loss is 0.5570
+2025-03-18 18:30:19,499 - INFO - Fold 9
+2025-03-18 18:30:19,561 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:26,280 - INFO - Model trained for 29 epochs
+2025-03-18 18:30:26,280 - INFO - Test accuracy is 100.00% and final test loss is 0.5673
+2025-03-18 18:30:26,280 - INFO - Mean accuracy is 61.14%
+2025-03-18 18:30:26,280 - INFO - Done!
+
+
+2025-03-18 18:30:26,280 - INFO - Trying 2
+2025-03-18 18:30:26,280 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:30:26,499 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:30:26,999 - INFO - Fold 0
+2025-03-18 18:30:27,062 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:30:34,610 - INFO - Model trained for 25 epochs
+2025-03-18 18:30:34,673 - INFO - Test accuracy is 77.46% and final test loss is 0.7926
+2025-03-18 18:30:34,673 - INFO - Fold 1
+2025-03-18 18:30:34,735 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:43,314 - INFO - Model trained for 31 epochs
+2025-03-18 18:30:43,376 - INFO - Test accuracy is 85.71% and final test loss is 0.4270
+2025-03-18 18:30:43,376 - INFO - Fold 2
+2025-03-18 18:30:43,439 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:30:54,679 - INFO - Model trained for 43 epochs
+2025-03-18 18:30:54,679 - INFO - Test accuracy is 91.43% and final test loss is 0.2862
+2025-03-18 18:30:54,679 - INFO - Fold 3
+2025-03-18 18:30:54,757 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:31:03,962 - INFO - Model trained for 34 epochs
+2025-03-18 18:31:03,977 - INFO - Test accuracy is 95.71% and final test loss is 0.3014
+2025-03-18 18:31:03,977 - INFO - Fold 4
+2025-03-18 18:31:04,040 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:31:13,666 - INFO - Model trained for 35 epochs
+2025-03-18 18:31:13,681 - INFO - Test accuracy is 47.14% and final test loss is 0.9401
+2025-03-18 18:31:13,681 - INFO - Fold 5
+2025-03-18 18:31:13,744 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:31:20,091 - INFO - Model trained for 20 epochs
+2025-03-18 18:31:20,091 - INFO - Test accuracy is 91.43% and final test loss is 0.2962
+2025-03-18 18:31:20,091 - INFO - Fold 6
+2025-03-18 18:31:20,154 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:31:27,248 - INFO - Model trained for 24 epochs
+2025-03-18 18:31:27,264 - INFO - Test accuracy is 78.57% and final test loss is 0.4409
+2025-03-18 18:31:27,264 - INFO - Fold 7
+2025-03-18 18:31:27,326 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:31:34,281 - INFO - Model trained for 22 epochs
+2025-03-18 18:31:34,281 - INFO - Test accuracy is 82.86% and final test loss is 0.4343
+2025-03-18 18:31:34,281 - INFO - Fold 8
+2025-03-18 18:31:34,344 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:31:42,235 - INFO - Model trained for 26 epochs
+2025-03-18 18:31:42,250 - INFO - Test accuracy is 98.57% and final test loss is 0.1268
+2025-03-18 18:31:42,250 - INFO - Fold 9
+2025-03-18 18:31:42,313 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:31:48,657 - INFO - Model trained for 19 epochs
+2025-03-18 18:31:48,673 - INFO - Test accuracy is 74.29% and final test loss is 0.7322
+2025-03-18 18:31:48,673 - INFO - Mean accuracy is 82.32%
+2025-03-18 18:31:48,673 - INFO - Done!
+
+
+2025-03-18 18:31:48,673 - INFO - Trying 3
+2025-03-18 18:31:48,673 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:31:48,891 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:31:49,393 - INFO - Fold 0
+2025-03-18 18:31:49,471 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:31:56,768 - INFO - Model trained for 18 epochs
+2025-03-18 18:31:56,831 - INFO - Test accuracy is 77.46% and final test loss is 0.6211
+2025-03-18 18:31:56,831 - INFO - Fold 1
+2025-03-18 18:31:56,893 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:32:05,817 - INFO - Model trained for 24 epochs
+2025-03-18 18:32:05,864 - INFO - Test accuracy is 81.43% and final test loss is 0.6148
+2025-03-18 18:32:05,864 - INFO - Fold 2
+2025-03-18 18:32:05,926 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:32:14,147 - INFO - Model trained for 21 epochs
+2025-03-18 18:32:14,147 - INFO - Test accuracy is 92.86% and final test loss is 0.2428
+2025-03-18 18:32:14,147 - INFO - Fold 3
+2025-03-18 18:32:14,209 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:32:21,572 - INFO - Model trained for 19 epochs
+2025-03-18 18:32:21,572 - INFO - Test accuracy is 98.57% and final test loss is 0.1538
+2025-03-18 18:32:21,572 - INFO - Fold 4
+2025-03-18 18:32:21,634 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:32:30,481 - INFO - Model trained for 23 epochs
+2025-03-18 18:32:30,481 - INFO - Test accuracy is 82.86% and final test loss is 0.4698
+2025-03-18 18:32:30,481 - INFO - Fold 5
+2025-03-18 18:32:30,543 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:32:39,061 - INFO - Model trained for 22 epochs
+2025-03-18 18:32:39,076 - INFO - Test accuracy is 97.14% and final test loss is 0.1641
+2025-03-18 18:32:39,076 - INFO - Fold 6
+2025-03-18 18:32:39,139 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:32:47,749 - INFO - Model trained for 23 epochs
+2025-03-18 18:32:47,749 - INFO - Test accuracy is 82.86% and final test loss is 0.3903
+2025-03-18 18:32:47,749 - INFO - Fold 7
+2025-03-18 18:32:47,811 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:32:57,110 - INFO - Model trained for 24 epochs
+2025-03-18 18:32:57,125 - INFO - Test accuracy is 90.00% and final test loss is 0.3517
+2025-03-18 18:32:57,125 - INFO - Fold 8
+2025-03-18 18:32:57,188 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:33:04,329 - INFO - Model trained for 15 epochs
+2025-03-18 18:33:04,336 - INFO - Test accuracy is 100.00% and final test loss is 0.1335
+2025-03-18 18:33:04,336 - INFO - Fold 9
+2025-03-18 18:33:04,405 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:33:11,640 - INFO - Model trained for 16 epochs
+2025-03-18 18:33:11,640 - INFO - Test accuracy is 80.00% and final test loss is 0.5622
+2025-03-18 18:33:11,640 - INFO - Mean accuracy is 88.32%
+2025-03-18 18:33:11,640 - INFO - Done!
+
+
+2025-03-18 18:33:11,640 - INFO - Trying 4
+2025-03-18 18:33:11,640 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:33:11,859 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:33:12,394 - INFO - Fold 0
+2025-03-18 18:33:12,457 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:33:19,694 - INFO - Model trained for 11 epochs
+2025-03-18 18:33:19,742 - INFO - Test accuracy is 77.46% and final test loss is 0.9613
+2025-03-18 18:33:19,742 - INFO - Fold 1
+2025-03-18 18:33:19,809 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:33:31,182 - INFO - Model trained for 23 epochs
+2025-03-18 18:33:31,225 - INFO - Test accuracy is 88.57% and final test loss is 0.4893
+2025-03-18 18:33:31,225 - INFO - Fold 2
+2025-03-18 18:33:31,291 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:33:40,288 - INFO - Model trained for 18 epochs
+2025-03-18 18:33:40,304 - INFO - Test accuracy is 95.71% and final test loss is 0.1895
+2025-03-18 18:33:40,304 - INFO - Fold 3
+2025-03-18 18:33:40,366 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:33:49,612 - INFO - Model trained for 18 epochs
+2025-03-18 18:33:49,628 - INFO - Test accuracy is 97.14% and final test loss is 0.1130
+2025-03-18 18:33:49,628 - INFO - Fold 4
+2025-03-18 18:33:49,691 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:33:58,846 - INFO - Model trained for 17 epochs
+2025-03-18 18:33:58,853 - INFO - Test accuracy is 71.43% and final test loss is 0.5940
+2025-03-18 18:33:58,853 - INFO - Fold 5
+2025-03-18 18:33:58,922 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:34:08,059 - INFO - Model trained for 17 epochs
+2025-03-18 18:34:08,070 - INFO - Test accuracy is 95.71% and final test loss is 0.1178
+2025-03-18 18:34:08,070 - INFO - Fold 6
+2025-03-18 18:34:08,145 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:34:18,235 - INFO - Model trained for 19 epochs
+2025-03-18 18:34:18,243 - INFO - Test accuracy is 82.86% and final test loss is 0.3899
+2025-03-18 18:34:18,243 - INFO - Fold 7
+2025-03-18 18:34:18,309 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:34:27,178 - INFO - Model trained for 16 epochs
+2025-03-18 18:34:27,186 - INFO - Test accuracy is 90.00% and final test loss is 0.2986
+2025-03-18 18:34:27,187 - INFO - Fold 8
+2025-03-18 18:34:27,267 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:34:36,131 - INFO - Model trained for 15 epochs
+2025-03-18 18:34:36,139 - INFO - Test accuracy is 100.00% and final test loss is 0.0670
+2025-03-18 18:34:36,139 - INFO - Fold 9
+2025-03-18 18:34:36,205 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:34:43,998 - INFO - Model trained for 12 epochs
+2025-03-18 18:34:44,009 - INFO - Test accuracy is 80.00% and final test loss is 0.6229
+2025-03-18 18:34:44,010 - INFO - Mean accuracy is 87.89%
+2025-03-18 18:34:44,010 - INFO - Done!
+
+
+2025-03-18 18:34:44,012 - INFO - Trying 5
+2025-03-18 18:34:44,012 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:34:44,238 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:34:44,779 - INFO - Fold 0
+2025-03-18 18:34:44,850 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:34:53,829 - INFO - Model trained for 10 epochs
+2025-03-18 18:34:53,872 - INFO - Test accuracy is 70.42% and final test loss is 1.6278
+2025-03-18 18:34:53,873 - INFO - Fold 1
+2025-03-18 18:34:53,939 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:35:08,832 - INFO - Model trained for 21 epochs
+2025-03-18 18:35:08,876 - INFO - Test accuracy is 85.71% and final test loss is 0.7986
+2025-03-18 18:35:08,876 - INFO - Fold 2
+2025-03-18 18:35:08,942 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:35:20,817 - INFO - Model trained for 16 epochs
+2025-03-18 18:35:20,827 - INFO - Test accuracy is 94.29% and final test loss is 0.1689
+2025-03-18 18:35:20,827 - INFO - Fold 3
+2025-03-18 18:35:20,903 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:35:34,217 - INFO - Model trained for 18 epochs
+2025-03-18 18:35:34,226 - INFO - Test accuracy is 100.00% and final test loss is 0.0565
+2025-03-18 18:35:34,226 - INFO - Fold 4
+2025-03-18 18:35:34,291 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:35:47,567 - INFO - Model trained for 17 epochs
+2025-03-18 18:35:47,583 - INFO - Test accuracy is 95.71% and final test loss is 0.1946
+2025-03-18 18:35:47,583 - INFO - Fold 5
+2025-03-18 18:35:47,672 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:35:59,219 - INFO - Model trained for 14 epochs
+2025-03-18 18:35:59,235 - INFO - Test accuracy is 82.86% and final test loss is 0.3279
+2025-03-18 18:35:59,235 - INFO - Fold 6
+2025-03-18 18:35:59,304 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:36:09,394 - INFO - Model trained for 11 epochs
+2025-03-18 18:36:09,394 - INFO - Test accuracy is 94.29% and final test loss is 0.2312
+2025-03-18 18:36:09,394 - INFO - Fold 7
+2025-03-18 18:36:09,463 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:36:20,809 - INFO - Model trained for 14 epochs
+2025-03-18 18:36:20,818 - INFO - Test accuracy is 90.00% and final test loss is 0.3342
+2025-03-18 18:36:20,818 - INFO - Fold 8
+2025-03-18 18:36:20,893 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:36:31,053 - INFO - Model trained for 11 epochs
+2025-03-18 18:36:31,062 - INFO - Test accuracy is 100.00% and final test loss is 0.0852
+2025-03-18 18:36:31,062 - INFO - Fold 9
+2025-03-18 18:36:31,127 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:36:41,121 - INFO - Model trained for 11 epochs
+2025-03-18 18:36:41,132 - INFO - Test accuracy is 90.00% and final test loss is 0.2823
+2025-03-18 18:36:41,132 - INFO - Mean accuracy is 90.33%
+2025-03-18 18:36:41,132 - INFO - Done!
+
+
+2025-03-18 18:36:41,135 - INFO - Trying 6
+2025-03-18 18:36:41,135 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:36:41,399 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:36:41,996 - INFO - Fold 0
+2025-03-18 18:36:42,073 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:36:55,880 - INFO - Model trained for 10 epochs
+2025-03-18 18:36:55,924 - INFO - Test accuracy is 76.06% and final test loss is 0.7979
+2025-03-18 18:36:55,924 - INFO - Fold 1
+2025-03-18 18:36:55,992 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:37:09,769 - INFO - Model trained for 11 epochs
+2025-03-18 18:37:09,807 - INFO - Test accuracy is 88.57% and final test loss is 0.5349
+2025-03-18 18:37:09,808 - INFO - Fold 2
+2025-03-18 18:37:09,874 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:37:26,358 - INFO - Model trained for 13 epochs
+2025-03-18 18:37:26,372 - INFO - Test accuracy is 95.71% and final test loss is 0.5807
+2025-03-18 18:37:26,372 - INFO - Fold 3
+2025-03-18 18:37:26,437 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:37:44,362 - INFO - Model trained for 15 epochs
+2025-03-18 18:37:44,375 - INFO - Test accuracy is 98.57% and final test loss is 0.0909
+2025-03-18 18:37:44,375 - INFO - Fold 4
+2025-03-18 18:37:44,440 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:37:58,290 - INFO - Model trained for 11 epochs
+2025-03-18 18:37:58,303 - INFO - Test accuracy is 51.43% and final test loss is 0.7981
+2025-03-18 18:37:58,303 - INFO - Fold 5
+2025-03-18 18:37:58,368 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:38:13,979 - INFO - Model trained for 12 epochs
+2025-03-18 18:38:13,993 - INFO - Test accuracy is 97.14% and final test loss is 0.0939
+2025-03-18 18:38:13,993 - INFO - Fold 6
+2025-03-18 18:38:14,058 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:38:31,560 - INFO - Model trained for 15 epochs
+2025-03-18 18:38:31,572 - INFO - Test accuracy is 90.00% and final test loss is 0.2393
+2025-03-18 18:38:31,572 - INFO - Fold 7
+2025-03-18 18:38:31,639 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:38:51,171 - INFO - Model trained for 16 epochs
+2025-03-18 18:38:51,183 - INFO - Test accuracy is 94.29% and final test loss is 0.2649
+2025-03-18 18:38:51,184 - INFO - Fold 8
+2025-03-18 18:38:51,248 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:39:08,388 - INFO - Model trained for 14 epochs
+2025-03-18 18:39:08,399 - INFO - Test accuracy is 100.00% and final test loss is 0.0402
+2025-03-18 18:39:08,399 - INFO - Fold 9
+2025-03-18 18:39:08,466 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:39:28,230 - INFO - Model trained for 16 epochs
+2025-03-18 18:39:28,244 - INFO - Test accuracy is 90.00% and final test loss is 0.4088
+2025-03-18 18:39:28,244 - INFO - Mean accuracy is 88.18%
+2025-03-18 18:39:28,244 - INFO - Done!
+
+
+2025-03-18 18:39:28,246 - INFO - conv_layers Sweep Results:
+{1: 0.6113883342593909, 2: 0.8231790721416473, 3: 0.8831790685653687, 4: 0.878893357515335, 5: 0.9032796740531921, 6: 0.8817706167697906}
+
+
+2025-03-18 18:39:28,354 - INFO - Sweeping dense_points
+2025-03-18 18:39:28,354 - INFO - Trying 32
+2025-03-18 18:39:28,355 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:39:28,572 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:39:29,103 - INFO - Fold 0
+2025-03-18 18:39:29,173 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:39:36,533 - INFO - Model trained for 13 epochs
+2025-03-18 18:39:36,539 - INFO - Test accuracy is 78.87% and final test loss is 0.7065
+2025-03-18 18:39:36,540 - INFO - Fold 1
+2025-03-18 18:39:36,604 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:39:44,877 - INFO - Model trained for 14 epochs
+2025-03-18 18:39:44,885 - INFO - Test accuracy is 87.14% and final test loss is 0.4888
+2025-03-18 18:39:44,886 - INFO - Fold 2
+2025-03-18 18:39:44,952 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:39:54,804 - INFO - Model trained for 22 epochs
+2025-03-18 18:39:54,811 - INFO - Test accuracy is 94.29% and final test loss is 0.2613
+2025-03-18 18:39:54,811 - INFO - Fold 3
+2025-03-18 18:39:54,874 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:40:02,843 - INFO - Model trained for 12 epochs
+2025-03-18 18:40:02,850 - INFO - Test accuracy is 98.57% and final test loss is 0.2128
+2025-03-18 18:40:02,850 - INFO - Fold 4
+2025-03-18 18:40:02,915 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:40:13,964 - INFO - Model trained for 26 epochs
+2025-03-18 18:40:13,971 - INFO - Test accuracy is 71.43% and final test loss is 0.6618
+2025-03-18 18:40:13,972 - INFO - Fold 5
+2025-03-18 18:40:14,040 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:40:22,292 - INFO - Model trained for 13 epochs
+2025-03-18 18:40:22,298 - INFO - Test accuracy is 97.14% and final test loss is 0.1836
+2025-03-18 18:40:22,299 - INFO - Fold 6
+2025-03-18 18:40:22,364 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:40:32,102 - INFO - Model trained for 22 epochs
+2025-03-18 18:40:32,109 - INFO - Test accuracy is 88.57% and final test loss is 0.2938
+2025-03-18 18:40:32,109 - INFO - Fold 7
+2025-03-18 18:40:32,173 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:40:40,219 - INFO - Model trained for 15 epochs
+2025-03-18 18:40:40,226 - INFO - Test accuracy is 90.00% and final test loss is 0.3250
+2025-03-18 18:40:40,226 - INFO - Fold 8
+2025-03-18 18:40:40,291 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:40:48,800 - INFO - Model trained for 13 epochs
+2025-03-18 18:40:48,807 - INFO - Test accuracy is 100.00% and final test loss is 0.1180
+2025-03-18 18:40:48,807 - INFO - Fold 9
+2025-03-18 18:40:48,873 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:40:55,540 - INFO - Model trained for 9 epochs
+2025-03-18 18:40:55,547 - INFO - Test accuracy is 82.86% and final test loss is 0.4138
+2025-03-18 18:40:55,548 - INFO - Mean accuracy is 88.89%
+2025-03-18 18:40:55,548 - INFO - Done!
+
+
+2025-03-18 18:40:55,549 - INFO - Trying 64
+2025-03-18 18:40:55,549 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:40:55,769 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:40:56,301 - INFO - Fold 0
+2025-03-18 18:40:56,374 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:41:08,952 - INFO - Model trained for 27 epochs
+2025-03-18 18:41:08,958 - INFO - Test accuracy is 80.28% and final test loss is 0.9869
+2025-03-18 18:41:08,959 - INFO - Fold 1
+2025-03-18 18:41:09,023 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:41:19,048 - INFO - Model trained for 21 epochs
+2025-03-18 18:41:19,055 - INFO - Test accuracy is 90.00% and final test loss is 0.4019
+2025-03-18 18:41:19,055 - INFO - Fold 2
+2025-03-18 18:41:19,120 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:41:28,799 - INFO - Model trained for 16 epochs
+2025-03-18 18:41:28,806 - INFO - Test accuracy is 95.71% and final test loss is 0.2485
+2025-03-18 18:41:28,807 - INFO - Fold 3
+2025-03-18 18:41:28,872 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:41:37,605 - INFO - Model trained for 16 epochs
+2025-03-18 18:41:37,612 - INFO - Test accuracy is 95.71% and final test loss is 0.1885
+2025-03-18 18:41:37,612 - INFO - Fold 4
+2025-03-18 18:41:37,678 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:41:48,807 - INFO - Model trained for 21 epochs
+2025-03-18 18:41:48,815 - INFO - Test accuracy is 61.43% and final test loss is 0.9554
+2025-03-18 18:41:48,815 - INFO - Fold 5
+2025-03-18 18:41:48,877 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:41:57,695 - INFO - Model trained for 16 epochs
+2025-03-18 18:41:57,703 - INFO - Test accuracy is 98.57% and final test loss is 0.1534
+2025-03-18 18:41:57,703 - INFO - Fold 6
+2025-03-18 18:41:57,768 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:42:06,760 - INFO - Model trained for 16 epochs
+2025-03-18 18:42:06,767 - INFO - Test accuracy is 85.71% and final test loss is 0.3745
+2025-03-18 18:42:06,767 - INFO - Fold 7
+2025-03-18 18:42:06,833 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:42:16,960 - INFO - Model trained for 15 epochs
+2025-03-18 18:42:16,966 - INFO - Test accuracy is 88.57% and final test loss is 0.3512
+2025-03-18 18:42:16,967 - INFO - Fold 8
+2025-03-18 18:42:17,032 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:42:25,477 - INFO - Model trained for 14 epochs
+2025-03-18 18:42:25,484 - INFO - Test accuracy is 100.00% and final test loss is 0.0979
+2025-03-18 18:42:25,484 - INFO - Fold 9
+2025-03-18 18:42:25,550 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:42:37,847 - INFO - Model trained for 23 epochs
+2025-03-18 18:42:37,856 - INFO - Test accuracy is 82.86% and final test loss is 0.5348
+2025-03-18 18:42:37,857 - INFO - Mean accuracy is 87.89%
+2025-03-18 18:42:37,857 - INFO - Done!
+
+
+2025-03-18 18:42:37,858 - INFO - Trying 128
+2025-03-18 18:42:37,859 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:42:38,088 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:42:38,619 - INFO - Fold 0
+2025-03-18 18:42:38,692 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:42:51,753 - INFO - Model trained for 28 epochs
+2025-03-18 18:42:51,760 - INFO - Test accuracy is 77.46% and final test loss is 1.0732
+2025-03-18 18:42:51,761 - INFO - Fold 1
+2025-03-18 18:42:51,826 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:43:02,267 - INFO - Model trained for 15 epochs
+2025-03-18 18:43:02,274 - INFO - Test accuracy is 84.29% and final test loss is 0.5384
+2025-03-18 18:43:02,274 - INFO - Fold 2
+2025-03-18 18:43:02,340 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:43:12,267 - INFO - Model trained for 17 epochs
+2025-03-18 18:43:12,271 - INFO - Test accuracy is 94.29% and final test loss is 0.2313
+2025-03-18 18:43:12,271 - INFO - Fold 3
+2025-03-18 18:43:12,340 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:43:21,532 - INFO - Model trained for 14 epochs
+2025-03-18 18:43:21,539 - INFO - Test accuracy is 97.14% and final test loss is 0.2199
+2025-03-18 18:43:21,539 - INFO - Fold 4
+2025-03-18 18:43:21,605 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:43:37,334 - INFO - Model trained for 33 epochs
+2025-03-18 18:43:37,341 - INFO - Test accuracy is 90.00% and final test loss is 0.4985
+2025-03-18 18:43:37,342 - INFO - Fold 5
+2025-03-18 18:43:37,407 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:43:47,679 - INFO - Model trained for 18 epochs
+2025-03-18 18:43:47,686 - INFO - Test accuracy is 98.57% and final test loss is 0.1633
+2025-03-18 18:43:47,687 - INFO - Fold 6
+2025-03-18 18:43:47,752 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:43:59,577 - INFO - Model trained for 19 epochs
+2025-03-18 18:43:59,585 - INFO - Test accuracy is 87.14% and final test loss is 0.3091
+2025-03-18 18:43:59,585 - INFO - Fold 7
+2025-03-18 18:43:59,650 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:44:08,322 - INFO - Model trained for 12 epochs
+2025-03-18 18:44:08,330 - INFO - Test accuracy is 88.57% and final test loss is 0.4104
+2025-03-18 18:44:08,331 - INFO - Fold 8
+2025-03-18 18:44:08,395 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:44:18,877 - INFO - Model trained for 14 epochs
+2025-03-18 18:44:18,885 - INFO - Test accuracy is 100.00% and final test loss is 0.1088
+2025-03-18 18:44:18,885 - INFO - Fold 9
+2025-03-18 18:44:18,950 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:44:28,897 - INFO - Model trained for 16 epochs
+2025-03-18 18:44:28,905 - INFO - Test accuracy is 84.29% and final test loss is 0.4179
+2025-03-18 18:44:28,905 - INFO - Mean accuracy is 90.18%
+2025-03-18 18:44:28,905 - INFO - Done!
+
+
+2025-03-18 18:44:28,907 - INFO - Trying 256
+2025-03-18 18:44:28,907 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:44:29,125 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:44:29,653 - INFO - Fold 0
+2025-03-18 18:44:29,726 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:44:45,171 - INFO - Model trained for 29 epochs
+2025-03-18 18:44:45,179 - INFO - Test accuracy is 78.87% and final test loss is 1.1772
+2025-03-18 18:44:45,179 - INFO - Fold 1
+2025-03-18 18:44:45,245 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:45:00,318 - INFO - Model trained for 24 epochs
+2025-03-18 18:45:00,326 - INFO - Test accuracy is 82.86% and final test loss is 0.7888
+2025-03-18 18:45:00,326 - INFO - Fold 2
+2025-03-18 18:45:00,391 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:45:12,003 - INFO - Model trained for 18 epochs
+2025-03-18 18:45:12,010 - INFO - Test accuracy is 91.43% and final test loss is 0.3029
+2025-03-18 18:45:12,011 - INFO - Fold 3
+2025-03-18 18:45:12,075 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:45:23,009 - INFO - Model trained for 12 epochs
+2025-03-18 18:45:23,017 - INFO - Test accuracy is 100.00% and final test loss is 0.1953
+2025-03-18 18:45:23,017 - INFO - Fold 4
+2025-03-18 18:45:23,082 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:45:34,869 - INFO - Model trained for 18 epochs
+2025-03-18 18:45:34,876 - INFO - Test accuracy is 67.14% and final test loss is 0.7461
+2025-03-18 18:45:34,876 - INFO - Fold 5
+2025-03-18 18:45:34,950 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:45:49,163 - INFO - Model trained for 25 epochs
+2025-03-18 18:45:49,171 - INFO - Test accuracy is 97.14% and final test loss is 0.1944
+2025-03-18 18:45:49,171 - INFO - Fold 6
+2025-03-18 18:45:49,237 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:46:02,262 - INFO - Model trained for 17 epochs
+2025-03-18 18:46:02,270 - INFO - Test accuracy is 82.86% and final test loss is 0.3966
+2025-03-18 18:46:02,270 - INFO - Fold 7
+2025-03-18 18:46:02,335 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:46:16,130 - INFO - Model trained for 23 epochs
+2025-03-18 18:46:16,138 - INFO - Test accuracy is 91.43% and final test loss is 0.2868
+2025-03-18 18:46:16,138 - INFO - Fold 8
+2025-03-18 18:46:16,204 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:46:29,609 - INFO - Model trained for 18 epochs
+2025-03-18 18:46:29,616 - INFO - Test accuracy is 100.00% and final test loss is 0.1073
+2025-03-18 18:46:29,616 - INFO - Fold 9
+2025-03-18 18:46:29,682 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:46:40,965 - INFO - Model trained for 16 epochs
+2025-03-18 18:46:40,972 - INFO - Test accuracy is 81.43% and final test loss is 0.4744
+2025-03-18 18:46:40,973 - INFO - Mean accuracy is 87.32%
+2025-03-18 18:46:40,973 - INFO - Done!
+
+
+2025-03-18 18:46:40,974 - INFO - Trying 512
+2025-03-18 18:46:40,974 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:46:41,195 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:46:41,709 - INFO - Fold 0
+2025-03-18 18:46:41,782 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:47:01,244 - INFO - Model trained for 28 epochs
+2025-03-18 18:47:01,252 - INFO - Test accuracy is 78.87% and final test loss is 1.0089
+2025-03-18 18:47:01,252 - INFO - Fold 1
+2025-03-18 18:47:01,318 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:47:28,839 - INFO - Model trained for 43 epochs
+2025-03-18 18:47:28,847 - INFO - Test accuracy is 90.00% and final test loss is 0.7944
+2025-03-18 18:47:28,847 - INFO - Fold 2
+2025-03-18 18:47:28,912 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:47:41,720 - INFO - Model trained for 14 epochs
+2025-03-18 18:47:41,728 - INFO - Test accuracy is 94.29% and final test loss is 0.2465
+2025-03-18 18:47:41,729 - INFO - Fold 3
+2025-03-18 18:47:41,794 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:48:15,900 - INFO - Model trained for 55 epochs
+2025-03-18 18:48:15,908 - INFO - Test accuracy is 97.14% and final test loss is 0.2016
+2025-03-18 18:48:15,908 - INFO - Fold 4
+2025-03-18 18:48:15,974 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:48:33,286 - INFO - Model trained for 20 epochs
+2025-03-18 18:48:33,294 - INFO - Test accuracy is 77.14% and final test loss is 0.5134
+2025-03-18 18:48:33,295 - INFO - Fold 5
+2025-03-18 18:48:33,359 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:48:51,150 - INFO - Model trained for 24 epochs
+2025-03-18 18:48:51,159 - INFO - Test accuracy is 97.14% and final test loss is 0.2519
+2025-03-18 18:48:51,159 - INFO - Fold 6
+2025-03-18 18:48:51,224 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:49:09,229 - INFO - Model trained for 21 epochs
+2025-03-18 18:49:09,237 - INFO - Test accuracy is 90.00% and final test loss is 0.2842
+2025-03-18 18:49:09,237 - INFO - Fold 7
+2025-03-18 18:49:09,302 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:49:30,226 - INFO - Model trained for 30 epochs
+2025-03-18 18:49:30,234 - INFO - Test accuracy is 90.00% and final test loss is 0.3442
+2025-03-18 18:49:30,235 - INFO - Fold 8
+2025-03-18 18:49:30,296 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:49:55,689 - INFO - Model trained for 40 epochs
+2025-03-18 18:49:55,697 - INFO - Test accuracy is 100.00% and final test loss is 0.0646
+2025-03-18 18:49:55,698 - INFO - Fold 9
+2025-03-18 18:49:55,763 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:50:11,393 - INFO - Model trained for 16 epochs
+2025-03-18 18:50:11,401 - INFO - Test accuracy is 80.00% and final test loss is 0.5566
+2025-03-18 18:50:11,401 - INFO - Mean accuracy is 89.46%
+2025-03-18 18:50:11,401 - INFO - Done!
+
+
+2025-03-18 18:50:11,403 - INFO - Trying 1024
+2025-03-18 18:50:11,403 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:50:11,621 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:50:12,127 - INFO - Fold 0
+2025-03-18 18:50:12,193 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:50:26,561 - INFO - Model trained for 10 epochs
+2025-03-18 18:50:26,570 - INFO - Test accuracy is 77.46% and final test loss is 0.9433
+2025-03-18 18:50:26,570 - INFO - Fold 1
+2025-03-18 18:50:26,635 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:50:50,466 - INFO - Model trained for 22 epochs
+2025-03-18 18:50:50,477 - INFO - Test accuracy is 87.14% and final test loss is 0.5099
+2025-03-18 18:50:50,477 - INFO - Fold 2
+2025-03-18 18:50:50,552 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:51:26,538 - INFO - Model trained for 35 epochs
+2025-03-18 18:51:26,547 - INFO - Test accuracy is 94.29% and final test loss is 0.2134
+2025-03-18 18:51:26,547 - INFO - Fold 3
+2025-03-18 18:51:26,615 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:51:52,149 - INFO - Model trained for 24 epochs
+2025-03-18 18:51:52,158 - INFO - Test accuracy is 97.14% and final test loss is 0.2516
+2025-03-18 18:51:52,158 - INFO - Fold 4
+2025-03-18 18:51:52,223 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:52:14,772 - INFO - Model trained for 18 epochs
+2025-03-18 18:52:14,783 - INFO - Test accuracy is 88.57% and final test loss is 0.4089
+2025-03-18 18:52:14,784 - INFO - Fold 5
+2025-03-18 18:52:14,849 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:52:34,952 - INFO - Model trained for 17 epochs
+2025-03-18 18:52:34,962 - INFO - Test accuracy is 95.71% and final test loss is 0.2073
+2025-03-18 18:52:34,962 - INFO - Fold 6
+2025-03-18 18:52:35,027 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:52:53,477 - INFO - Model trained for 15 epochs
+2025-03-18 18:52:53,490 - INFO - Test accuracy is 81.43% and final test loss is 0.5154
+2025-03-18 18:52:53,491 - INFO - Fold 7
+2025-03-18 18:52:53,556 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:53:22,223 - INFO - Model trained for 25 epochs
+2025-03-18 18:53:22,233 - INFO - Test accuracy is 90.00% and final test loss is 0.3627
+2025-03-18 18:53:22,233 - INFO - Fold 8
+2025-03-18 18:53:22,299 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:53:43,661 - INFO - Model trained for 18 epochs
+2025-03-18 18:53:43,671 - INFO - Test accuracy is 100.00% and final test loss is 0.1154
+2025-03-18 18:53:43,671 - INFO - Fold 9
+2025-03-18 18:53:43,736 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:54:07,063 - INFO - Model trained for 21 epochs
+2025-03-18 18:54:07,073 - INFO - Test accuracy is 85.71% and final test loss is 0.4373
+2025-03-18 18:54:07,074 - INFO - Mean accuracy is 89.75%
+2025-03-18 18:54:07,074 - INFO - Done!
+
+
+2025-03-18 18:54:07,075 - INFO - dense_points Sweep Results:
+{32: 0.8888732373714447, 64: 0.8788531124591827, 128: 0.9017504930496216, 256: 0.8731589555740357, 512: 0.8945875227451324, 1024: 0.897464781999588}
+
+
+2025-03-18 18:54:07,159 - INFO - Sweeping dropout_rate
+2025-03-18 18:54:07,159 - INFO - Trying 0.2
+2025-03-18 18:54:07,160 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:54:07,381 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:54:07,888 - INFO - Fold 0
+2025-03-18 18:54:07,957 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:54:26,912 - INFO - Model trained for 35 epochs
+2025-03-18 18:54:26,919 - INFO - Test accuracy is 77.46% and final test loss is 1.4750
+2025-03-18 18:54:26,920 - INFO - Fold 1
+2025-03-18 18:54:26,998 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:54:36,686 - INFO - Model trained for 10 epochs
+2025-03-18 18:54:36,693 - INFO - Test accuracy is 87.14% and final test loss is 0.5665
+2025-03-18 18:54:36,693 - INFO - Fold 2
+2025-03-18 18:54:36,758 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:54:49,198 - INFO - Model trained for 19 epochs
+2025-03-18 18:54:49,205 - INFO - Test accuracy is 95.71% and final test loss is 0.2192
+2025-03-18 18:54:49,205 - INFO - Fold 3
+2025-03-18 18:54:49,270 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:55:03,322 - INFO - Model trained for 18 epochs
+2025-03-18 18:55:03,329 - INFO - Test accuracy is 100.00% and final test loss is 0.1460
+2025-03-18 18:55:03,329 - INFO - Fold 4
+2025-03-18 18:55:03,395 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:55:15,283 - INFO - Model trained for 17 epochs
+2025-03-18 18:55:15,290 - INFO - Test accuracy is 88.57% and final test loss is 0.4489
+2025-03-18 18:55:15,291 - INFO - Fold 5
+2025-03-18 18:55:15,357 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:55:27,972 - INFO - Model trained for 12 epochs
+2025-03-18 18:55:27,980 - INFO - Test accuracy is 92.86% and final test loss is 0.2346
+2025-03-18 18:55:27,980 - INFO - Fold 6
+2025-03-18 18:55:28,045 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:55:38,098 - INFO - Model trained for 10 epochs
+2025-03-18 18:55:38,105 - INFO - Test accuracy is 82.86% and final test loss is 0.4716
+2025-03-18 18:55:38,106 - INFO - Fold 7
+2025-03-18 18:55:38,170 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:55:53,961 - INFO - Model trained for 30 epochs
+2025-03-18 18:55:53,968 - INFO - Test accuracy is 90.00% and final test loss is 0.3284
+2025-03-18 18:55:53,968 - INFO - Fold 8
+2025-03-18 18:55:54,033 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:56:07,256 - INFO - Model trained for 13 epochs
+2025-03-18 18:56:07,263 - INFO - Test accuracy is 100.00% and final test loss is 0.1533
+2025-03-18 18:56:07,263 - INFO - Fold 9
+2025-03-18 18:56:07,329 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:56:19,416 - INFO - Model trained for 17 epochs
+2025-03-18 18:56:19,423 - INFO - Test accuracy is 82.86% and final test loss is 0.4665
+2025-03-18 18:56:19,424 - INFO - Mean accuracy is 89.75%
+2025-03-18 18:56:19,424 - INFO - Done!
+
+
+2025-03-18 18:56:19,425 - INFO - Trying 0.25
+2025-03-18 18:56:19,425 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:56:19,647 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:56:20,166 - INFO - Fold 0
+2025-03-18 18:56:20,236 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:56:34,056 - INFO - Model trained for 23 epochs
+2025-03-18 18:56:34,063 - INFO - Test accuracy is 80.28% and final test loss is 0.7285
+2025-03-18 18:56:34,063 - INFO - Fold 1
+2025-03-18 18:56:34,129 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:56:49,629 - INFO - Model trained for 20 epochs
+2025-03-18 18:56:49,636 - INFO - Test accuracy is 90.00% and final test loss is 0.3872
+2025-03-18 18:56:49,636 - INFO - Fold 2
+2025-03-18 18:56:49,702 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:57:00,912 - INFO - Model trained for 13 epochs
+2025-03-18 18:57:00,919 - INFO - Test accuracy is 94.29% and final test loss is 0.2318
+2025-03-18 18:57:00,919 - INFO - Fold 3
+2025-03-18 18:57:00,986 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:57:13,864 - INFO - Model trained for 19 epochs
+2025-03-18 18:57:13,872 - INFO - Test accuracy is 97.14% and final test loss is 0.1807
+2025-03-18 18:57:13,872 - INFO - Fold 4
+2025-03-18 18:57:13,938 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:57:29,989 - INFO - Model trained for 21 epochs
+2025-03-18 18:57:29,996 - INFO - Test accuracy is 67.14% and final test loss is 0.6361
+2025-03-18 18:57:29,996 - INFO - Fold 5
+2025-03-18 18:57:30,063 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:57:41,590 - INFO - Model trained for 14 epochs
+2025-03-18 18:57:41,597 - INFO - Test accuracy is 98.57% and final test loss is 0.1702
+2025-03-18 18:57:41,598 - INFO - Fold 6
+2025-03-18 18:57:41,664 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:57:54,351 - INFO - Model trained for 17 epochs
+2025-03-18 18:57:54,358 - INFO - Test accuracy is 88.57% and final test loss is 0.2821
+2025-03-18 18:57:54,358 - INFO - Fold 7
+2025-03-18 18:57:54,426 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:58:09,746 - INFO - Model trained for 19 epochs
+2025-03-18 18:58:09,753 - INFO - Test accuracy is 88.57% and final test loss is 0.3276
+2025-03-18 18:58:09,753 - INFO - Fold 8
+2025-03-18 18:58:09,818 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:58:21,442 - INFO - Model trained for 15 epochs
+2025-03-18 18:58:21,449 - INFO - Test accuracy is 100.00% and final test loss is 0.1187
+2025-03-18 18:58:21,449 - INFO - Fold 9
+2025-03-18 18:58:21,513 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:58:34,718 - INFO - Model trained for 20 epochs
+2025-03-18 18:58:34,725 - INFO - Test accuracy is 81.43% and final test loss is 0.5785
+2025-03-18 18:58:34,725 - INFO - Mean accuracy is 88.60%
+2025-03-18 18:58:34,725 - INFO - Done!
+
+
+2025-03-18 18:58:34,727 - INFO - Trying 0.3
+2025-03-18 18:58:34,727 - INFO - 1D CNN for Pulse Detection
+2025-03-18 18:58:34,944 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 18:58:35,453 - INFO - Fold 0
+2025-03-18 18:58:35,521 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 18:58:54,628 - INFO - Model trained for 31 epochs
+2025-03-18 18:58:54,636 - INFO - Test accuracy is 80.28% and final test loss is 1.0495
+2025-03-18 18:58:54,636 - INFO - Fold 1
+2025-03-18 18:58:54,704 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:59:09,651 - INFO - Model trained for 23 epochs
+2025-03-18 18:59:09,651 - INFO - Test accuracy is 85.71% and final test loss is 0.5592
+2025-03-18 18:59:09,651 - INFO - Fold 2
+2025-03-18 18:59:09,729 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:59:22,529 - INFO - Model trained for 15 epochs
+2025-03-18 18:59:22,545 - INFO - Test accuracy is 95.71% and final test loss is 0.2492
+2025-03-18 18:59:22,545 - INFO - Fold 3
+2025-03-18 18:59:22,602 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:59:44,776 - INFO - Model trained for 28 epochs
+2025-03-18 18:59:44,785 - INFO - Test accuracy is 95.71% and final test loss is 0.2142
+2025-03-18 18:59:44,786 - INFO - Fold 4
+2025-03-18 18:59:44,854 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 18:59:59,266 - INFO - Model trained for 17 epochs
+2025-03-18 18:59:59,273 - INFO - Test accuracy is 75.71% and final test loss is 0.6773
+2025-03-18 18:59:59,273 - INFO - Fold 5
+2025-03-18 18:59:59,349 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:00:14,360 - INFO - Model trained for 21 epochs
+2025-03-18 19:00:14,371 - INFO - Test accuracy is 97.14% and final test loss is 0.1643
+2025-03-18 19:00:14,371 - INFO - Fold 6
+2025-03-18 19:00:14,451 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:00:30,905 - INFO - Model trained for 16 epochs
+2025-03-18 19:00:30,912 - INFO - Test accuracy is 81.43% and final test loss is 0.4600
+2025-03-18 19:00:30,913 - INFO - Fold 7
+2025-03-18 19:00:30,978 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:00:43,867 - INFO - Model trained for 15 epochs
+2025-03-18 19:00:43,875 - INFO - Test accuracy is 90.00% and final test loss is 0.3305
+2025-03-18 19:00:43,875 - INFO - Fold 8
+2025-03-18 19:00:43,941 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:00:56,281 - INFO - Model trained for 14 epochs
+2025-03-18 19:00:56,289 - INFO - Test accuracy is 100.00% and final test loss is 0.1073
+2025-03-18 19:00:56,289 - INFO - Fold 9
+2025-03-18 19:00:56,355 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:01:11,717 - INFO - Model trained for 13 epochs
+2025-03-18 19:01:11,724 - INFO - Test accuracy is 81.43% and final test loss is 0.5139
+2025-03-18 19:01:11,725 - INFO - Mean accuracy is 88.31%
+2025-03-18 19:01:11,725 - INFO - Done!
+
+
+2025-03-18 19:01:11,728 - INFO - Trying 0.35
+2025-03-18 19:01:11,728 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:01:12,004 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:01:12,581 - INFO - Fold 0
+2025-03-18 19:01:12,655 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:01:26,920 - INFO - Model trained for 21 epochs
+2025-03-18 19:01:26,927 - INFO - Test accuracy is 77.46% and final test loss is 1.0900
+2025-03-18 19:01:26,927 - INFO - Fold 1
+2025-03-18 19:01:26,993 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:01:44,185 - INFO - Model trained for 30 epochs
+2025-03-18 19:01:44,192 - INFO - Test accuracy is 85.71% and final test loss is 0.6470
+2025-03-18 19:01:44,192 - INFO - Fold 2
+2025-03-18 19:01:44,257 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:02:01,321 - INFO - Model trained for 19 epochs
+2025-03-18 19:02:01,329 - INFO - Test accuracy is 90.00% and final test loss is 0.3177
+2025-03-18 19:02:01,329 - INFO - Fold 3
+2025-03-18 19:02:01,396 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:02:15,847 - INFO - Model trained for 21 epochs
+2025-03-18 19:02:15,854 - INFO - Test accuracy is 98.57% and final test loss is 0.1773
+2025-03-18 19:02:15,854 - INFO - Fold 4
+2025-03-18 19:02:15,920 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:02:29,934 - INFO - Model trained for 18 epochs
+2025-03-18 19:02:29,942 - INFO - Test accuracy is 81.43% and final test loss is 0.5253
+2025-03-18 19:02:29,942 - INFO - Fold 5
+2025-03-18 19:02:30,011 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:02:44,186 - INFO - Model trained for 19 epochs
+2025-03-18 19:02:44,193 - INFO - Test accuracy is 98.57% and final test loss is 0.1513
+2025-03-18 19:02:44,194 - INFO - Fold 6
+2025-03-18 19:02:44,264 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:03:00,567 - INFO - Model trained for 15 epochs
+2025-03-18 19:03:00,573 - INFO - Test accuracy is 85.71% and final test loss is 0.3642
+2025-03-18 19:03:00,574 - INFO - Fold 7
+2025-03-18 19:03:00,640 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:03:16,952 - INFO - Model trained for 26 epochs
+2025-03-18 19:03:16,959 - INFO - Test accuracy is 92.86% and final test loss is 0.3307
+2025-03-18 19:03:16,959 - INFO - Fold 8
+2025-03-18 19:03:17,024 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:03:30,038 - INFO - Model trained for 14 epochs
+2025-03-18 19:03:30,044 - INFO - Test accuracy is 100.00% and final test loss is 0.1046
+2025-03-18 19:03:30,044 - INFO - Fold 9
+2025-03-18 19:03:30,110 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:03:50,433 - INFO - Model trained for 26 epochs
+2025-03-18 19:03:50,441 - INFO - Test accuracy is 82.86% and final test loss is 0.3210
+2025-03-18 19:03:50,441 - INFO - Mean accuracy is 89.32%
+2025-03-18 19:03:50,441 - INFO - Done!
+
+
+2025-03-18 19:03:50,443 - INFO - Trying 0.4
+2025-03-18 19:03:50,443 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:03:50,665 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:03:51,239 - INFO - Fold 0
+2025-03-18 19:03:51,317 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:04:05,345 - INFO - Model trained for 18 epochs
+2025-03-18 19:04:05,351 - INFO - Test accuracy is 78.87% and final test loss is 0.9942
+2025-03-18 19:04:05,352 - INFO - Fold 1
+2025-03-18 19:04:05,418 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:04:21,301 - INFO - Model trained for 26 epochs
+2025-03-18 19:04:21,309 - INFO - Test accuracy is 90.00% and final test loss is 0.4808
+2025-03-18 19:04:21,310 - INFO - Fold 2
+2025-03-18 19:04:21,375 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:04:38,876 - INFO - Model trained for 18 epochs
+2025-03-18 19:04:38,882 - INFO - Test accuracy is 94.29% and final test loss is 0.2300
+2025-03-18 19:04:38,883 - INFO - Fold 3
+2025-03-18 19:04:38,949 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:04:52,385 - INFO - Model trained for 17 epochs
+2025-03-18 19:04:52,392 - INFO - Test accuracy is 92.86% and final test loss is 0.2446
+2025-03-18 19:04:52,392 - INFO - Fold 4
+2025-03-18 19:04:52,460 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:05:08,115 - INFO - Model trained for 23 epochs
+2025-03-18 19:05:08,124 - INFO - Test accuracy is 55.71% and final test loss is 0.9515
+2025-03-18 19:05:08,125 - INFO - Fold 5
+2025-03-18 19:05:08,194 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:05:24,818 - INFO - Model trained for 14 epochs
+2025-03-18 19:05:24,826 - INFO - Test accuracy is 95.71% and final test loss is 0.2014
+2025-03-18 19:05:24,827 - INFO - Fold 6
+2025-03-18 19:05:24,896 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:05:37,460 - INFO - Model trained for 13 epochs
+2025-03-18 19:05:37,467 - INFO - Test accuracy is 88.57% and final test loss is 0.3538
+2025-03-18 19:05:37,468 - INFO - Fold 7
+2025-03-18 19:05:37,532 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:05:53,217 - INFO - Model trained for 22 epochs
+2025-03-18 19:05:53,225 - INFO - Test accuracy is 88.57% and final test loss is 0.4058
+2025-03-18 19:05:53,225 - INFO - Fold 8
+2025-03-18 19:05:53,291 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:06:11,585 - INFO - Model trained for 28 epochs
+2025-03-18 19:06:11,594 - INFO - Test accuracy is 100.00% and final test loss is 0.0570
+2025-03-18 19:06:11,595 - INFO - Fold 9
+2025-03-18 19:06:11,676 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:06:32,241 - INFO - Model trained for 24 epochs
+2025-03-18 19:06:32,249 - INFO - Test accuracy is 81.43% and final test loss is 0.6649
+2025-03-18 19:06:32,249 - INFO - Mean accuracy is 86.60%
+2025-03-18 19:06:32,250 - INFO - Done!
+
+
+2025-03-18 19:06:32,251 - INFO - Trying 0.45
+2025-03-18 19:06:32,251 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:06:32,576 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:06:33,149 - INFO - Fold 0
+2025-03-18 19:06:33,224 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:06:54,336 - INFO - Model trained for 40 epochs
+2025-03-18 19:06:54,343 - INFO - Test accuracy is 78.87% and final test loss is 1.8833
+2025-03-18 19:06:54,343 - INFO - Fold 1
+2025-03-18 19:06:54,408 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:07:08,596 - INFO - Model trained for 17 epochs
+2025-03-18 19:07:08,603 - INFO - Test accuracy is 87.14% and final test loss is 0.5240
+2025-03-18 19:07:08,604 - INFO - Fold 2
+2025-03-18 19:07:08,669 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:07:25,345 - INFO - Model trained for 12 epochs
+2025-03-18 19:07:25,352 - INFO - Test accuracy is 92.86% and final test loss is 0.2545
+2025-03-18 19:07:25,352 - INFO - Fold 3
+2025-03-18 19:07:25,419 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:07:39,838 - INFO - Model trained for 18 epochs
+2025-03-18 19:07:39,845 - INFO - Test accuracy is 95.71% and final test loss is 0.2519
+2025-03-18 19:07:39,845 - INFO - Fold 4
+2025-03-18 19:07:39,910 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:07:56,108 - INFO - Model trained for 24 epochs
+2025-03-18 19:07:56,115 - INFO - Test accuracy is 75.71% and final test loss is 0.6055
+2025-03-18 19:07:56,116 - INFO - Fold 5
+2025-03-18 19:07:56,181 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:08:14,404 - INFO - Model trained for 18 epochs
+2025-03-18 19:08:14,411 - INFO - Test accuracy is 98.57% and final test loss is 0.1785
+2025-03-18 19:08:14,412 - INFO - Fold 6
+2025-03-18 19:08:14,478 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:08:30,866 - INFO - Model trained for 25 epochs
+2025-03-18 19:08:30,873 - INFO - Test accuracy is 82.86% and final test loss is 0.4235
+2025-03-18 19:08:30,874 - INFO - Fold 7
+2025-03-18 19:08:30,938 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:08:46,391 - INFO - Model trained for 21 epochs
+2025-03-18 19:08:46,398 - INFO - Test accuracy is 90.00% and final test loss is 0.3547
+2025-03-18 19:08:46,398 - INFO - Fold 8
+2025-03-18 19:08:46,463 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:08:59,881 - INFO - Model trained for 14 epochs
+2025-03-18 19:08:59,888 - INFO - Test accuracy is 100.00% and final test loss is 0.1181
+2025-03-18 19:08:59,889 - INFO - Fold 9
+2025-03-18 19:08:59,955 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:09:21,847 - INFO - Model trained for 22 epochs
+2025-03-18 19:09:21,855 - INFO - Test accuracy is 84.29% and final test loss is 0.5034
+2025-03-18 19:09:21,855 - INFO - Mean accuracy is 88.60%
+2025-03-18 19:09:21,855 - INFO - Done!
+
+
+2025-03-18 19:09:21,858 - INFO - Trying 0.5
+2025-03-18 19:09:21,858 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:09:22,137 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:09:22,679 - INFO - Fold 0
+2025-03-18 19:09:22,755 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:09:38,003 - INFO - Model trained for 19 epochs
+2025-03-18 19:09:38,011 - INFO - Test accuracy is 77.46% and final test loss is 0.8293
+2025-03-18 19:09:38,012 - INFO - Fold 1
+2025-03-18 19:09:38,077 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:09:53,662 - INFO - Model trained for 20 epochs
+2025-03-18 19:09:53,669 - INFO - Test accuracy is 81.43% and final test loss is 0.6652
+2025-03-18 19:09:53,669 - INFO - Fold 2
+2025-03-18 19:09:53,734 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:10:11,868 - INFO - Model trained for 14 epochs
+2025-03-18 19:10:11,875 - INFO - Test accuracy is 95.71% and final test loss is 0.2632
+2025-03-18 19:10:11,875 - INFO - Fold 3
+2025-03-18 19:10:11,940 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:10:25,786 - INFO - Model trained for 14 epochs
+2025-03-18 19:10:25,795 - INFO - Test accuracy is 95.71% and final test loss is 0.2265
+2025-03-18 19:10:25,795 - INFO - Fold 4
+2025-03-18 19:10:25,860 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:10:39,816 - INFO - Model trained for 15 epochs
+2025-03-18 19:10:39,823 - INFO - Test accuracy is 78.57% and final test loss is 0.6023
+2025-03-18 19:10:39,823 - INFO - Fold 5
+2025-03-18 19:10:39,889 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:10:52,687 - INFO - Model trained for 11 epochs
+2025-03-18 19:10:52,695 - INFO - Test accuracy is 97.14% and final test loss is 0.2059
+2025-03-18 19:10:52,695 - INFO - Fold 6
+2025-03-18 19:10:52,762 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:11:10,334 - INFO - Model trained for 11 epochs
+2025-03-18 19:11:10,341 - INFO - Test accuracy is 84.29% and final test loss is 0.3955
+2025-03-18 19:11:10,342 - INFO - Fold 7
+2025-03-18 19:11:10,407 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:11:26,304 - INFO - Model trained for 13 epochs
+2025-03-18 19:11:26,311 - INFO - Test accuracy is 90.00% and final test loss is 0.4106
+2025-03-18 19:11:26,311 - INFO - Fold 8
+2025-03-18 19:11:26,377 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:11:43,127 - INFO - Model trained for 21 epochs
+2025-03-18 19:11:43,134 - INFO - Test accuracy is 100.00% and final test loss is 0.1284
+2025-03-18 19:11:43,135 - INFO - Fold 9
+2025-03-18 19:11:43,200 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:12:02,516 - INFO - Model trained for 15 epochs
+2025-03-18 19:12:02,524 - INFO - Test accuracy is 81.43% and final test loss is 0.4821
+2025-03-18 19:12:02,524 - INFO - Mean accuracy is 88.18%
+2025-03-18 19:12:02,524 - INFO - Done!
+
+
+2025-03-18 19:12:02,526 - INFO - dropout_rate Sweep Results:
+{0.2: 0.897464781999588, 0.25: 0.8859959721565247, 0.3: 0.8831388235092164, 0.35: 0.8931790649890899, 0.4: 0.8660160899162292, 0.45: 0.8860160827636718, 0.5: 0.88175048828125}
+
+
+2025-03-18 19:12:02,625 - INFO - Sweeping l2_rate
+2025-03-18 19:12:02,625 - INFO - Trying 0.0
+2025-03-18 19:12:02,625 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:12:02,905 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:12:03,453 - INFO - Fold 0
+2025-03-18 19:12:03,529 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:12:16,844 - INFO - Model trained for 11 epochs
+2025-03-18 19:12:16,851 - INFO - Test accuracy is 78.87% and final test loss is 0.8904
+2025-03-18 19:12:16,852 - INFO - Fold 1
+2025-03-18 19:12:16,918 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:12:30,621 - INFO - Model trained for 10 epochs
+2025-03-18 19:12:30,628 - INFO - Test accuracy is 82.86% and final test loss is 0.4999
+2025-03-18 19:12:30,628 - INFO - Fold 2
+2025-03-18 19:12:30,695 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:12:45,152 - INFO - Model trained for 8 epochs
+2025-03-18 19:12:45,159 - INFO - Test accuracy is 91.43% and final test loss is 0.2181
+2025-03-18 19:12:45,159 - INFO - Fold 3
+2025-03-18 19:12:45,225 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:13:05,308 - INFO - Model trained for 15 epochs
+2025-03-18 19:13:05,317 - INFO - Test accuracy is 95.71% and final test loss is 0.0699
+2025-03-18 19:13:05,318 - INFO - Fold 4
+2025-03-18 19:13:05,384 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:13:18,436 - INFO - Model trained for 9 epochs
+2025-03-18 19:13:18,444 - INFO - Test accuracy is 92.86% and final test loss is 0.2240
+2025-03-18 19:13:18,444 - INFO - Fold 5
+2025-03-18 19:13:18,514 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:13:30,984 - INFO - Model trained for 7 epochs
+2025-03-18 19:13:30,991 - INFO - Test accuracy is 91.43% and final test loss is 0.1878
+2025-03-18 19:13:30,992 - INFO - Fold 6
+2025-03-18 19:13:31,057 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:13:44,080 - INFO - Model trained for 9 epochs
+2025-03-18 19:13:44,087 - INFO - Test accuracy is 84.29% and final test loss is 0.3262
+2025-03-18 19:13:44,087 - INFO - Fold 7
+2025-03-18 19:13:44,154 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:14:01,691 - INFO - Model trained for 8 epochs
+2025-03-18 19:14:01,701 - INFO - Test accuracy is 90.00% and final test loss is 0.2168
+2025-03-18 19:14:01,702 - INFO - Fold 8
+2025-03-18 19:14:01,766 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:14:15,234 - INFO - Model trained for 10 epochs
+2025-03-18 19:14:15,240 - INFO - Test accuracy is 100.00% and final test loss is 0.0146
+2025-03-18 19:14:15,241 - INFO - Fold 9
+2025-03-18 19:14:15,306 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:14:28,689 - INFO - Model trained for 10 epochs
+2025-03-18 19:14:28,698 - INFO - Test accuracy is 84.29% and final test loss is 0.4059
+2025-03-18 19:14:28,698 - INFO - Mean accuracy is 89.17%
+2025-03-18 19:14:28,698 - INFO - Done!
+
+
+2025-03-18 19:14:28,701 - INFO - Trying 0.01
+2025-03-18 19:14:28,701 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:14:28,979 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:14:29,521 - INFO - Fold 0
+2025-03-18 19:14:29,593 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:14:52,044 - INFO - Model trained for 19 epochs
+2025-03-18 19:14:52,051 - INFO - Test accuracy is 77.46% and final test loss is 0.8281
+2025-03-18 19:14:52,052 - INFO - Fold 1
+2025-03-18 19:14:52,119 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:15:07,972 - INFO - Model trained for 16 epochs
+2025-03-18 19:15:07,979 - INFO - Test accuracy is 84.29% and final test loss is 0.7033
+2025-03-18 19:15:07,980 - INFO - Fold 2
+2025-03-18 19:15:08,047 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:15:22,224 - INFO - Model trained for 11 epochs
+2025-03-18 19:15:22,230 - INFO - Test accuracy is 92.86% and final test loss is 0.2892
+2025-03-18 19:15:22,231 - INFO - Fold 3
+2025-03-18 19:15:22,296 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:15:36,582 - INFO - Model trained for 11 epochs
+2025-03-18 19:15:36,591 - INFO - Test accuracy is 98.57% and final test loss is 0.1910
+2025-03-18 19:15:36,591 - INFO - Fold 4
+2025-03-18 19:15:36,657 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:15:58,240 - INFO - Model trained for 17 epochs
+2025-03-18 19:15:58,247 - INFO - Test accuracy is 72.86% and final test loss is 0.5664
+2025-03-18 19:15:58,247 - INFO - Fold 5
+2025-03-18 19:15:58,314 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:16:15,016 - INFO - Model trained for 15 epochs
+2025-03-18 19:16:15,023 - INFO - Test accuracy is 98.57% and final test loss is 0.2984
+2025-03-18 19:16:15,023 - INFO - Fold 6
+2025-03-18 19:16:15,088 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:16:33,547 - INFO - Model trained for 23 epochs
+2025-03-18 19:16:33,556 - INFO - Test accuracy is 87.14% and final test loss is 0.3405
+2025-03-18 19:16:33,557 - INFO - Fold 7
+2025-03-18 19:16:33,622 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:16:50,523 - INFO - Model trained for 18 epochs
+2025-03-18 19:16:50,532 - INFO - Test accuracy is 88.57% and final test loss is 0.3849
+2025-03-18 19:16:50,532 - INFO - Fold 8
+2025-03-18 19:16:50,599 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:17:17,378 - INFO - Model trained for 30 epochs
+2025-03-18 19:17:17,385 - INFO - Test accuracy is 100.00% and final test loss is 0.0781
+2025-03-18 19:17:17,385 - INFO - Fold 9
+2025-03-18 19:17:17,452 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:17:33,656 - INFO - Model trained for 16 epochs
+2025-03-18 19:17:33,663 - INFO - Test accuracy is 80.00% and final test loss is 0.5718
+2025-03-18 19:17:33,664 - INFO - Mean accuracy is 88.03%
+2025-03-18 19:17:33,664 - INFO - Done!
+
+
+2025-03-18 19:17:33,665 - INFO - Trying 0.02
+2025-03-18 19:17:33,665 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:17:33,949 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:17:34,502 - INFO - Fold 0
+2025-03-18 19:17:34,576 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:17:50,789 - INFO - Model trained for 15 epochs
+2025-03-18 19:17:50,796 - INFO - Test accuracy is 77.46% and final test loss is 0.9831
+2025-03-18 19:17:50,796 - INFO - Fold 1
+2025-03-18 19:17:50,862 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:18:13,035 - INFO - Model trained for 33 epochs
+2025-03-18 19:18:13,043 - INFO - Test accuracy is 90.00% and final test loss is 0.5816
+2025-03-18 19:18:13,043 - INFO - Fold 2
+2025-03-18 19:18:13,110 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:18:34,042 - INFO - Model trained for 13 epochs
+2025-03-18 19:18:34,052 - INFO - Test accuracy is 94.29% and final test loss is 0.2426
+2025-03-18 19:18:34,052 - INFO - Fold 3
+2025-03-18 19:18:34,120 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:18:59,498 - INFO - Model trained for 41 epochs
+2025-03-18 19:18:59,506 - INFO - Test accuracy is 97.14% and final test loss is 0.2115
+2025-03-18 19:18:59,506 - INFO - Fold 4
+2025-03-18 19:18:59,572 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:19:17,144 - INFO - Model trained for 19 epochs
+2025-03-18 19:19:17,154 - INFO - Test accuracy is 87.14% and final test loss is 0.4810
+2025-03-18 19:19:17,155 - INFO - Fold 5
+2025-03-18 19:19:17,225 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:19:38,584 - INFO - Model trained for 13 epochs
+2025-03-18 19:19:38,594 - INFO - Test accuracy is 98.57% and final test loss is 0.2213
+2025-03-18 19:19:38,595 - INFO - Fold 6
+2025-03-18 19:19:38,660 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:19:54,510 - INFO - Model trained for 11 epochs
+2025-03-18 19:19:54,518 - INFO - Test accuracy is 75.71% and final test loss is 0.4960
+2025-03-18 19:19:54,518 - INFO - Fold 7
+2025-03-18 19:19:54,583 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:20:16,429 - INFO - Model trained for 29 epochs
+2025-03-18 19:20:16,438 - INFO - Test accuracy is 87.14% and final test loss is 0.3885
+2025-03-18 19:20:16,438 - INFO - Fold 8
+2025-03-18 19:20:16,503 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:20:34,706 - INFO - Model trained for 20 epochs
+2025-03-18 19:20:34,714 - INFO - Test accuracy is 100.00% and final test loss is 0.1156
+2025-03-18 19:20:34,714 - INFO - Fold 9
+2025-03-18 19:20:34,779 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:20:57,824 - INFO - Model trained for 17 epochs
+2025-03-18 19:20:57,832 - INFO - Test accuracy is 81.43% and final test loss is 0.3713
+2025-03-18 19:20:57,832 - INFO - Mean accuracy is 88.89%
+2025-03-18 19:20:57,832 - INFO - Done!
+
+
+2025-03-18 19:20:57,835 - INFO - Trying 0.03
+2025-03-18 19:20:57,835 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:20:58,114 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:20:58,662 - INFO - Fold 0
+2025-03-18 19:20:58,742 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:21:22,884 - INFO - Model trained for 37 epochs
+2025-03-18 19:21:22,891 - INFO - Test accuracy is 80.28% and final test loss is 0.8837
+2025-03-18 19:21:22,891 - INFO - Fold 1
+2025-03-18 19:21:22,956 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:21:46,902 - INFO - Model trained for 36 epochs
+2025-03-18 19:21:46,909 - INFO - Test accuracy is 82.86% and final test loss is 0.7564
+2025-03-18 19:21:46,910 - INFO - Fold 2
+2025-03-18 19:21:46,975 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:22:04,734 - INFO - Model trained for 20 epochs
+2025-03-18 19:22:04,742 - INFO - Test accuracy is 94.29% and final test loss is 0.2531
+2025-03-18 19:22:04,742 - INFO - Fold 3
+2025-03-18 19:22:04,808 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:22:26,125 - INFO - Model trained for 12 epochs
+2025-03-18 19:22:26,132 - INFO - Test accuracy is 95.71% and final test loss is 0.2881
+2025-03-18 19:22:26,132 - INFO - Fold 4
+2025-03-18 19:22:26,197 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:22:46,435 - INFO - Model trained for 29 epochs
+2025-03-18 19:22:46,442 - INFO - Test accuracy is 77.14% and final test loss is 0.6334
+2025-03-18 19:22:46,442 - INFO - Fold 5
+2025-03-18 19:22:46,507 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:23:13,507 - INFO - Model trained for 50 epochs
+2025-03-18 19:23:13,514 - INFO - Test accuracy is 98.57% and final test loss is 0.1751
+2025-03-18 19:23:13,514 - INFO - Fold 6
+2025-03-18 19:23:13,581 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:23:28,931 - INFO - Model trained for 12 epochs
+2025-03-18 19:23:28,938 - INFO - Test accuracy is 82.86% and final test loss is 0.4553
+2025-03-18 19:23:28,938 - INFO - Fold 7
+2025-03-18 19:23:29,004 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:23:53,307 - INFO - Model trained for 21 epochs
+2025-03-18 19:23:53,314 - INFO - Test accuracy is 88.57% and final test loss is 0.3866
+2025-03-18 19:23:53,315 - INFO - Fold 8
+2025-03-18 19:23:53,379 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:24:16,508 - INFO - Model trained for 37 epochs
+2025-03-18 19:24:16,516 - INFO - Test accuracy is 100.00% and final test loss is 0.0791
+2025-03-18 19:24:16,517 - INFO - Fold 9
+2025-03-18 19:24:16,581 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:24:34,073 - INFO - Model trained for 18 epochs
+2025-03-18 19:24:34,080 - INFO - Test accuracy is 80.00% and final test loss is 0.4662
+2025-03-18 19:24:34,082 - INFO - Mean accuracy is 88.03%
+2025-03-18 19:24:34,082 - INFO - Done!
+
+
+2025-03-18 19:24:34,085 - INFO - Trying 0.04
+2025-03-18 19:24:34,085 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:24:34,382 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:24:34,944 - INFO - Fold 0
+2025-03-18 19:24:35,015 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:24:52,697 - INFO - Model trained for 19 epochs
+2025-03-18 19:24:52,704 - INFO - Test accuracy is 78.87% and final test loss is 0.8140
+2025-03-18 19:24:52,704 - INFO - Fold 1
+2025-03-18 19:24:52,770 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:25:17,711 - INFO - Model trained for 22 epochs
+2025-03-18 19:25:17,718 - INFO - Test accuracy is 85.71% and final test loss is 0.6266
+2025-03-18 19:25:17,718 - INFO - Fold 2
+2025-03-18 19:25:17,783 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:25:33,491 - INFO - Model trained for 13 epochs
+2025-03-18 19:25:33,498 - INFO - Test accuracy is 95.71% and final test loss is 0.5596
+2025-03-18 19:25:33,499 - INFO - Fold 3
+2025-03-18 19:25:33,564 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:25:52,308 - INFO - Model trained for 23 epochs
+2025-03-18 19:25:52,315 - INFO - Test accuracy is 98.57% and final test loss is 0.2988
+2025-03-18 19:25:52,316 - INFO - Fold 4
+2025-03-18 19:25:52,380 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:26:12,301 - INFO - Model trained for 26 epochs
+2025-03-18 19:26:12,308 - INFO - Test accuracy is 88.57% and final test loss is 0.5390
+2025-03-18 19:26:12,308 - INFO - Fold 5
+2025-03-18 19:26:12,373 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:26:31,878 - INFO - Model trained for 25 epochs
+2025-03-18 19:26:31,886 - INFO - Test accuracy is 98.57% and final test loss is 0.1816
+2025-03-18 19:26:31,886 - INFO - Fold 6
+2025-03-18 19:26:31,951 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:26:55,926 - INFO - Model trained for 17 epochs
+2025-03-18 19:26:55,933 - INFO - Test accuracy is 78.57% and final test loss is 0.4887
+2025-03-18 19:26:55,934 - INFO - Fold 7
+2025-03-18 19:26:55,998 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:27:16,815 - INFO - Model trained for 29 epochs
+2025-03-18 19:27:16,823 - INFO - Test accuracy is 90.00% and final test loss is 0.3230
+2025-03-18 19:27:16,823 - INFO - Fold 8
+2025-03-18 19:27:16,888 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:27:40,365 - INFO - Model trained for 37 epochs
+2025-03-18 19:27:40,372 - INFO - Test accuracy is 100.00% and final test loss is 0.1073
+2025-03-18 19:27:40,373 - INFO - Fold 9
+2025-03-18 19:27:40,438 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:28:03,176 - INFO - Model trained for 35 epochs
+2025-03-18 19:28:03,183 - INFO - Test accuracy is 81.43% and final test loss is 0.3403
+2025-03-18 19:28:03,183 - INFO - Mean accuracy is 89.60%
+2025-03-18 19:28:03,183 - INFO - Done!
+
+
+2025-03-18 19:28:03,185 - INFO - Trying 0.05
+2025-03-18 19:28:03,185 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:28:03,458 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:28:03,971 - INFO - Fold 0
+2025-03-18 19:28:04,044 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:28:32,653 - INFO - Model trained for 31 epochs
+2025-03-18 19:28:32,660 - INFO - Test accuracy is 77.46% and final test loss is 0.8123
+2025-03-18 19:28:32,660 - INFO - Fold 1
+2025-03-18 19:28:32,725 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:28:53,629 - INFO - Model trained for 29 epochs
+2025-03-18 19:28:53,636 - INFO - Test accuracy is 87.14% and final test loss is 0.4886
+2025-03-18 19:28:53,636 - INFO - Fold 2
+2025-03-18 19:28:53,700 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:29:09,910 - INFO - Model trained for 13 epochs
+2025-03-18 19:29:09,917 - INFO - Test accuracy is 94.29% and final test loss is 0.2780
+2025-03-18 19:29:09,917 - INFO - Fold 3
+2025-03-18 19:29:09,982 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:29:26,732 - INFO - Model trained for 15 epochs
+2025-03-18 19:29:26,738 - INFO - Test accuracy is 65.71% and final test loss is 0.6477
+2025-03-18 19:29:26,739 - INFO - Fold 4
+2025-03-18 19:29:26,805 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:29:51,959 - INFO - Model trained for 18 epochs
+2025-03-18 19:29:51,966 - INFO - Test accuracy is 28.57% and final test loss is 0.9349
+2025-03-18 19:29:51,966 - INFO - Fold 5
+2025-03-18 19:29:52,031 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:30:14,153 - INFO - Model trained for 32 epochs
+2025-03-18 19:30:14,160 - INFO - Test accuracy is 97.14% and final test loss is 0.1813
+2025-03-18 19:30:14,160 - INFO - Fold 6
+2025-03-18 19:30:14,226 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:30:34,008 - INFO - Model trained for 24 epochs
+2025-03-18 19:30:34,015 - INFO - Test accuracy is 84.29% and final test loss is 0.3867
+2025-03-18 19:30:34,015 - INFO - Fold 7
+2025-03-18 19:30:34,080 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:30:54,948 - INFO - Model trained for 27 epochs
+2025-03-18 19:30:54,956 - INFO - Test accuracy is 90.00% and final test loss is 0.3144
+2025-03-18 19:30:54,956 - INFO - Fold 8
+2025-03-18 19:30:55,021 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:31:20,038 - INFO - Model trained for 12 epochs
+2025-03-18 19:31:20,046 - INFO - Test accuracy is 100.00% and final test loss is 0.5737
+2025-03-18 19:31:20,046 - INFO - Fold 9
+2025-03-18 19:31:20,112 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:31:45,638 - INFO - Model trained for 37 epochs
+2025-03-18 19:31:45,648 - INFO - Test accuracy is 85.71% and final test loss is 0.2773
+2025-03-18 19:31:45,649 - INFO - Mean accuracy is 81.03%
+2025-03-18 19:31:45,649 - INFO - Done!
+
+
+2025-03-18 19:31:45,651 - INFO - Trying 0.06
+2025-03-18 19:31:45,651 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:31:45,931 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:31:46,469 - INFO - Fold 0
+2025-03-18 19:31:46,547 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:32:14,050 - INFO - Model trained for 43 epochs
+2025-03-18 19:32:14,058 - INFO - Test accuracy is 77.46% and final test loss is 0.9169
+2025-03-18 19:32:14,058 - INFO - Fold 1
+2025-03-18 19:32:14,124 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:32:38,073 - INFO - Model trained for 33 epochs
+2025-03-18 19:32:38,080 - INFO - Test accuracy is 84.29% and final test loss is 0.6584
+2025-03-18 19:32:38,081 - INFO - Fold 2
+2025-03-18 19:32:38,147 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:33:08,536 - INFO - Model trained for 28 epochs
+2025-03-18 19:33:08,546 - INFO - Test accuracy is 95.71% and final test loss is 0.2908
+2025-03-18 19:33:08,547 - INFO - Fold 3
+2025-03-18 19:33:08,612 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:33:31,338 - INFO - Model trained for 28 epochs
+2025-03-18 19:33:31,346 - INFO - Test accuracy is 100.00% and final test loss is 0.1784
+2025-03-18 19:33:31,346 - INFO - Fold 4
+2025-03-18 19:33:31,412 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:33:55,280 - INFO - Model trained for 31 epochs
+2025-03-18 19:33:55,288 - INFO - Test accuracy is 95.71% and final test loss is 0.5101
+2025-03-18 19:33:55,288 - INFO - Fold 5
+2025-03-18 19:33:55,353 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:34:22,919 - INFO - Model trained for 41 epochs
+2025-03-18 19:34:22,926 - INFO - Test accuracy is 95.71% and final test loss is 0.2315
+2025-03-18 19:34:22,927 - INFO - Fold 6
+2025-03-18 19:34:22,993 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:34:43,264 - INFO - Model trained for 22 epochs
+2025-03-18 19:34:43,273 - INFO - Test accuracy is 87.14% and final test loss is 0.3519
+2025-03-18 19:34:43,274 - INFO - Fold 7
+2025-03-18 19:34:43,341 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:35:14,988 - INFO - Model trained for 30 epochs
+2025-03-18 19:35:14,997 - INFO - Test accuracy is 88.57% and final test loss is 0.3577
+2025-03-18 19:35:14,997 - INFO - Fold 8
+2025-03-18 19:35:15,063 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:35:36,528 - INFO - Model trained for 24 epochs
+2025-03-18 19:35:36,538 - INFO - Test accuracy is 100.00% and final test loss is 0.5782
+2025-03-18 19:35:36,538 - INFO - Fold 9
+2025-03-18 19:35:36,605 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:35:54,471 - INFO - Model trained for 14 epochs
+2025-03-18 19:35:54,479 - INFO - Test accuracy is 100.00% and final test loss is 0.5675
+2025-03-18 19:35:54,479 - INFO - Mean accuracy is 92.46%
+2025-03-18 19:35:54,479 - INFO - Done!
+
+
+2025-03-18 19:35:54,481 - INFO - Trying 0.07
+2025-03-18 19:35:54,482 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:35:54,762 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:35:55,315 - INFO - Fold 0
+2025-03-18 19:35:55,388 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:36:19,574 - INFO - Model trained for 32 epochs
+2025-03-18 19:36:19,584 - INFO - Test accuracy is 78.87% and final test loss is 1.0908
+2025-03-18 19:36:19,584 - INFO - Fold 1
+2025-03-18 19:36:19,651 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:36:51,762 - INFO - Model trained for 30 epochs
+2025-03-18 19:36:51,772 - INFO - Test accuracy is 84.29% and final test loss is 0.7087
+2025-03-18 19:36:51,772 - INFO - Fold 2
+2025-03-18 19:36:51,839 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:37:12,503 - INFO - Model trained for 21 epochs
+2025-03-18 19:37:12,513 - INFO - Test accuracy is 92.86% and final test loss is 0.3632
+2025-03-18 19:37:12,513 - INFO - Fold 3
+2025-03-18 19:37:12,580 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:37:34,426 - INFO - Model trained for 24 epochs
+2025-03-18 19:37:34,434 - INFO - Test accuracy is 92.86% and final test loss is 0.3051
+2025-03-18 19:37:34,434 - INFO - Fold 4
+2025-03-18 19:37:34,499 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:37:59,107 - INFO - Model trained for 32 epochs
+2025-03-18 19:37:59,115 - INFO - Test accuracy is 82.86% and final test loss is 0.5877
+2025-03-18 19:37:59,115 - INFO - Fold 5
+2025-03-18 19:37:59,182 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:38:30,317 - INFO - Model trained for 26 epochs
+2025-03-18 19:38:30,327 - INFO - Test accuracy is 95.71% and final test loss is 0.2904
+2025-03-18 19:38:30,327 - INFO - Fold 6
+2025-03-18 19:38:30,393 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:38:52,180 - INFO - Model trained for 24 epochs
+2025-03-18 19:38:52,187 - INFO - Test accuracy is 84.29% and final test loss is 0.3758
+2025-03-18 19:38:52,188 - INFO - Fold 7
+2025-03-18 19:38:52,253 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:39:11,650 - INFO - Model trained for 17 epochs
+2025-03-18 19:39:11,660 - INFO - Test accuracy is 88.57% and final test loss is 0.3555
+2025-03-18 19:39:11,660 - INFO - Fold 8
+2025-03-18 19:39:11,727 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:39:34,577 - INFO - Model trained for 27 epochs
+2025-03-18 19:39:34,587 - INFO - Test accuracy is 100.00% and final test loss is 0.1293
+2025-03-18 19:39:34,587 - INFO - Fold 9
+2025-03-18 19:39:34,653 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:39:56,416 - INFO - Model trained for 24 epochs
+2025-03-18 19:39:56,423 - INFO - Test accuracy is 78.57% and final test loss is 0.3546
+2025-03-18 19:39:56,424 - INFO - Mean accuracy is 87.89%
+2025-03-18 19:39:56,424 - INFO - Done!
+
+
+2025-03-18 19:39:56,426 - INFO - Trying 0.08
+2025-03-18 19:39:56,426 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:39:56,709 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:39:57,260 - INFO - Fold 0
+2025-03-18 19:39:57,337 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:40:31,896 - INFO - Model trained for 34 epochs
+2025-03-18 19:40:31,906 - INFO - Test accuracy is 80.28% and final test loss is 1.0463
+2025-03-18 19:40:31,906 - INFO - Fold 1
+2025-03-18 19:40:31,971 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:41:02,813 - INFO - Model trained for 49 epochs
+2025-03-18 19:41:02,822 - INFO - Test accuracy is 82.86% and final test loss is 0.6592
+2025-03-18 19:41:02,823 - INFO - Fold 2
+2025-03-18 19:41:02,889 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:41:20,386 - INFO - Model trained for 11 epochs
+2025-03-18 19:41:20,394 - INFO - Test accuracy is 95.71% and final test loss is 0.5713
+2025-03-18 19:41:20,394 - INFO - Fold 3
+2025-03-18 19:41:20,460 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:41:38,052 - INFO - Model trained for 11 epochs
+2025-03-18 19:41:38,060 - INFO - Test accuracy is 65.71% and final test loss is 0.6470
+2025-03-18 19:41:38,060 - INFO - Fold 4
+2025-03-18 19:41:38,125 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:42:18,676 - INFO - Model trained for 50 epochs
+2025-03-18 19:42:18,684 - INFO - Test accuracy is 61.43% and final test loss is 0.7683
+2025-03-18 19:42:18,685 - INFO - Fold 5
+2025-03-18 19:42:18,751 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:42:47,000 - INFO - Model trained for 41 epochs
+2025-03-18 19:42:47,007 - INFO - Test accuracy is 98.57% and final test loss is 0.2255
+2025-03-18 19:42:47,007 - INFO - Fold 6
+2025-03-18 19:42:47,073 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:43:12,709 - INFO - Model trained for 38 epochs
+2025-03-18 19:43:12,716 - INFO - Test accuracy is 85.71% and final test loss is 0.3426
+2025-03-18 19:43:12,716 - INFO - Fold 7
+2025-03-18 19:43:12,781 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:43:30,353 - INFO - Model trained for 12 epochs
+2025-03-18 19:43:30,360 - INFO - Test accuracy is 74.29% and final test loss is 0.6213
+2025-03-18 19:43:30,360 - INFO - Fold 8
+2025-03-18 19:43:30,426 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:43:49,052 - INFO - Model trained for 12 epochs
+2025-03-18 19:43:49,059 - INFO - Test accuracy is 100.00% and final test loss is 0.5606
+2025-03-18 19:43:49,059 - INFO - Fold 9
+2025-03-18 19:43:49,125 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:44:24,335 - INFO - Model trained for 33 epochs
+2025-03-18 19:44:24,345 - INFO - Test accuracy is 81.43% and final test loss is 0.5053
+2025-03-18 19:44:24,345 - INFO - Mean accuracy is 82.60%
+2025-03-18 19:44:24,345 - INFO - Done!
+
+
+2025-03-18 19:44:24,348 - INFO - Trying 0.09
+2025-03-18 19:44:24,348 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:44:24,631 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:44:25,178 - INFO - Fold 0
+2025-03-18 19:44:25,253 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:44:43,605 - INFO - Model trained for 12 epochs
+2025-03-18 19:44:43,615 - INFO - Test accuracy is 2.82% and final test loss is 1.0979
+2025-03-18 19:44:43,617 - INFO - Fold 1
+2025-03-18 19:44:43,682 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:45:01,911 - INFO - Model trained for 12 epochs
+2025-03-18 19:45:01,918 - INFO - Test accuracy is 21.43% and final test loss is 0.9227
+2025-03-18 19:45:01,918 - INFO - Fold 2
+2025-03-18 19:45:01,984 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:45:21,207 - INFO - Model trained for 15 epochs
+2025-03-18 19:45:21,214 - INFO - Test accuracy is 95.71% and final test loss is 0.5706
+2025-03-18 19:45:21,214 - INFO - Fold 3
+2025-03-18 19:45:21,280 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:45:42,203 - INFO - Model trained for 20 epochs
+2025-03-18 19:45:42,211 - INFO - Test accuracy is 82.86% and final test loss is 0.4709
+2025-03-18 19:45:42,211 - INFO - Fold 4
+2025-03-18 19:45:42,278 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:46:14,147 - INFO - Model trained for 22 epochs
+2025-03-18 19:46:14,155 - INFO - Test accuracy is 70.00% and final test loss is 0.7094
+2025-03-18 19:46:14,156 - INFO - Fold 5
+2025-03-18 19:46:14,222 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:46:38,737 - INFO - Model trained for 30 epochs
+2025-03-18 19:46:38,744 - INFO - Test accuracy is 98.57% and final test loss is 0.2710
+2025-03-18 19:46:38,744 - INFO - Fold 6
+2025-03-18 19:46:38,811 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:47:07,262 - INFO - Model trained for 40 epochs
+2025-03-18 19:47:07,270 - INFO - Test accuracy is 90.00% and final test loss is 0.3015
+2025-03-18 19:47:07,270 - INFO - Fold 7
+2025-03-18 19:47:07,337 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:47:35,996 - INFO - Model trained for 34 epochs
+2025-03-18 19:47:36,004 - INFO - Test accuracy is 90.00% and final test loss is 0.3072
+2025-03-18 19:47:36,005 - INFO - Fold 8
+2025-03-18 19:47:36,071 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:48:12,884 - INFO - Model trained for 34 epochs
+2025-03-18 19:48:12,892 - INFO - Test accuracy is 100.00% and final test loss is 0.1139
+2025-03-18 19:48:12,892 - INFO - Fold 9
+2025-03-18 19:48:12,959 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:48:31,251 - INFO - Model trained for 11 epochs
+2025-03-18 19:48:31,259 - INFO - Test accuracy is 100.00% and final test loss is 0.5679
+2025-03-18 19:48:31,259 - INFO - Mean accuracy is 75.14%
+2025-03-18 19:48:31,259 - INFO - Done!
+
+
+2025-03-18 19:48:31,262 - INFO - Trying 0.1
+2025-03-18 19:48:31,262 - INFO - 1D CNN for Pulse Detection
+2025-03-18 19:48:31,548 - INFO - Data loaded, 63.79% of data has a pulse
+2025-03-18 19:48:32,095 - INFO - Fold 0
+2025-03-18 19:48:32,172 - INFO - Data processed, divided, and augmented: train: 1512 | test: 71 | val: 126
+2025-03-18 19:48:52,358 - INFO - Model trained for 17 epochs
+2025-03-18 19:48:52,365 - INFO - Test accuracy is 2.82% and final test loss is 1.0907
+2025-03-18 19:48:52,366 - INFO - Fold 1
+2025-03-18 19:48:52,431 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:49:10,932 - INFO - Model trained for 12 epochs
+2025-03-18 19:49:10,941 - INFO - Test accuracy is 21.43% and final test loss is 0.9359
+2025-03-18 19:49:10,942 - INFO - Fold 2
+2025-03-18 19:49:11,008 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:49:30,708 - INFO - Model trained for 14 epochs
+2025-03-18 19:49:30,716 - INFO - Test accuracy is 95.71% and final test loss is 0.5878
+2025-03-18 19:49:30,717 - INFO - Fold 3
+2025-03-18 19:49:30,783 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:50:02,998 - INFO - Model trained for 16 epochs
+2025-03-18 19:50:03,006 - INFO - Test accuracy is 65.71% and final test loss is 0.6499
+2025-03-18 19:50:03,006 - INFO - Fold 4
+2025-03-18 19:50:03,072 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:50:27,320 - INFO - Model trained for 28 epochs
+2025-03-18 19:50:27,329 - INFO - Test accuracy is 65.71% and final test loss is 0.7112
+2025-03-18 19:50:27,330 - INFO - Fold 5
+2025-03-18 19:50:27,396 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:50:46,616 - INFO - Model trained for 13 epochs
+2025-03-18 19:50:46,624 - INFO - Test accuracy is 62.86% and final test loss is 0.6606
+2025-03-18 19:50:46,624 - INFO - Fold 6
+2025-03-18 19:50:46,690 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:51:06,275 - INFO - Model trained for 14 epochs
+2025-03-18 19:51:06,282 - INFO - Test accuracy is 82.86% and final test loss is 0.5942
+2025-03-18 19:51:06,282 - INFO - Fold 7
+2025-03-18 19:51:06,351 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:51:32,801 - INFO - Model trained for 34 epochs
+2025-03-18 19:51:32,808 - INFO - Test accuracy is 90.00% and final test loss is 0.3600
+2025-03-18 19:51:32,809 - INFO - Fold 8
+2025-03-18 19:51:32,875 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:52:03,059 - INFO - Model trained for 12 epochs
+2025-03-18 19:52:03,069 - INFO - Test accuracy is 100.00% and final test loss is 0.5623
+2025-03-18 19:52:03,069 - INFO - Fold 9
+2025-03-18 19:52:03,135 - INFO - Data processed, divided, and augmented: train: 1512 | test: 70 | val: 127
+2025-03-18 19:52:22,457 - INFO - Model trained for 13 epochs
+2025-03-18 19:52:22,464 - INFO - Test accuracy is 100.00% and final test loss is 0.5672
+2025-03-18 19:52:22,464 - INFO - Mean accuracy is 68.71%
+2025-03-18 19:52:22,465 - INFO - Done!
+
+
+2025-03-18 19:52:22,467 - INFO - l2_rate Sweep Results:
+{0.0: 0.8917303740978241, 0.01: 0.8803219199180603, 0.02: 0.8888933479785919, 0.03: 0.8802816927433014, 0.04: 0.8960160851478577, 0.05: 0.81032193005085, 0.06: 0.9246076345443726, 0.07: 0.8788732290267944, 0.08: 0.8259959757328034, 0.09: 0.751388319581747, 0.1: 0.6871026180684566}
+
+
+2025-03-18 19:52:22,588 - INFO - Extra Done!
+
+
