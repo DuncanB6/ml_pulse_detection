@@ -163,23 +163,22 @@ def augment_data(X, y):
     for series, label in zip(X, y):
         augmented_X.append(series)
         augmented_y.append(label)
-
-        # randomly scale the data
-        scale_factor = np.random.uniform(0.5, 2.0)
-        augmented_X.append(series * scale_factor)
-        augmented_y.append(label)
-
-        # randomly stretch data along the x axis
+        
+        # randomly stretch data along the x axis and choose a four second segment
         stretch_factor = np.random.uniform(1.0, 2.0)
         x_stretched = np.linspace(0, len(series), int(len(series) * stretch_factor))
         interpolator = interp1d(
             list(range(0, len(series))), series, kind="linear", fill_value="extrapolate"
         )
         stretched_series = interpolator(x_stretched)
-        offset = random.randint(
-            0, len(stretched_series) - len(series)
-        )  # pick a random segment of the stretched section
-        augmented_X.append(stretched_series[offset : offset + X.shape[1]])
+        offset = random.randint(0, len(stretched_series) - len(series))
+        new_series = stretched_series[offset : offset + X.shape[1]]
+
+        # randomly scale the amplitude of the data
+        scale_factor = np.random.uniform(0.5, 2.0)
+        new_series = series * scale_factor
+
+        augmented_X.append(new_series)
         augmented_y.append(label)
 
     augmented_X = np.asarray(augmented_X)
@@ -203,10 +202,11 @@ def model_trial(model_cfg, X_data, y_data):
         X_test = X_data[test_index]
         y_test = y_data[test_index]
 
+        X_train, y_train = augment_data(X_train, y_train)
+
         X_train, X_val, y_train, y_val = train_test_split(
             X_train, y_train, test_size=0.2
         )  # split val data
-        X_train, y_train = augment_data(X_train, y_train)
 
         # add an axis for proper input shape
         X_train = np.expand_dims(X_train, axis=-1)
