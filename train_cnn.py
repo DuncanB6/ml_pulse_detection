@@ -175,11 +175,7 @@ def augment_data(X, y):
     return augmented_X, augmented_y
 
 
-def model_trial(model_cfg):
-
-    X_data, y_data = build_dataset()
-
-    X_data, y_data = preprocess_data(X_data, y_data)
+def model_trial(model_cfg, X_data, y_data):
 
     model_accuracies = []
     n_splits = 2 if SPEED_MODE else 10
@@ -224,7 +220,7 @@ def model_trial(model_cfg):
     return mean_acc
 
 
-def sweep_param(param, sweep, csv_path):
+def sweep_param(param, sweep, csv_path, X_data, y_data):
 
     model_cfg = ModelConfig()
 
@@ -244,7 +240,7 @@ def sweep_param(param, sweep, csv_path):
         logging.info(f"Trying {val} {param}")
 
         try:
-            mean_acc = model_trial(model_cfg)
+            mean_acc = model_trial(model_cfg, X_data, y_data)
         except KeyboardInterrupt as e:
             logging.exception("Interrupted by user!")
             exit()
@@ -292,6 +288,10 @@ if __name__ == "__main__":
 
     model_cfg = ModelConfig()
 
+    X_data, y_data = build_dataset()
+    X_data, y_data = preprocess_data(X_data, y_data)
+    logging.info(f"Loaded {len(y_data)} datapoints")
+
     # configure sweeps
     conv_sweep = list(range(1, 6 + 1))  # 1 - 6, 1 increments
     dense_sweep = [32 * (2**i) for i in range(8)]  # 32 - 8192, power of 2 increments
@@ -317,9 +317,10 @@ if __name__ == "__main__":
             writer = csv.writer(file)
             writer.writerow(headers)
 
-    sweep_param("conv_layers", conv_sweep, csv_path)
-    sweep_param("dense_points", dense_sweep, csv_path)
-    sweep_param("dropout_rate", dropout_sweep, csv_path)
-    sweep_param("l2_rate", l2_sweep, csv_path)
+    logging.info("Beginning sweeps...\n")
+    sweep_param("conv_layers", conv_sweep, csv_path, X_data, y_data)
+    sweep_param("dense_points", dense_sweep, csv_path, X_data, y_data)
+    sweep_param("dropout_rate", dropout_sweep, csv_path, X_data, y_data)
+    sweep_param("l2_rate", l2_sweep, csv_path, X_data, y_data)
 
     logging.info("Done!")
