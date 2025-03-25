@@ -13,7 +13,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"  # suppress a TF warning about CPU use
 import numpy as np
 import logging
 from keras.models import Sequential, load_model
-from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Input, Dropout
+from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout
 from keras.optimizers import Adam
 from keras.regularizers import l2
 from keras.callbacks import EarlyStopping
@@ -31,12 +31,12 @@ import csv
 
 from load_data import build_dataset
 
-SPEED_MODE = False  # train with a single epoch for debugging
+SPEED_MODE = True  # train with a single epoch for debugging
+SAVE_MODEL = False
 LOGGING_DIR = "logging"
 MODELS_DIR = "models"
 FIGURES_DIR = "figures"
 RESULTS_DIR = "results"
-SAVE_MODEL = False
 
 
 class ModelConfig:
@@ -175,21 +175,17 @@ def augment_data(X, y):
     return augmented_X, augmented_y
 
 
-def model_trial(model_cfg, logger):
-
-    logger.info(f"1D CNN for Pulse Detection")
+def model_trial(model_cfg):
 
     X_data, y_data = build_dataset()
-    logger.info(
-        f"Data loaded, {100 * np.count_nonzero(y_data == 1) / np.count_nonzero(y_data == 0):.2f}% of data has a pulse"
-    )
 
     X_data, y_data = preprocess_data(X_data, y_data)
 
     model_accuracies = []
-    kf = KFold(n_splits=2 if SPEED_MODE else 10)
+    n_splits = 2 if SPEED_MODE else 10
+    kf = KFold(n_splits=n_splits)
     for i, (train_index, test_index) in enumerate(kf.split(X_data)):
-        logging.info(f"Fold {i}")
+        logging.info(f"\tFold {i + 1}/{n_splits}")
         X_train = X_data[train_index]
         y_train = y_data[train_index]
         X_test = X_data[test_index]
@@ -199,9 +195,6 @@ def model_trial(model_cfg, logger):
             X_train, y_train, test_size=0.2
         )  # split val data
         X_train, y_train = augment_data(X_train, y_train)
-        logger.info(
-            f"Data processed, divided, and augmented: train: {len(X_train)} | test: {len(X_test)} | val: {len(X_val)}"
-        )
 
         # add an axis for proper input shape
         X_train = np.expand_dims(X_train, axis=-1)
@@ -209,17 +202,16 @@ def model_trial(model_cfg, logger):
         X_val = np.expand_dims(X_val, axis=-1)
 
         model, history = train_model(X_train, y_train, X_val, y_val, model_cfg)
-        logger.info(f"Model trained for {len(history.epoch)} epochs")
 
         test_loss, test_acc = model.evaluate(X_test, y_test, verbose=0)
-        logger.info(
-            f"Test accuracy is {100*test_acc:.2f}% and final test loss is {test_loss:.4f}"
+        logging.info(
+            f"\tModel trained for {len(history.epoch)} epochs, accuracy is {100*test_acc:.2f}%"
         )
 
         model_accuracies.append(test_acc)
 
     mean_acc = stats.mean(model_accuracies)
-    logger.info(f"Mean accuracy is {100*mean_acc:.2f}%")
+    logging.info(f"\tMean accuracy over all folds is {100*mean_acc:.2f}%")
 
     if SAVE_MODEL:
         model_filename = os.path.join(
@@ -227,18 +219,16 @@ def model_trial(model_cfg, logger):
             f'model_{int(100*test_acc)}_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.keras',
         )
         model.save(model_filename)
-        logging.info(f"Model saved as: {model_filename}")
-
-    logger.info(f"Done!\n\n")
+        logging.info(f"\tModel saved as: {model_filename}")
 
     return mean_acc
 
 
-def sweep_param(param, sweep, logger, csv_path):
+def sweep_param(param, sweep, csv_path):
 
     model_cfg = ModelConfig()
 
-    logging.info(f"Sweeping {param}")
+    logging.info(f"Sweeping {param}...")
     sweep_accs = {}
     for val in sweep:
 
@@ -251,15 +241,15 @@ def sweep_param(param, sweep, logger, csv_path):
         elif param == "l2_rate":
             model_cfg.l2_decay = val
 
-        logging.info(f"Trying {val}")
+        logging.info(f"Trying {val} {param}")
 
         try:
-            mean_acc = model_trial(model_cfg, logger)
+            mean_acc = model_trial(model_cfg)
         except KeyboardInterrupt as e:
             logging.exception("Interrupted by user!")
             exit()
         except Exception as e:
-            logging.exception("Exception occured!")
+            logging.exception(f"Exception occured for {val} {param}!")
             break
 
         sweep_accs[val] = mean_acc
@@ -277,7 +267,7 @@ def sweep_param(param, sweep, logger, csv_path):
                 ]
             )
 
-    logging.info(f"{param} Sweep Results:\n{sweep_accs}\n\n")
+    logging.info(f"Done sweeping {param}\n")
 
     plt.clf()
     plt.plot(list(sweep_accs.keys()), list(sweep_accs.values()))
@@ -298,12 +288,12 @@ if __name__ == "__main__":
         format="%(asctime)s - %(levelname)s - %(message)s",
         handlers=[logging.FileHandler(log_filename), logging.StreamHandler()],
     )
-    logger = logging.getLogger()
+    logging.info(f"{10*'-'} 2D CNN Training {10*'-'}")
 
     model_cfg = ModelConfig()
 
     # configure sweeps
-    conv_sweep = list(range(1, 10 + 1))  # 1 - 10, 1 increments
+    conv_sweep = list(range(1, 6 + 1))  # 1 - 6, 1 increments
     dense_sweep = [32 * (2**i) for i in range(8)]  # 32 - 8192, power of 2 increments
     dropout_sweep = list(np.arange(0.0, 0.500001, 0.001))
     dropout_sweep = np.round(dropout_sweep, 2)  # 0.0 - 0.5, 0.001 increments
@@ -327,9 +317,9 @@ if __name__ == "__main__":
             writer = csv.writer(file)
             writer.writerow(headers)
 
-    sweep_param("conv_layers", conv_sweep, logger, csv_path)
-    sweep_param("dense_points", dense_sweep, logger, csv_path)
-    sweep_param("dropout_rate", dropout_sweep, logger, csv_path)
-    sweep_param("l2_rate", l2_sweep, logger, csv_path)
+    sweep_param("conv_layers", conv_sweep, csv_path)
+    sweep_param("dense_points", dense_sweep, csv_path)
+    sweep_param("dropout_rate", dropout_sweep, csv_path)
+    sweep_param("l2_rate", l2_sweep, csv_path)
 
-    logger.info(f"Extra Done!\n\n")
+    logging.info("Done!")
