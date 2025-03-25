@@ -1,5 +1,6 @@
 """
 A script to train and test a 1D CNN ML model on capstone pulse time series data. Predicts whether or not a pulse is present in a 4 second signal.
+This script focuses on performing sweeps on some key hyperparameters to determine the best model for this task.
 
 Duncan Boyd
 duncan@wapta.ca
@@ -40,6 +41,9 @@ RESULTS_DIR = "results"
 
 
 class ModelConfig:
+    """
+    Object for storing model hyperparameters to be swept. Defaults determined by previous trials.
+    """
     def __init__(
         self, conv_layers=5, dense_points=128, dropout_rate=0.2, l2_decay=0.06
     ):
@@ -51,7 +55,7 @@ class ModelConfig:
 
 def preprocess_data(X, y):
     """
-    Preprocessing borrowed from our capstone projects preprocessing, reduces noise and normalizes.
+    Preprocessing borrowed from our capstone project, reduces noise and normalizes.
     """
 
     for ii in range(X.shape[0]):
@@ -80,6 +84,9 @@ def preprocess_data(X, y):
 
 
 def train_model(X_train, y_train, X_val, y_val, model_cfg: ModelConfig):
+    """
+    Defines and trains a 2D CNN.
+    """
 
     model = Sequential()
 
@@ -143,6 +150,9 @@ def train_model(X_train, y_train, X_val, y_val, model_cfg: ModelConfig):
 
 
 def augment_data(X, y):
+    """
+    Augments pulse data by varying amplitude and stretching data (slower heart rate).
+    """
 
     augmented_X = []
     augmented_y = []
@@ -176,6 +186,9 @@ def augment_data(X, y):
 
 
 def model_trial(model_cfg, X_data, y_data):
+    """
+    For a single set of hyperparameters, trains multiple models with fold of train test data and gets the average accuracy.
+    """
 
     model_accuracies = []
     n_splits = 2 if SPEED_MODE else 10
@@ -221,6 +234,9 @@ def model_trial(model_cfg, X_data, y_data):
 
 
 def sweep_param(param, sweep, csv_path, X_data, y_data):
+    """
+    For a set values for a single hyperparamters, performs model trials to assess each setting.
+    """
 
     model_cfg = ModelConfig()
 
