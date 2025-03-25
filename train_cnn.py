@@ -14,7 +14,7 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"  # suppress a TF warning about CPU use
 import numpy as np
 import logging
 import tensorflow as tf
-from keras.models import Sequential, load_model
+from keras.models import Sequential
 import tensorflow.keras.backend as K
 from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout
 from keras.optimizers import Adam
