@@ -85,7 +85,7 @@ def preprocess_data(X, y):
 
 def train_model(X_train, y_train, X_val, y_val, model_cfg: ModelConfig):
     """
-    Defines and trains a 2D CNN.
+    Defines and trains a 1D CNN.
     """
 
     model = Sequential()
@@ -300,7 +300,7 @@ if __name__ == "__main__":
         format="%(asctime)s - %(levelname)s - %(message)s",
         handlers=[logging.FileHandler(log_filename), logging.StreamHandler()],
     )
-    logging.info(f"{10*'-'} 2D CNN Training {10*'-'}")
+    logging.info(f"{10*'-'} 1D CNN Training {10*'-'}")
 
     model_cfg = ModelConfig()
 
