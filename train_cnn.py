@@ -36,9 +36,7 @@ import gc
 from load_data import build_dataset
 
 SPEED_MODE = False  # train with a single epoch for debugging
-SAVE_MODEL = False
 LOGGING_DIR = "logging"
-MODELS_DIR = "models"
 FIGURES_DIR = "figures"
 RESULTS_DIR = "results"
 
@@ -230,14 +228,6 @@ def model_trial(model_cfg, X_data, y_data):
 
     mean_acc = stats.mean(model_accuracies)
     logging.info(f"\tMean accuracy over all folds is {100*mean_acc:.2f}%")
-
-    if SAVE_MODEL:
-        model_filename = os.path.join(
-            MODELS_DIR,
-            f'model_{int(100*test_acc)}_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.keras',
-        )
-        model.save(model_filename)
-        logging.info(f"\tModel saved as: {model_filename}")
 
     return mean_acc
 
