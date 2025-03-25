@@ -46,7 +46,7 @@ class ModelConfig:
     Object for storing model hyperparameters to be swept. Defaults determined by previous trials.
     """
     def __init__(
-        self, conv_layers=5, dense_points=128, dropout_rate=0.2, l2_decay=0.06
+        self, conv_layers=3, dense_points=128, dropout_rate=0.2, l2_decay=0.06
     ):
         self.conv_layers = conv_layers
         self.dense_points = dense_points
@@ -311,9 +311,9 @@ if __name__ == "__main__":
     conv_sweep = list(range(1, 6 + 1))  # 1 - 6, 1 increments
     dense_sweep = [32 * (2**i) for i in range(6)]  # 32 - 1024, power of 2 increments
     dropout_sweep = list(np.arange(0.0, 0.500001, 0.001))
-    dropout_sweep = np.round(dropout_sweep, 2)  # 0.0 - 0.5, 0.001 increments
+    dropout_sweep = np.round(dropout_sweep, 3)  # 0.0 - 0.5, 0.001 increments
     l2_sweep = list(np.arange(0, 0.100001, 0.001))
-    l2_sweep = np.round(l2_sweep, 2)  # 0 - 0.1, 0.01 increments
+    l2_sweep = np.round(l2_sweep, 3)  # 0 - 0.1, 0.01 increments
 
     headers = [
         "Time",
