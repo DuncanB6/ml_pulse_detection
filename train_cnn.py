@@ -31,7 +31,7 @@ import csv
 
 from load_data import build_dataset
 
-SPEED_MODE = True  # train with a single epoch for debugging
+SPEED_MODE = False  # train with a single epoch for debugging
 SAVE_MODEL = False
 LOGGING_DIR = "logging"
 MODELS_DIR = "models"
