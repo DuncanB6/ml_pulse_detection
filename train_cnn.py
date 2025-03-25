@@ -13,7 +13,9 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"  # suppress a TF warning about CPU use
 
 import numpy as np
 import logging
+import tensorflow as tf
 from keras.models import Sequential, load_model
+import tensorflow.keras.backend as K
 from keras.layers import Conv1D, MaxPooling1D, Flatten, Dense, Dropout
 from keras.optimizers import Adam
 from keras.regularizers import l2
@@ -29,6 +31,7 @@ from scipy.interpolate import interp1d
 from datetime import datetime
 import statistics as stats
 import csv
+import gc
 
 from load_data import build_dataset
 
@@ -219,6 +222,12 @@ def model_trial(model_cfg, X_data, y_data):
 
         model_accuracies.append(test_acc)
 
+        # clear memory in a variety of ways
+        K.clear_session()
+        tf.compat.v1.reset_default_graph()
+        tf.keras.backend.clear_session()
+        gc.collect()
+
     mean_acc = stats.mean(model_accuracies)
     logging.info(f"\tMean accuracy over all folds is {100*mean_acc:.2f}%")
 
@@ -310,7 +319,7 @@ if __name__ == "__main__":
 
     # configure sweeps
     conv_sweep = list(range(1, 6 + 1))  # 1 - 6, 1 increments
-    dense_sweep = [32 * (2**i) for i in range(6)]  # 32 - 1024, power of 2 increments
+    dense_sweep = [32 * (2**i) for i in range(8)]  # 32 - 1024, power of 2 increments
     dropout_sweep = list(np.arange(0.0, 0.500001, 0.001))
     dropout_sweep = np.round(dropout_sweep, 2)  # 0.0 - 0.5, 0.001 increments
     l2_sweep = list(np.arange(0, 0.100001, 0.001))
