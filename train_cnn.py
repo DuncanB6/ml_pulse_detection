@@ -303,11 +303,11 @@ if __name__ == "__main__":
     model_cfg = ModelConfig()
 
     # configure sweeps
-    conv_sweep = list(range(1, 8 + 1))  # 1 - 6, 1 increments
-    dense_sweep = [32 * (2**i) for i in range(7)]  # 32 - 2048, power of 2 increments
-    dropout_sweep = list(np.arange(0.2, 0.500001, 0.01))
-    dropout_sweep = np.round(dropout_sweep, 2)  # 0.2 - 0.5, 0.05 increments
-    l2_sweep = list(np.arange(0, 0.100001, 0.005))
+    conv_sweep = list(range(1, 10 + 1))  # 1 - 10, 1 increments
+    dense_sweep = [32 * (2**i) for i in range(8)]  # 32 - 8192, power of 2 increments
+    dropout_sweep = list(np.arange(0.0, 0.500001, 0.001))
+    dropout_sweep = np.round(dropout_sweep, 2)  # 0.0 - 0.5, 0.001 increments
+    l2_sweep = list(np.arange(0, 0.100001, 0.001))
     l2_sweep = np.round(l2_sweep, 2)  # 0 - 0.1, 0.01 increments
 
     headers = [
