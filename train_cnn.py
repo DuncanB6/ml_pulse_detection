@@ -309,7 +309,7 @@ if __name__ == "__main__":
 
     # configure sweeps
     conv_sweep = list(range(1, 6 + 1))  # 1 - 6, 1 increments
-    dense_sweep = [32 * (2**i) for i in range(8)]  # 32 - 1024, power of 2 increments
+    dense_sweep = [32 * (2**i) for i in range(6)]  # 32 - 1024, power of 2 increments
     dropout_sweep = list(np.arange(0.0, 0.500001, 0.001))
     dropout_sweep = np.round(dropout_sweep, 2)  # 0.0 - 0.5, 0.001 increments
     l2_sweep = list(np.arange(0, 0.100001, 0.001))
