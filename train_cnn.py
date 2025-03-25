@@ -257,12 +257,12 @@ def sweep_param(param, sweep, csv_path, X_data, y_data):
 
         try:
             mean_acc = model_trial(model_cfg, X_data, y_data)
-        except KeyboardInterrupt as e:
+        except KeyboardInterrupt:
             logging.exception("Interrupted by user!")
             exit()
         except Exception as e:
             logging.exception(f"Exception occured for {val} {param}!")
-            break
+            continue
 
         sweep_accs[val] = mean_acc
 
