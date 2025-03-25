@@ -45,6 +45,12 @@ def build_dataset():
     X_data = np.asarray(X_data).astype(np.float64)
     y_data = np.asarray(y_data).astype(np.float64)
 
+    # randomly shuffle data
+    np.random.seed(33)
+    indices = np.random.permutation(len(X_data))
+    X_data = X_data[indices]
+    y_data = y_data[indices]
+
     return X_data, y_data
 
 
