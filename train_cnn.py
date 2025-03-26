@@ -284,6 +284,7 @@ def sweep_param(param, sweep, csv_path, X_data, y_data):
     plt.plot(list(sweep_accs.keys()), list(sweep_accs.values()))
     plt.title(f"Accuracy vs. # {param}")
     fig_path = os.path.join(FIGURES_DIR, f"{param}_sweep.png")
+    plt.grid()
     plt.savefig(fig_path)
 
     return
