@@ -283,6 +283,7 @@ def sweep_param(param, sweep, csv_path, X_data, y_data):
     plt.clf()
     plt.plot(list(sweep_accs.keys()), list(sweep_accs.values()))
     plt.title(f"Accuracy vs. # {param}")
+    plt.grid()
     fig_path = os.path.join(FIGURES_DIR, f"{param}_sweep.png")
     plt.savefig(fig_path)
 
@@ -292,7 +293,7 @@ def sweep_param(param, sweep, csv_path, X_data, y_data):
 if __name__ == "__main__":
 
     log_filename = os.path.join(
-        LOGGING_DIR, f'log_{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log'
+        LOGGING_DIR, f'{datetime.now().strftime("%Y-%m-%d_%H-%M-%S")}.log'
     )
     logging.basicConfig(
         level=logging.INFO,
