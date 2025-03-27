@@ -1,0 +1,1130 @@
+2025-03-26 17:41:36,496 - INFO - ---------- 1D CNN Training ----------
+2025-03-26 17:41:37,244 - INFO - Loaded 701 datapoints
+2025-03-26 17:41:37,245 - INFO - Beginning sweeps...
+
+2025-03-26 17:41:37,245 - INFO - Sweeping dropout_rate...
+2025-03-26 17:41:37,246 - INFO - Trying 0.0 dropout_rate
+2025-03-26 17:41:37,246 - INFO - 	Fold 1/10
+2025-03-26 17:41:46,600 - INFO - 	Model trained for 28 epochs, accuracy is 91.55%
+2025-03-26 17:41:46,676 - INFO - 	Fold 2/10
+2025-03-26 17:41:55,619 - INFO - 	Model trained for 33 epochs, accuracy is 92.86%
+2025-03-26 17:41:55,718 - INFO - 	Fold 3/10
+2025-03-26 17:42:06,425 - INFO - 	Model trained for 45 epochs, accuracy is 85.71%
+2025-03-26 17:42:06,526 - INFO - 	Fold 4/10
+2025-03-26 17:42:20,577 - INFO - 	Model trained for 61 epochs, accuracy is 90.00%
+2025-03-26 17:42:20,678 - INFO - 	Fold 5/10
+2025-03-26 17:42:32,110 - INFO - 	Model trained for 48 epochs, accuracy is 95.71%
+2025-03-26 17:42:32,212 - INFO - 	Fold 6/10
+2025-03-26 17:42:41,161 - INFO - 	Model trained for 37 epochs, accuracy is 94.29%
+2025-03-26 17:42:41,262 - INFO - 	Fold 7/10
+2025-03-26 17:42:50,248 - INFO - 	Model trained for 37 epochs, accuracy is 95.71%
+2025-03-26 17:42:50,349 - INFO - 	Fold 8/10
+2025-03-26 17:43:03,424 - INFO - 	Model trained for 56 epochs, accuracy is 88.57%
+2025-03-26 17:43:03,526 - INFO - 	Fold 9/10
+2025-03-26 17:43:07,697 - INFO - 	Model trained for 14 epochs, accuracy is 42.86%
+2025-03-26 17:43:07,798 - INFO - 	Fold 10/10
+2025-03-26 17:43:13,619 - INFO - 	Model trained for 22 epochs, accuracy is 94.29%
+2025-03-26 17:43:13,723 - INFO - 	Mean accuracy over all folds is 87.15%
+2025-03-26 17:43:13,724 - INFO - Trying 0.01 dropout_rate
+2025-03-26 17:43:13,724 - INFO - 	Fold 1/10
+2025-03-26 17:43:21,545 - INFO - 	Model trained for 30 epochs, accuracy is 88.73%
+2025-03-26 17:43:21,650 - INFO - 	Fold 2/10
+2025-03-26 17:43:27,266 - INFO - 	Model trained for 20 epochs, accuracy is 62.86%
+2025-03-26 17:43:27,369 - INFO - 	Fold 3/10
+2025-03-26 17:43:36,487 - INFO - 	Model trained for 36 epochs, accuracy is 91.43%
+2025-03-26 17:43:36,593 - INFO - 	Fold 4/10
+2025-03-26 17:43:41,764 - INFO - 	Model trained for 18 epochs, accuracy is 58.57%
+2025-03-26 17:43:41,875 - INFO - 	Fold 5/10
+2025-03-26 17:43:47,704 - INFO - 	Model trained for 21 epochs, accuracy is 92.86%
+2025-03-26 17:43:47,820 - INFO - 	Fold 6/10
+2025-03-26 17:43:57,946 - INFO - 	Model trained for 41 epochs, accuracy is 92.86%
+2025-03-26 17:43:58,066 - INFO - 	Fold 7/10
+2025-03-26 17:44:08,517 - INFO - 	Model trained for 42 epochs, accuracy is 95.71%
+2025-03-26 17:44:08,642 - INFO - 	Fold 8/10
+2025-03-26 17:44:19,925 - INFO - 	Model trained for 46 epochs, accuracy is 88.57%
+2025-03-26 17:44:20,056 - INFO - 	Fold 9/10
+2025-03-26 17:44:25,231 - INFO - 	Model trained for 18 epochs, accuracy is 42.86%
+2025-03-26 17:44:25,365 - INFO - 	Fold 10/10
+2025-03-26 17:44:32,688 - INFO - 	Model trained for 28 epochs, accuracy is 94.29%
+2025-03-26 17:44:32,828 - INFO - 	Mean accuracy over all folds is 80.87%
+2025-03-26 17:44:32,829 - INFO - Trying 0.02 dropout_rate
+2025-03-26 17:44:32,830 - INFO - 	Fold 1/10
+2025-03-26 17:44:38,235 - INFO - 	Model trained for 19 epochs, accuracy is 91.55%
+2025-03-26 17:44:38,380 - INFO - 	Fold 2/10
+2025-03-26 17:44:48,781 - INFO - 	Model trained for 42 epochs, accuracy is 94.29%
+2025-03-26 17:44:48,930 - INFO - 	Fold 3/10
+2025-03-26 17:44:59,513 - INFO - 	Model trained for 43 epochs, accuracy is 91.43%
+2025-03-26 17:44:59,667 - INFO - 	Fold 4/10
+2025-03-26 17:45:09,118 - INFO - 	Model trained for 37 epochs, accuracy is 91.43%
+2025-03-26 17:45:09,275 - INFO - 	Fold 5/10
+2025-03-26 17:45:16,224 - INFO - 	Model trained for 26 epochs, accuracy is 94.29%
+2025-03-26 17:45:16,389 - INFO - 	Fold 6/10
+2025-03-26 17:45:26,299 - INFO - 	Model trained for 40 epochs, accuracy is 94.29%
+2025-03-26 17:45:26,468 - INFO - 	Fold 7/10
+2025-03-26 17:45:35,981 - INFO - 	Model trained for 38 epochs, accuracy is 90.00%
+2025-03-26 17:45:36,155 - INFO - 	Fold 8/10
+2025-03-26 17:45:42,609 - INFO - 	Model trained for 24 epochs, accuracy is 82.86%
+2025-03-26 17:45:42,787 - INFO - 	Fold 9/10
+2025-03-26 17:45:52,701 - INFO - 	Model trained for 40 epochs, accuracy is 91.43%
+2025-03-26 17:45:52,884 - INFO - 	Fold 10/10
+2025-03-26 17:46:02,197 - INFO - 	Model trained for 37 epochs, accuracy is 94.29%
+2025-03-26 17:46:02,384 - INFO - 	Mean accuracy over all folds is 91.58%
+2025-03-26 17:46:02,385 - INFO - Trying 0.03 dropout_rate
+2025-03-26 17:46:02,385 - INFO - 	Fold 1/10
+2025-03-26 17:46:08,245 - INFO - 	Model trained for 21 epochs, accuracy is 57.75%
+2025-03-26 17:46:08,437 - INFO - 	Fold 2/10
+2025-03-26 17:46:18,171 - INFO - 	Model trained for 38 epochs, accuracy is 94.29%
+2025-03-26 17:46:18,367 - INFO - 	Fold 3/10
+2025-03-26 17:46:25,785 - INFO - 	Model trained for 28 epochs, accuracy is 90.00%
+2025-03-26 17:46:25,989 - INFO - 	Fold 4/10
+2025-03-26 17:46:32,245 - INFO - 	Model trained for 23 epochs, accuracy is 90.00%
+2025-03-26 17:46:32,450 - INFO - 	Fold 5/10
+2025-03-26 17:46:38,998 - INFO - 	Model trained for 24 epochs, accuracy is 95.71%
+2025-03-26 17:46:39,208 - INFO - 	Fold 6/10
+2025-03-26 17:46:46,320 - INFO - 	Model trained for 27 epochs, accuracy is 61.43%
+2025-03-26 17:46:46,537 - INFO - 	Fold 7/10
+2025-03-26 17:46:57,534 - INFO - 	Model trained for 45 epochs, accuracy is 94.29%
+2025-03-26 17:46:57,754 - INFO - 	Fold 8/10
+2025-03-26 17:47:07,042 - INFO - 	Model trained for 37 epochs, accuracy is 85.71%
+2025-03-26 17:47:07,266 - INFO - 	Fold 9/10
+2025-03-26 17:47:15,160 - INFO - 	Model trained for 30 epochs, accuracy is 95.71%
+2025-03-26 17:47:15,390 - INFO - 	Fold 10/10
+2025-03-26 17:47:19,977 - INFO - 	Model trained for 15 epochs, accuracy is 65.71%
+2025-03-26 17:47:20,212 - INFO - 	Mean accuracy over all folds is 83.06%
+2025-03-26 17:47:20,213 - INFO - Trying 0.04 dropout_rate
+2025-03-26 17:47:20,213 - INFO - 	Fold 1/10
+2025-03-26 17:47:25,412 - INFO - 	Model trained for 18 epochs, accuracy is 57.75%
+2025-03-26 17:47:25,652 - INFO - 	Fold 2/10
+2025-03-26 17:47:33,230 - INFO - 	Model trained for 29 epochs, accuracy is 97.14%
+2025-03-26 17:47:33,472 - INFO - 	Fold 3/10
+2025-03-26 17:47:42,341 - INFO - 	Model trained for 35 epochs, accuracy is 90.00%
+2025-03-26 17:47:42,591 - INFO - 	Fold 4/10
+2025-03-26 17:47:47,788 - INFO - 	Model trained for 18 epochs, accuracy is 58.57%
+2025-03-26 17:47:48,042 - INFO - 	Fold 5/10
+2025-03-26 17:48:05,087 - INFO - 	Model trained for 73 epochs, accuracy is 94.29%
+2025-03-26 17:48:05,349 - INFO - 	Fold 6/10
+2025-03-26 17:48:14,511 - INFO - 	Model trained for 36 epochs, accuracy is 94.29%
+2025-03-26 17:48:14,773 - INFO - 	Fold 7/10
+2025-03-26 17:48:24,395 - INFO - 	Model trained for 38 epochs, accuracy is 95.71%
+2025-03-26 17:48:24,664 - INFO - 	Fold 8/10
+2025-03-26 17:48:32,061 - INFO - 	Model trained for 28 epochs, accuracy is 85.71%
+2025-03-26 17:48:32,335 - INFO - 	Fold 9/10
+2025-03-26 17:48:38,156 - INFO - 	Model trained for 21 epochs, accuracy is 91.43%
+2025-03-26 17:48:38,434 - INFO - 	Fold 10/10
+2025-03-26 17:48:56,222 - INFO - 	Model trained for 76 epochs, accuracy is 94.29%
+2025-03-26 17:48:56,504 - INFO - 	Mean accuracy over all folds is 85.92%
+2025-03-26 17:48:56,505 - INFO - Trying 0.05 dropout_rate
+2025-03-26 17:48:56,505 - INFO - 	Fold 1/10
+2025-03-26 17:49:02,956 - INFO - 	Model trained for 24 epochs, accuracy is 90.14%
+2025-03-26 17:49:03,244 - INFO - 	Fold 2/10
+2025-03-26 17:49:11,888 - INFO - 	Model trained for 34 epochs, accuracy is 94.29%
+2025-03-26 17:49:12,180 - INFO - 	Fold 3/10
+2025-03-26 17:49:25,281 - INFO - 	Model trained for 54 epochs, accuracy is 85.71%
+2025-03-26 17:49:25,576 - INFO - 	Fold 4/10
+2025-03-26 17:49:47,185 - INFO - 	Model trained for 93 epochs, accuracy is 95.71%
+2025-03-26 17:49:47,485 - INFO - 	Fold 5/10
+2025-03-26 17:49:58,136 - INFO - 	Model trained for 43 epochs, accuracy is 95.71%
+2025-03-26 17:49:58,440 - INFO - 	Fold 6/10
+2025-03-26 17:50:09,174 - INFO - 	Model trained for 43 epochs, accuracy is 95.71%
+2025-03-26 17:50:09,484 - INFO - 	Fold 7/10
+2025-03-26 17:50:17,114 - INFO - 	Model trained for 29 epochs, accuracy is 95.71%
+2025-03-26 17:50:17,429 - INFO - 	Fold 8/10
+2025-03-26 17:50:29,690 - INFO - 	Model trained for 50 epochs, accuracy is 87.14%
+2025-03-26 17:50:30,011 - INFO - 	Fold 9/10
+2025-03-26 17:50:38,066 - INFO - 	Model trained for 31 epochs, accuracy is 90.00%
+2025-03-26 17:50:38,390 - INFO - 	Fold 10/10
+2025-03-26 17:50:49,666 - INFO - 	Model trained for 46 epochs, accuracy is 91.43%
+2025-03-26 17:50:49,995 - INFO - 	Mean accuracy over all folds is 92.16%
+2025-03-26 17:50:49,996 - INFO - Trying 0.06 dropout_rate
+2025-03-26 17:50:49,996 - INFO - 	Fold 1/10
+2025-03-26 17:50:59,809 - INFO - 	Model trained for 39 epochs, accuracy is 88.73%
+2025-03-26 17:51:00,145 - INFO - 	Fold 2/10
+2025-03-26 17:51:09,011 - INFO - 	Model trained for 35 epochs, accuracy is 97.14%
+2025-03-26 17:51:09,349 - INFO - 	Fold 3/10
+2025-03-26 17:51:19,087 - INFO - 	Model trained for 39 epochs, accuracy is 91.43%
+2025-03-26 17:51:19,429 - INFO - 	Fold 4/10
+2025-03-26 17:51:25,734 - INFO - 	Model trained for 23 epochs, accuracy is 90.00%
+2025-03-26 17:51:26,081 - INFO - 	Fold 5/10
+2025-03-26 17:51:31,301 - INFO - 	Model trained for 18 epochs, accuracy is 68.57%
+2025-03-26 17:51:31,653 - INFO - 	Fold 6/10
+2025-03-26 17:51:42,270 - INFO - 	Model trained for 43 epochs, accuracy is 92.86%
+2025-03-26 17:51:42,627 - INFO - 	Fold 7/10
+2025-03-26 17:51:51,076 - INFO - 	Model trained for 33 epochs, accuracy is 92.86%
+2025-03-26 17:51:51,438 - INFO - 	Fold 8/10
+2025-03-26 17:51:56,663 - INFO - 	Model trained for 18 epochs, accuracy is 64.29%
+2025-03-26 17:51:57,028 - INFO - 	Fold 9/10
+2025-03-26 17:52:07,134 - INFO - 	Model trained for 40 epochs, accuracy is 94.29%
+2025-03-26 17:52:07,511 - INFO - 	Fold 10/10
+2025-03-26 17:52:14,600 - INFO - 	Model trained for 27 epochs, accuracy is 95.71%
+2025-03-26 17:52:14,974 - INFO - 	Mean accuracy over all folds is 87.59%
+2025-03-26 17:52:14,975 - INFO - Trying 0.07 dropout_rate
+2025-03-26 17:52:14,976 - INFO - 	Fold 1/10
+2025-03-26 17:52:24,117 - INFO - 	Model trained for 36 epochs, accuracy is 87.32%
+2025-03-26 17:52:24,495 - INFO - 	Fold 2/10
+2025-03-26 17:52:32,666 - INFO - 	Model trained for 32 epochs, accuracy is 95.71%
+2025-03-26 17:52:33,050 - INFO - 	Fold 3/10
+2025-03-26 17:52:40,354 - INFO - 	Model trained for 28 epochs, accuracy is 55.71%
+2025-03-26 17:52:40,743 - INFO - 	Fold 4/10
+2025-03-26 17:52:47,828 - INFO - 	Model trained for 27 epochs, accuracy is 91.43%
+2025-03-26 17:52:48,224 - INFO - 	Fold 5/10
+2025-03-26 17:53:00,081 - INFO - 	Model trained for 49 epochs, accuracy is 94.29%
+2025-03-26 17:53:00,479 - INFO - 	Fold 6/10
+2025-03-26 17:53:19,484 - INFO - 	Model trained for 82 epochs, accuracy is 94.29%
+2025-03-26 17:53:19,888 - INFO - 	Fold 7/10
+2025-03-26 17:53:25,461 - INFO - 	Model trained for 20 epochs, accuracy is 72.86%
+2025-03-26 17:53:25,871 - INFO - 	Fold 8/10
+2025-03-26 17:53:35,387 - INFO - 	Model trained for 38 epochs, accuracy is 85.71%
+2025-03-26 17:53:35,800 - INFO - 	Fold 9/10
+2025-03-26 17:53:45,735 - INFO - 	Model trained for 40 epochs, accuracy is 92.86%
+2025-03-26 17:53:46,154 - INFO - 	Fold 10/10
+2025-03-26 17:53:58,297 - INFO - 	Model trained for 50 epochs, accuracy is 92.86%
+2025-03-26 17:53:58,718 - INFO - 	Mean accuracy over all folds is 86.30%
+2025-03-26 17:53:58,719 - INFO - Trying 0.08 dropout_rate
+2025-03-26 17:53:58,719 - INFO - 	Fold 1/10
+2025-03-26 17:54:05,834 - INFO - 	Model trained for 27 epochs, accuracy is 88.73%
+2025-03-26 17:54:06,261 - INFO - 	Fold 2/10
+2025-03-26 17:54:12,293 - INFO - 	Model trained for 22 epochs, accuracy is 62.86%
+2025-03-26 17:54:12,725 - INFO - 	Fold 3/10
+2025-03-26 17:54:22,007 - INFO - 	Model trained for 37 epochs, accuracy is 94.29%
+2025-03-26 17:54:22,442 - INFO - 	Fold 4/10
+2025-03-26 17:54:30,164 - INFO - 	Model trained for 30 epochs, accuracy is 90.00%
+2025-03-26 17:54:30,609 - INFO - 	Fold 5/10
+2025-03-26 17:54:40,943 - INFO - 	Model trained for 42 epochs, accuracy is 94.29%
+2025-03-26 17:54:41,388 - INFO - 	Fold 6/10
+2025-03-26 17:54:48,718 - INFO - 	Model trained for 28 epochs, accuracy is 91.43%
+2025-03-26 17:54:49,169 - INFO - 	Fold 7/10
+2025-03-26 17:54:59,688 - INFO - 	Model trained for 43 epochs, accuracy is 91.43%
+2025-03-26 17:55:00,142 - INFO - 	Fold 8/10
+2025-03-26 17:55:07,264 - INFO - 	Model trained for 27 epochs, accuracy is 85.71%
+2025-03-26 17:55:07,725 - INFO - 	Fold 9/10
+2025-03-26 17:55:14,045 - INFO - 	Model trained for 23 epochs, accuracy is 91.43%
+2025-03-26 17:55:14,509 - INFO - 	Fold 10/10
+2025-03-26 17:55:25,480 - INFO - 	Model trained for 45 epochs, accuracy is 94.29%
+2025-03-26 17:55:25,949 - INFO - 	Mean accuracy over all folds is 88.44%
+2025-03-26 17:55:25,951 - INFO - Trying 0.09 dropout_rate
+2025-03-26 17:55:25,951 - INFO - 	Fold 1/10
+2025-03-26 17:55:32,502 - INFO - 	Model trained for 24 epochs, accuracy is 91.55%
+2025-03-26 17:55:32,979 - INFO - 	Fold 2/10
+2025-03-26 17:55:38,233 - INFO - 	Model trained for 18 epochs, accuracy is 62.86%
+2025-03-26 17:55:38,712 - INFO - 	Fold 3/10
+2025-03-26 17:55:46,745 - INFO - 	Model trained for 31 epochs, accuracy is 88.57%
+2025-03-26 17:55:47,231 - INFO - 	Fold 4/10
+2025-03-26 17:55:54,450 - INFO - 	Model trained for 27 epochs, accuracy is 92.86%
+2025-03-26 17:55:54,939 - INFO - 	Fold 5/10
+2025-03-26 17:56:04,105 - INFO - 	Model trained for 36 epochs, accuracy is 91.43%
+2025-03-26 17:56:04,598 - INFO - 	Fold 6/10
+2025-03-26 17:56:13,285 - INFO - 	Model trained for 34 epochs, accuracy is 92.86%
+2025-03-26 17:56:13,783 - INFO - 	Fold 7/10
+2025-03-26 17:56:26,583 - INFO - 	Model trained for 53 epochs, accuracy is 91.43%
+2025-03-26 17:56:27,086 - INFO - 	Fold 8/10
+2025-03-26 17:56:34,243 - INFO - 	Model trained for 27 epochs, accuracy is 84.29%
+2025-03-26 17:56:34,754 - INFO - 	Fold 9/10
+2025-03-26 17:56:44,212 - INFO - 	Model trained for 37 epochs, accuracy is 92.86%
+2025-03-26 17:56:44,728 - INFO - 	Fold 10/10
+2025-03-26 17:56:52,321 - INFO - 	Model trained for 29 epochs, accuracy is 94.29%
+2025-03-26 17:56:52,842 - INFO - 	Mean accuracy over all folds is 88.30%
+2025-03-26 17:56:52,843 - INFO - Trying 0.1 dropout_rate
+2025-03-26 17:56:52,843 - INFO - 	Fold 1/10
+2025-03-26 17:57:00,964 - INFO - 	Model trained for 31 epochs, accuracy is 88.73%
+2025-03-26 17:57:01,487 - INFO - 	Fold 2/10
+2025-03-26 17:57:06,135 - INFO - 	Model trained for 15 epochs, accuracy is 62.86%
+2025-03-26 17:57:06,664 - INFO - 	Fold 3/10
+2025-03-26 17:57:20,077 - INFO - 	Model trained for 56 epochs, accuracy is 91.43%
+2025-03-26 17:57:20,611 - INFO - 	Fold 4/10
+2025-03-26 17:57:32,349 - INFO - 	Model trained for 48 epochs, accuracy is 94.29%
+2025-03-26 17:57:32,889 - INFO - 	Fold 5/10
+2025-03-26 17:57:42,937 - INFO - 	Model trained for 40 epochs, accuracy is 95.71%
+2025-03-26 17:57:43,477 - INFO - 	Fold 6/10
+2025-03-26 17:57:48,123 - INFO - 	Model trained for 15 epochs, accuracy is 61.43%
+2025-03-26 17:57:48,671 - INFO - 	Fold 7/10
+2025-03-26 17:57:56,562 - INFO - 	Model trained for 30 epochs, accuracy is 94.29%
+2025-03-26 17:57:57,114 - INFO - 	Fold 8/10
+2025-03-26 17:58:03,466 - INFO - 	Model trained for 23 epochs, accuracy is 81.43%
+2025-03-26 17:58:04,026 - INFO - 	Fold 9/10
+2025-03-26 17:58:14,769 - INFO - 	Model trained for 43 epochs, accuracy is 94.29%
+2025-03-26 17:58:15,332 - INFO - 	Fold 10/10
+2025-03-26 17:58:25,302 - INFO - 	Model trained for 39 epochs, accuracy is 94.29%
+2025-03-26 17:58:25,864 - INFO - 	Mean accuracy over all folds is 85.87%
+2025-03-26 17:58:25,865 - INFO - Trying 0.11 dropout_rate
+2025-03-26 17:58:25,866 - INFO - 	Fold 1/10
+2025-03-26 17:58:35,183 - INFO - 	Model trained for 37 epochs, accuracy is 90.14%
+2025-03-26 17:58:35,751 - INFO - 	Fold 2/10
+2025-03-26 17:58:40,571 - INFO - 	Model trained for 16 epochs, accuracy is 62.86%
+2025-03-26 17:58:41,145 - INFO - 	Fold 3/10
+2025-03-26 17:58:46,827 - INFO - 	Model trained for 20 epochs, accuracy is 91.43%
+2025-03-26 17:58:47,405 - INFO - 	Fold 4/10
+2025-03-26 17:58:54,170 - INFO - 	Model trained for 25 epochs, accuracy is 90.00%
+2025-03-26 17:58:54,752 - INFO - 	Fold 5/10
+2025-03-26 17:59:01,799 - INFO - 	Model trained for 26 epochs, accuracy is 95.71%
+2025-03-26 17:59:02,391 - INFO - 	Fold 6/10
+2025-03-26 17:59:14,298 - INFO - 	Model trained for 47 epochs, accuracy is 94.29%
+2025-03-26 17:59:14,891 - INFO - 	Fold 7/10
+2025-03-26 17:59:21,979 - INFO - 	Model trained for 26 epochs, accuracy is 92.86%
+2025-03-26 17:59:22,576 - INFO - 	Fold 8/10
+2025-03-26 17:59:32,021 - INFO - 	Model trained for 37 epochs, accuracy is 82.86%
+2025-03-26 17:59:32,624 - INFO - 	Fold 9/10
+2025-03-26 17:59:41,847 - INFO - 	Model trained for 36 epochs, accuracy is 92.86%
+2025-03-26 17:59:42,453 - INFO - 	Fold 10/10
+2025-03-26 17:59:52,472 - INFO - 	Model trained for 40 epochs, accuracy is 94.29%
+2025-03-26 17:59:53,084 - INFO - 	Mean accuracy over all folds is 88.73%
+2025-03-26 17:59:53,085 - INFO - Trying 0.12 dropout_rate
+2025-03-26 17:59:53,086 - INFO - 	Fold 1/10
+2025-03-26 18:00:02,142 - INFO - 	Model trained for 35 epochs, accuracy is 92.96%
+2025-03-26 18:00:02,758 - INFO - 	Fold 2/10
+2025-03-26 18:00:12,899 - INFO - 	Model trained for 40 epochs, accuracy is 92.86%
+2025-03-26 18:00:13,522 - INFO - 	Fold 3/10
+2025-03-26 18:00:20,327 - INFO - 	Model trained for 25 epochs, accuracy is 88.57%
+2025-03-26 18:00:20,954 - INFO - 	Fold 4/10
+2025-03-26 18:00:32,704 - INFO - 	Model trained for 48 epochs, accuracy is 94.29%
+2025-03-26 18:00:33,340 - INFO - 	Fold 5/10
+2025-03-26 18:00:48,134 - INFO - 	Model trained for 62 epochs, accuracy is 95.71%
+2025-03-26 18:00:48,767 - INFO - 	Fold 6/10
+2025-03-26 18:01:04,792 - INFO - 	Model trained for 68 epochs, accuracy is 94.29%
+2025-03-26 18:01:05,436 - INFO - 	Fold 7/10
+2025-03-26 18:01:11,166 - INFO - 	Model trained for 20 epochs, accuracy is 72.86%
+2025-03-26 18:01:11,813 - INFO - 	Fold 8/10
+2025-03-26 18:01:17,119 - INFO - 	Model trained for 18 epochs, accuracy is 64.29%
+2025-03-26 18:01:17,771 - INFO - 	Fold 9/10
+2025-03-26 18:01:28,054 - INFO - 	Model trained for 41 epochs, accuracy is 92.86%
+2025-03-26 18:01:28,711 - INFO - 	Fold 10/10
+2025-03-26 18:01:35,319 - INFO - 	Model trained for 24 epochs, accuracy is 65.71%
+2025-03-26 18:01:35,978 - INFO - 	Mean accuracy over all folds is 85.44%
+2025-03-26 18:01:35,978 - INFO - Trying 0.13 dropout_rate
+2025-03-26 18:01:35,979 - INFO - 	Fold 1/10
+2025-03-26 18:01:47,608 - INFO - 	Model trained for 47 epochs, accuracy is 91.55%
+2025-03-26 18:01:48,271 - INFO - 	Fold 2/10
+2025-03-26 18:01:57,617 - INFO - 	Model trained for 37 epochs, accuracy is 97.14%
+2025-03-26 18:01:58,285 - INFO - 	Fold 3/10
+2025-03-26 18:02:16,280 - INFO - 	Model trained for 77 epochs, accuracy is 88.57%
+2025-03-26 18:02:16,955 - INFO - 	Fold 4/10
+2025-03-26 18:02:27,248 - INFO - 	Model trained for 41 epochs, accuracy is 92.86%
+2025-03-26 18:02:27,924 - INFO - 	Fold 5/10
+2025-03-26 18:02:32,528 - INFO - 	Model trained for 15 epochs, accuracy is 68.57%
+2025-03-26 18:02:33,208 - INFO - 	Fold 6/10
+2025-03-26 18:02:46,368 - INFO - 	Model trained for 55 epochs, accuracy is 92.86%
+2025-03-26 18:02:47,053 - INFO - 	Fold 7/10
+2025-03-26 18:02:58,382 - INFO - 	Model trained for 46 epochs, accuracy is 94.29%
+2025-03-26 18:02:59,078 - INFO - 	Fold 8/10
+2025-03-26 18:03:11,311 - INFO - 	Model trained for 50 epochs, accuracy is 90.00%
+2025-03-26 18:03:12,006 - INFO - 	Fold 9/10
+2025-03-26 18:03:19,693 - INFO - 	Model trained for 29 epochs, accuracy is 92.86%
+2025-03-26 18:03:20,394 - INFO - 	Fold 10/10
+2025-03-26 18:03:27,219 - INFO - 	Model trained for 25 epochs, accuracy is 94.29%
+2025-03-26 18:03:27,923 - INFO - 	Mean accuracy over all folds is 90.30%
+2025-03-26 18:03:27,924 - INFO - Trying 0.14 dropout_rate
+2025-03-26 18:03:27,924 - INFO - 	Fold 1/10
+2025-03-26 18:03:36,428 - INFO - 	Model trained for 33 epochs, accuracy is 90.14%
+2025-03-26 18:03:37,138 - INFO - 	Fold 2/10
+2025-03-26 18:03:52,030 - INFO - 	Model trained for 63 epochs, accuracy is 98.57%
+2025-03-26 18:03:52,746 - INFO - 	Fold 3/10
+2025-03-26 18:04:05,960 - INFO - 	Model trained for 55 epochs, accuracy is 90.00%
+2025-03-26 18:04:06,682 - INFO - 	Fold 4/10
+2025-03-26 18:04:14,358 - INFO - 	Model trained for 29 epochs, accuracy is 91.43%
+2025-03-26 18:04:15,084 - INFO - 	Fold 5/10
+2025-03-26 18:04:26,599 - INFO - 	Model trained for 47 epochs, accuracy is 94.29%
+2025-03-26 18:04:27,331 - INFO - 	Fold 6/10
+2025-03-26 18:04:37,768 - INFO - 	Model trained for 42 epochs, accuracy is 94.29%
+2025-03-26 18:04:38,501 - INFO - 	Fold 7/10
+2025-03-26 18:04:46,018 - INFO - 	Model trained for 28 epochs, accuracy is 92.86%
+2025-03-26 18:04:46,758 - INFO - 	Fold 8/10
+2025-03-26 18:04:57,538 - INFO - 	Model trained for 43 epochs, accuracy is 85.71%
+2025-03-26 18:04:58,282 - INFO - 	Fold 9/10
+2025-03-26 18:05:15,905 - INFO - 	Model trained for 75 epochs, accuracy is 92.86%
+2025-03-26 18:05:16,653 - INFO - 	Fold 10/10
+2025-03-26 18:05:21,337 - INFO - 	Model trained for 15 epochs, accuracy is 65.71%
+2025-03-26 18:05:22,090 - INFO - 	Mean accuracy over all folds is 89.59%
+2025-03-26 18:05:22,091 - INFO - Trying 0.15 dropout_rate
+2025-03-26 18:05:22,092 - INFO - 	Fold 1/10
+2025-03-26 18:05:29,600 - INFO - 	Model trained for 28 epochs, accuracy is 90.14%
+2025-03-26 18:05:30,361 - INFO - 	Fold 2/10
+2025-03-26 18:05:42,154 - INFO - 	Model trained for 48 epochs, accuracy is 95.71%
+2025-03-26 18:05:42,915 - INFO - 	Fold 3/10
+2025-03-26 18:05:50,582 - INFO - 	Model trained for 29 epochs, accuracy is 88.57%
+2025-03-26 18:05:51,349 - INFO - 	Fold 4/10
+2025-03-26 18:05:59,921 - INFO - 	Model trained for 33 epochs, accuracy is 91.43%
+2025-03-26 18:06:00,695 - INFO - 	Fold 5/10
+2025-03-26 18:06:07,975 - INFO - 	Model trained for 27 epochs, accuracy is 95.71%
+2025-03-26 18:06:08,761 - INFO - 	Fold 6/10
+2025-03-26 18:06:16,930 - INFO - 	Model trained for 31 epochs, accuracy is 92.86%
+2025-03-26 18:06:17,712 - INFO - 	Fold 7/10
+2025-03-26 18:06:26,016 - INFO - 	Model trained for 32 epochs, accuracy is 87.14%
+2025-03-26 18:06:26,803 - INFO - 	Fold 8/10
+2025-03-26 18:06:32,283 - INFO - 	Model trained for 19 epochs, accuracy is 64.29%
+2025-03-26 18:06:33,076 - INFO - 	Fold 9/10
+2025-03-26 18:06:37,970 - INFO - 	Model trained for 16 epochs, accuracy is 42.86%
+2025-03-26 18:06:38,768 - INFO - 	Fold 10/10
+2025-03-26 18:06:49,467 - INFO - 	Model trained for 43 epochs, accuracy is 95.71%
+2025-03-26 18:06:50,267 - INFO - 	Mean accuracy over all folds is 84.44%
+2025-03-26 18:06:50,268 - INFO - Trying 0.16 dropout_rate
+2025-03-26 18:06:50,268 - INFO - 	Fold 1/10
+2025-03-26 18:06:57,283 - INFO - 	Model trained for 25 epochs, accuracy is 88.73%
+2025-03-26 18:06:58,089 - INFO - 	Fold 2/10
+2025-03-26 18:07:03,967 - INFO - 	Model trained for 20 epochs, accuracy is 97.14%
+2025-03-26 18:07:04,783 - INFO - 	Fold 3/10
+2025-03-26 18:07:09,213 - INFO - 	Model trained for 14 epochs, accuracy is 55.71%
+2025-03-26 18:07:10,032 - INFO - 	Fold 4/10
+2025-03-26 18:07:19,388 - INFO - 	Model trained for 37 epochs, accuracy is 91.43%
+2025-03-26 18:07:20,210 - INFO - 	Fold 5/10
+2025-03-26 18:07:27,869 - INFO - 	Model trained for 29 epochs, accuracy is 94.29%
+2025-03-26 18:07:28,694 - INFO - 	Fold 6/10
+2025-03-26 18:07:35,924 - INFO - 	Model trained for 27 epochs, accuracy is 92.86%
+2025-03-26 18:07:36,751 - INFO - 	Fold 7/10
+2025-03-26 18:07:41,781 - INFO - 	Model trained for 17 epochs, accuracy is 72.86%
+2025-03-26 18:07:42,615 - INFO - 	Fold 8/10
+2025-03-26 18:07:50,058 - INFO - 	Model trained for 28 epochs, accuracy is 81.43%
+2025-03-26 18:07:50,898 - INFO - 	Fold 9/10
+2025-03-26 18:07:58,586 - INFO - 	Model trained for 29 epochs, accuracy is 94.29%
+2025-03-26 18:07:59,431 - INFO - 	Fold 10/10
+2025-03-26 18:08:09,207 - INFO - 	Model trained for 39 epochs, accuracy is 94.29%
+2025-03-26 18:08:10,054 - INFO - 	Mean accuracy over all folds is 86.30%
+2025-03-26 18:08:10,055 - INFO - Trying 0.17 dropout_rate
+2025-03-26 18:08:10,055 - INFO - 	Fold 1/10
+2025-03-26 18:08:16,668 - INFO - 	Model trained for 24 epochs, accuracy is 57.75%
+2025-03-26 18:08:17,523 - INFO - 	Fold 2/10
+2025-03-26 18:08:25,173 - INFO - 	Model trained for 29 epochs, accuracy is 95.71%
+2025-03-26 18:08:26,028 - INFO - 	Fold 3/10
+2025-03-26 18:08:34,080 - INFO - 	Model trained for 31 epochs, accuracy is 90.00%
+2025-03-26 18:08:34,941 - INFO - 	Fold 4/10
+2025-03-26 18:08:51,327 - INFO - 	Model trained for 69 epochs, accuracy is 90.00%
+2025-03-26 18:08:52,198 - INFO - 	Fold 5/10
+2025-03-26 18:08:58,378 - INFO - 	Model trained for 22 epochs, accuracy is 94.29%
+2025-03-26 18:08:59,250 - INFO - 	Fold 6/10
+2025-03-26 18:09:05,253 - INFO - 	Model trained for 21 epochs, accuracy is 92.86%
+2025-03-26 18:09:06,133 - INFO - 	Fold 7/10
+2025-03-26 18:09:17,863 - INFO - 	Model trained for 47 epochs, accuracy is 92.86%
+2025-03-26 18:09:18,748 - INFO - 	Fold 8/10
+2025-03-26 18:09:23,429 - INFO - 	Model trained for 15 epochs, accuracy is 64.29%
+2025-03-26 18:09:24,317 - INFO - 	Fold 9/10
+2025-03-26 18:09:31,581 - INFO - 	Model trained for 27 epochs, accuracy is 42.86%
+2025-03-26 18:09:32,475 - INFO - 	Fold 10/10
+2025-03-26 18:09:46,025 - INFO - 	Model trained for 56 epochs, accuracy is 94.29%
+2025-03-26 18:09:46,920 - INFO - 	Mean accuracy over all folds is 81.49%
+2025-03-26 18:09:46,921 - INFO - Trying 0.18 dropout_rate
+2025-03-26 18:09:46,922 - INFO - 	Fold 1/10
+2025-03-26 18:09:53,549 - INFO - 	Model trained for 24 epochs, accuracy is 88.73%
+2025-03-26 18:09:54,451 - INFO - 	Fold 2/10
+2025-03-26 18:10:10,404 - INFO - 	Model trained for 67 epochs, accuracy is 94.29%
+2025-03-26 18:10:11,309 - INFO - 	Fold 3/10
+2025-03-26 18:10:22,056 - INFO - 	Model trained for 43 epochs, accuracy is 90.00%
+2025-03-26 18:10:22,967 - INFO - 	Fold 4/10
+2025-03-26 18:10:30,660 - INFO - 	Model trained for 29 epochs, accuracy is 91.43%
+2025-03-26 18:10:31,573 - INFO - 	Fold 5/10
+2025-03-26 18:10:38,590 - INFO - 	Model trained for 26 epochs, accuracy is 68.57%
+2025-03-26 18:10:39,511 - INFO - 	Fold 6/10
+2025-03-26 18:10:45,625 - INFO - 	Model trained for 22 epochs, accuracy is 92.86%
+2025-03-26 18:10:46,549 - INFO - 	Fold 7/10
+2025-03-26 18:10:59,202 - INFO - 	Model trained for 52 epochs, accuracy is 94.29%
+2025-03-26 18:11:00,129 - INFO - 	Fold 8/10
+2025-03-26 18:11:09,381 - INFO - 	Model trained for 36 epochs, accuracy is 84.29%
+2025-03-26 18:11:10,314 - INFO - 	Fold 9/10
+2025-03-26 18:11:18,224 - INFO - 	Model trained for 30 epochs, accuracy is 94.29%
+2025-03-26 18:11:19,163 - INFO - 	Fold 10/10
+2025-03-26 18:11:34,244 - INFO - 	Model trained for 63 epochs, accuracy is 94.29%
+2025-03-26 18:11:35,189 - INFO - 	Mean accuracy over all folds is 89.30%
+2025-03-26 18:11:35,189 - INFO - Trying 0.19 dropout_rate
+2025-03-26 18:11:35,190 - INFO - 	Fold 1/10
+2025-03-26 18:11:58,256 - INFO - 	Model trained for 99 epochs, accuracy is 85.92%
+2025-03-26 18:11:59,203 - INFO - 	Fold 2/10
+2025-03-26 18:12:05,768 - INFO - 	Model trained for 24 epochs, accuracy is 97.14%
+2025-03-26 18:12:06,719 - INFO - 	Fold 3/10
+2025-03-26 18:12:16,207 - INFO - 	Model trained for 37 epochs, accuracy is 92.86%
+2025-03-26 18:12:17,162 - INFO - 	Fold 4/10
+2025-03-26 18:12:23,173 - INFO - 	Model trained for 21 epochs, accuracy is 90.00%
+2025-03-26 18:12:24,135 - INFO - 	Fold 5/10
+2025-03-26 18:12:35,589 - INFO - 	Model trained for 47 epochs, accuracy is 94.29%
+2025-03-26 18:12:36,552 - INFO - 	Fold 6/10
+2025-03-26 18:12:43,154 - INFO - 	Model trained for 24 epochs, accuracy is 94.29%
+2025-03-26 18:12:44,126 - INFO - 	Fold 7/10
+2025-03-26 18:12:49,627 - INFO - 	Model trained for 19 epochs, accuracy is 72.86%
+2025-03-26 18:12:50,603 - INFO - 	Fold 8/10
+2025-03-26 18:12:57,250 - INFO - 	Model trained for 24 epochs, accuracy is 82.86%
+2025-03-26 18:12:58,228 - INFO - 	Fold 9/10
+2025-03-26 18:13:09,909 - INFO - 	Model trained for 47 epochs, accuracy is 91.43%
+2025-03-26 18:13:10,891 - INFO - 	Fold 10/10
+2025-03-26 18:13:16,458 - INFO - 	Model trained for 19 epochs, accuracy is 65.71%
+2025-03-26 18:13:17,445 - INFO - 	Mean accuracy over all folds is 86.73%
+2025-03-26 18:13:17,445 - INFO - Trying 0.2 dropout_rate
+2025-03-26 18:13:17,446 - INFO - 	Fold 1/10
+2025-03-26 18:13:23,059 - INFO - 	Model trained for 19 epochs, accuracy is 90.14%
+2025-03-26 18:13:24,052 - INFO - 	Fold 2/10
+2025-03-26 18:13:34,533 - INFO - 	Model trained for 42 epochs, accuracy is 97.14%
+2025-03-26 18:13:35,534 - INFO - 	Fold 3/10
+2025-03-26 18:13:43,624 - INFO - 	Model trained for 31 epochs, accuracy is 91.43%
+2025-03-26 18:13:44,627 - INFO - 	Fold 4/10
+2025-03-26 18:13:56,095 - INFO - 	Model trained for 46 epochs, accuracy is 90.00%
+2025-03-26 18:13:57,103 - INFO - 	Fold 5/10
+2025-03-26 18:14:11,133 - INFO - 	Model trained for 58 epochs, accuracy is 97.14%
+2025-03-26 18:14:12,144 - INFO - 	Fold 6/10
+2025-03-26 18:14:17,583 - INFO - 	Model trained for 19 epochs, accuracy is 94.29%
+2025-03-26 18:14:18,601 - INFO - 	Fold 7/10
+2025-03-26 18:14:29,594 - INFO - 	Model trained for 44 epochs, accuracy is 95.71%
+2025-03-26 18:14:30,618 - INFO - 	Fold 8/10
+2025-03-26 18:14:39,459 - INFO - 	Model trained for 34 epochs, accuracy is 85.71%
+2025-03-26 18:14:40,486 - INFO - 	Fold 9/10
+2025-03-26 18:14:48,609 - INFO - 	Model trained for 31 epochs, accuracy is 92.86%
+2025-03-26 18:14:49,640 - INFO - 	Fold 10/10
+2025-03-26 18:14:54,963 - INFO - 	Model trained for 18 epochs, accuracy is 65.71%
+2025-03-26 18:14:55,997 - INFO - 	Mean accuracy over all folds is 90.01%
+2025-03-26 18:14:55,998 - INFO - Trying 0.21 dropout_rate
+2025-03-26 18:14:55,998 - INFO - 	Fold 1/10
+2025-03-26 18:15:15,607 - INFO - 	Model trained for 84 epochs, accuracy is 84.51%
+2025-03-26 18:15:16,646 - INFO - 	Fold 2/10
+2025-03-26 18:15:29,963 - INFO - 	Model trained for 55 epochs, accuracy is 95.71%
+2025-03-26 18:15:31,007 - INFO - 	Fold 3/10
+2025-03-26 18:15:40,076 - INFO - 	Model trained for 35 epochs, accuracy is 88.57%
+2025-03-26 18:15:41,125 - INFO - 	Fold 4/10
+2025-03-26 18:15:50,611 - INFO - 	Model trained for 37 epochs, accuracy is 90.00%
+2025-03-26 18:15:51,663 - INFO - 	Fold 5/10
+2025-03-26 18:16:00,428 - INFO - 	Model trained for 34 epochs, accuracy is 95.71%
+2025-03-26 18:16:01,487 - INFO - 	Fold 6/10
+2025-03-26 18:16:11,399 - INFO - 	Model trained for 39 epochs, accuracy is 91.43%
+2025-03-26 18:16:12,460 - INFO - 	Fold 7/10
+2025-03-26 18:16:33,343 - INFO - 	Model trained for 90 epochs, accuracy is 94.29%
+2025-03-26 18:16:34,411 - INFO - 	Fold 8/10
+2025-03-26 18:16:49,364 - INFO - 	Model trained for 62 epochs, accuracy is 85.71%
+2025-03-26 18:16:50,435 - INFO - 	Fold 9/10
+2025-03-26 18:17:04,540 - INFO - 	Model trained for 59 epochs, accuracy is 92.86%
+2025-03-26 18:17:05,617 - INFO - 	Fold 10/10
+2025-03-26 18:17:16,096 - INFO - 	Model trained for 42 epochs, accuracy is 94.29%
+2025-03-26 18:17:17,177 - INFO - 	Mean accuracy over all folds is 91.31%
+2025-03-26 18:17:17,178 - INFO - Trying 0.22 dropout_rate
+2025-03-26 18:17:17,179 - INFO - 	Fold 1/10
+2025-03-26 18:17:24,996 - INFO - 	Model trained for 30 epochs, accuracy is 90.14%
+2025-03-26 18:17:26,082 - INFO - 	Fold 2/10
+2025-03-26 18:17:32,054 - INFO - 	Model trained for 21 epochs, accuracy is 94.29%
+2025-03-26 18:17:33,149 - INFO - 	Fold 3/10
+2025-03-26 18:17:43,465 - INFO - 	Model trained for 41 epochs, accuracy is 92.86%
+2025-03-26 18:17:44,558 - INFO - 	Fold 4/10
+2025-03-26 18:17:52,029 - INFO - 	Model trained for 28 epochs, accuracy is 90.00%
+2025-03-26 18:17:53,129 - INFO - 	Fold 5/10
+2025-03-26 18:18:00,580 - INFO - 	Model trained for 28 epochs, accuracy is 94.29%
+2025-03-26 18:18:01,684 - INFO - 	Fold 6/10
+2025-03-26 18:18:06,794 - INFO - 	Model trained for 17 epochs, accuracy is 61.43%
+2025-03-26 18:18:07,903 - INFO - 	Fold 7/10
+2025-03-26 18:18:20,453 - INFO - 	Model trained for 51 epochs, accuracy is 94.29%
+2025-03-26 18:18:21,570 - INFO - 	Fold 8/10
+2025-03-26 18:18:30,556 - INFO - 	Model trained for 35 epochs, accuracy is 81.43%
+2025-03-26 18:18:31,674 - INFO - 	Fold 9/10
+2025-03-26 18:18:45,768 - INFO - 	Model trained for 59 epochs, accuracy is 95.71%
+2025-03-26 18:18:46,892 - INFO - 	Fold 10/10
+2025-03-26 18:18:53,502 - INFO - 	Model trained for 24 epochs, accuracy is 94.29%
+2025-03-26 18:18:54,631 - INFO - 	Mean accuracy over all folds is 88.87%
+2025-03-26 18:18:54,632 - INFO - Trying 0.23 dropout_rate
+2025-03-26 18:18:54,632 - INFO - 	Fold 1/10
+2025-03-26 18:19:11,470 - INFO - 	Model trained for 70 epochs, accuracy is 92.96%
+2025-03-26 18:19:12,636 - INFO - 	Fold 2/10
+2025-03-26 18:19:22,004 - INFO - 	Model trained for 36 epochs, accuracy is 95.71%
+2025-03-26 18:19:23,140 - INFO - 	Fold 3/10
+2025-03-26 18:19:35,873 - INFO - 	Model trained for 52 epochs, accuracy is 88.57%
+2025-03-26 18:19:37,021 - INFO - 	Fold 4/10
+2025-03-26 18:19:48,511 - INFO - 	Model trained for 46 epochs, accuracy is 91.43%
+2025-03-26 18:19:49,660 - INFO - 	Fold 5/10
+2025-03-26 18:20:05,775 - INFO - 	Model trained for 68 epochs, accuracy is 95.71%
+2025-03-26 18:20:06,924 - INFO - 	Fold 6/10
+2025-03-26 18:20:11,539 - INFO - 	Model trained for 15 epochs, accuracy is 61.43%
+2025-03-26 18:20:12,700 - INFO - 	Fold 7/10
+2025-03-26 18:20:24,013 - INFO - 	Model trained for 46 epochs, accuracy is 92.86%
+2025-03-26 18:20:25,173 - INFO - 	Fold 8/10
+2025-03-26 18:20:32,575 - INFO - 	Model trained for 28 epochs, accuracy is 85.71%
+2025-03-26 18:20:33,743 - INFO - 	Fold 9/10
+2025-03-26 18:20:42,919 - INFO - 	Model trained for 36 epochs, accuracy is 88.57%
+2025-03-26 18:20:44,091 - INFO - 	Fold 10/10
+2025-03-26 18:20:54,087 - INFO - 	Model trained for 39 epochs, accuracy is 94.29%
+2025-03-26 18:20:55,266 - INFO - 	Mean accuracy over all folds is 88.72%
+2025-03-26 18:20:55,267 - INFO - Trying 0.24 dropout_rate
+2025-03-26 18:20:55,268 - INFO - 	Fold 1/10
+2025-03-26 18:21:11,493 - INFO - 	Model trained for 68 epochs, accuracy is 85.92%
+2025-03-26 18:21:12,674 - INFO - 	Fold 2/10
+2025-03-26 18:21:21,423 - INFO - 	Model trained for 34 epochs, accuracy is 97.14%
+2025-03-26 18:21:22,609 - INFO - 	Fold 3/10
+2025-03-26 18:21:29,252 - INFO - 	Model trained for 24 epochs, accuracy is 87.14%
+2025-03-26 18:21:30,442 - INFO - 	Fold 4/10
+2025-03-26 18:21:37,479 - INFO - 	Model trained for 26 epochs, accuracy is 91.43%
+2025-03-26 18:21:38,672 - INFO - 	Fold 5/10
+2025-03-26 18:21:47,712 - INFO - 	Model trained for 35 epochs, accuracy is 94.29%
+2025-03-26 18:21:48,911 - INFO - 	Fold 6/10
+2025-03-26 18:21:57,292 - INFO - 	Model trained for 32 epochs, accuracy is 92.86%
+2025-03-26 18:21:58,496 - INFO - 	Fold 7/10
+2025-03-26 18:22:06,510 - INFO - 	Model trained for 30 epochs, accuracy is 91.43%
+2025-03-26 18:22:07,721 - INFO - 	Fold 8/10
+2025-03-26 18:22:17,033 - INFO - 	Model trained for 36 epochs, accuracy is 82.86%
+2025-03-26 18:22:18,249 - INFO - 	Fold 9/10
+2025-03-26 18:22:27,400 - INFO - 	Model trained for 36 epochs, accuracy is 92.86%
+2025-03-26 18:22:28,621 - INFO - 	Fold 10/10
+2025-03-26 18:22:36,513 - INFO - 	Model trained for 30 epochs, accuracy is 95.71%
+2025-03-26 18:22:37,734 - INFO - 	Mean accuracy over all folds is 91.16%
+2025-03-26 18:22:37,735 - INFO - Trying 0.25 dropout_rate
+2025-03-26 18:22:37,736 - INFO - 	Fold 1/10
+2025-03-26 18:22:43,865 - INFO - 	Model trained for 22 epochs, accuracy is 90.14%
+2025-03-26 18:22:45,091 - INFO - 	Fold 2/10
+2025-03-26 18:22:58,192 - INFO - 	Model trained for 54 epochs, accuracy is 94.29%
+2025-03-26 18:22:59,424 - INFO - 	Fold 3/10
+2025-03-26 18:23:08,619 - INFO - 	Model trained for 36 epochs, accuracy is 87.14%
+2025-03-26 18:23:09,863 - INFO - 	Fold 4/10
+2025-03-26 18:23:22,077 - INFO - 	Model trained for 50 epochs, accuracy is 92.86%
+2025-03-26 18:23:23,318 - INFO - 	Fold 5/10
+2025-03-26 18:23:32,924 - INFO - 	Model trained for 38 epochs, accuracy is 94.29%
+2025-03-26 18:23:34,176 - INFO - 	Fold 6/10
+2025-03-26 18:23:42,275 - INFO - 	Model trained for 31 epochs, accuracy is 94.29%
+2025-03-26 18:23:43,526 - INFO - 	Fold 7/10
+2025-03-26 18:23:51,196 - INFO - 	Model trained for 29 epochs, accuracy is 98.57%
+2025-03-26 18:23:52,450 - INFO - 	Fold 8/10
+2025-03-26 18:24:02,707 - INFO - 	Model trained for 41 epochs, accuracy is 84.29%
+2025-03-26 18:24:03,967 - INFO - 	Fold 9/10
+2025-03-26 18:24:11,164 - INFO - 	Model trained for 27 epochs, accuracy is 94.29%
+2025-03-26 18:24:12,435 - INFO - 	Fold 10/10
+2025-03-26 18:24:22,743 - INFO - 	Model trained for 41 epochs, accuracy is 92.86%
+2025-03-26 18:24:24,012 - INFO - 	Mean accuracy over all folds is 92.30%
+2025-03-26 18:24:24,013 - INFO - Trying 0.26 dropout_rate
+2025-03-26 18:24:24,013 - INFO - 	Fold 1/10
+2025-03-26 18:24:31,925 - INFO - 	Model trained for 30 epochs, accuracy is 90.14%
+2025-03-26 18:24:33,199 - INFO - 	Fold 2/10
+2025-03-26 18:24:39,772 - INFO - 	Model trained for 24 epochs, accuracy is 92.86%
+2025-03-26 18:24:41,056 - INFO - 	Fold 3/10
+2025-03-26 18:24:51,401 - INFO - 	Model trained for 41 epochs, accuracy is 90.00%
+2025-03-26 18:24:52,684 - INFO - 	Fold 4/10
+2025-03-26 18:24:59,345 - INFO - 	Model trained for 24 epochs, accuracy is 92.86%
+2025-03-26 18:25:00,635 - INFO - 	Fold 5/10
+2025-03-26 18:25:10,222 - INFO - 	Model trained for 37 epochs, accuracy is 95.71%
+2025-03-26 18:25:11,521 - INFO - 	Fold 6/10
+2025-03-26 18:25:22,358 - INFO - 	Model trained for 43 epochs, accuracy is 94.29%
+2025-03-26 18:25:23,654 - INFO - 	Fold 7/10
+2025-03-26 18:25:29,627 - INFO - 	Model trained for 21 epochs, accuracy is 95.71%
+2025-03-26 18:25:30,932 - INFO - 	Fold 8/10
+2025-03-26 18:25:41,167 - INFO - 	Model trained for 41 epochs, accuracy is 85.71%
+2025-03-26 18:25:42,480 - INFO - 	Fold 9/10
+2025-03-26 18:25:50,611 - INFO - 	Model trained for 31 epochs, accuracy is 91.43%
+2025-03-26 18:25:51,924 - INFO - 	Fold 10/10
+2025-03-26 18:26:07,922 - INFO - 	Model trained for 67 epochs, accuracy is 92.86%
+2025-03-26 18:26:09,237 - INFO - 	Mean accuracy over all folds is 92.16%
+2025-03-26 18:26:09,238 - INFO - Trying 0.27 dropout_rate
+2025-03-26 18:26:09,238 - INFO - 	Fold 1/10
+2025-03-26 18:26:22,541 - INFO - 	Model trained for 55 epochs, accuracy is 91.55%
+2025-03-26 18:26:23,862 - INFO - 	Fold 2/10
+2025-03-26 18:26:30,471 - INFO - 	Model trained for 24 epochs, accuracy is 95.71%
+2025-03-26 18:26:31,797 - INFO - 	Fold 3/10
+2025-03-26 18:26:45,946 - INFO - 	Model trained for 59 epochs, accuracy is 94.29%
+2025-03-26 18:26:47,286 - INFO - 	Fold 4/10
+2025-03-26 18:26:58,898 - INFO - 	Model trained for 47 epochs, accuracy is 91.43%
+2025-03-26 18:27:00,235 - INFO - 	Fold 5/10
+2025-03-26 18:27:10,428 - INFO - 	Model trained for 41 epochs, accuracy is 94.29%
+2025-03-26 18:27:11,767 - INFO - 	Fold 6/10
+2025-03-26 18:27:17,106 - INFO - 	Model trained for 18 epochs, accuracy is 61.43%
+2025-03-26 18:27:18,449 - INFO - 	Fold 7/10
+2025-03-26 18:27:23,513 - INFO - 	Model trained for 17 epochs, accuracy is 72.86%
+2025-03-26 18:27:24,863 - INFO - 	Fold 8/10
+2025-03-26 18:27:37,888 - INFO - 	Model trained for 53 epochs, accuracy is 85.71%
+2025-03-26 18:27:39,245 - INFO - 	Fold 9/10
+2025-03-26 18:27:45,153 - INFO - 	Model trained for 21 epochs, accuracy is 90.00%
+2025-03-26 18:27:46,513 - INFO - 	Fold 10/10
+2025-03-26 18:27:57,840 - INFO - 	Model trained for 46 epochs, accuracy is 94.29%
+2025-03-26 18:27:59,206 - INFO - 	Mean accuracy over all folds is 87.15%
+2025-03-26 18:27:59,207 - INFO - Trying 0.28 dropout_rate
+2025-03-26 18:27:59,207 - INFO - 	Fold 1/10
+2025-03-26 18:28:09,164 - INFO - 	Model trained for 39 epochs, accuracy is 91.55%
+2025-03-26 18:28:10,535 - INFO - 	Fold 2/10
+2025-03-26 18:28:19,078 - INFO - 	Model trained for 33 epochs, accuracy is 95.71%
+2025-03-26 18:28:20,450 - INFO - 	Fold 3/10
+2025-03-26 18:28:27,435 - INFO - 	Model trained for 26 epochs, accuracy is 91.43%
+2025-03-26 18:28:28,815 - INFO - 	Fold 4/10
+2025-03-26 18:28:36,901 - INFO - 	Model trained for 31 epochs, accuracy is 90.00%
+2025-03-26 18:28:38,318 - INFO - 	Fold 5/10
+2025-03-26 18:28:50,856 - INFO - 	Model trained for 52 epochs, accuracy is 95.71%
+2025-03-26 18:28:52,244 - INFO - 	Fold 6/10
+2025-03-26 18:28:56,626 - INFO - 	Model trained for 14 epochs, accuracy is 61.43%
+2025-03-26 18:28:58,018 - INFO - 	Fold 7/10
+2025-03-26 18:29:07,221 - INFO - 	Model trained for 36 epochs, accuracy is 92.86%
+2025-03-26 18:29:08,617 - INFO - 	Fold 8/10
+2025-03-26 18:29:16,899 - INFO - 	Model trained for 32 epochs, accuracy is 81.43%
+2025-03-26 18:29:18,301 - INFO - 	Fold 9/10
+2025-03-26 18:29:33,660 - INFO - 	Model trained for 64 epochs, accuracy is 92.86%
+2025-03-26 18:29:35,071 - INFO - 	Fold 10/10
+2025-03-26 18:29:44,688 - INFO - 	Model trained for 38 epochs, accuracy is 92.86%
+2025-03-26 18:29:46,101 - INFO - 	Mean accuracy over all folds is 88.58%
+2025-03-26 18:29:46,102 - INFO - Trying 0.29 dropout_rate
+2025-03-26 18:29:46,102 - INFO - 	Fold 1/10
+2025-03-26 18:29:53,342 - INFO - 	Model trained for 27 epochs, accuracy is 88.73%
+2025-03-26 18:29:54,757 - INFO - 	Fold 2/10
+2025-03-26 18:30:03,122 - INFO - 	Model trained for 32 epochs, accuracy is 94.29%
+2025-03-26 18:30:04,542 - INFO - 	Fold 3/10
+2025-03-26 18:30:10,775 - INFO - 	Model trained for 22 epochs, accuracy is 91.43%
+2025-03-26 18:30:12,201 - INFO - 	Fold 4/10
+2025-03-26 18:30:17,328 - INFO - 	Model trained for 17 epochs, accuracy is 58.57%
+2025-03-26 18:30:18,760 - INFO - 	Fold 5/10
+2025-03-26 18:30:34,308 - INFO - 	Model trained for 65 epochs, accuracy is 98.57%
+2025-03-26 18:30:35,743 - INFO - 	Fold 6/10
+2025-03-26 18:30:46,895 - INFO - 	Model trained for 45 epochs, accuracy is 92.86%
+2025-03-26 18:30:48,334 - INFO - 	Fold 7/10
+2025-03-26 18:30:59,114 - INFO - 	Model trained for 43 epochs, accuracy is 95.71%
+2025-03-26 18:31:00,565 - INFO - 	Fold 8/10
+2025-03-26 18:31:09,778 - INFO - 	Model trained for 36 epochs, accuracy is 84.29%
+2025-03-26 18:31:11,231 - INFO - 	Fold 9/10
+2025-03-26 18:31:19,068 - INFO - 	Model trained for 29 epochs, accuracy is 90.00%
+2025-03-26 18:31:20,524 - INFO - 	Fold 10/10
+2025-03-26 18:31:25,325 - INFO - 	Model trained for 15 epochs, accuracy is 65.71%
+2025-03-26 18:31:26,783 - INFO - 	Mean accuracy over all folds is 86.02%
+2025-03-26 18:31:26,784 - INFO - Trying 0.3 dropout_rate
+2025-03-26 18:31:26,784 - INFO - 	Fold 1/10
+2025-03-26 18:31:36,150 - INFO - 	Model trained for 36 epochs, accuracy is 90.14%
+2025-03-26 18:31:37,618 - INFO - 	Fold 2/10
+2025-03-26 18:31:46,502 - INFO - 	Model trained for 33 epochs, accuracy is 97.14%
+2025-03-26 18:31:47,973 - INFO - 	Fold 3/10
+2025-03-26 18:31:54,323 - INFO - 	Model trained for 23 epochs, accuracy is 91.43%
+2025-03-26 18:31:55,799 - INFO - 	Fold 4/10
+2025-03-26 18:32:01,557 - INFO - 	Model trained for 20 epochs, accuracy is 94.29%
+2025-03-26 18:32:03,035 - INFO - 	Fold 5/10
+2025-03-26 18:32:10,469 - INFO - 	Model trained for 28 epochs, accuracy is 94.29%
+2025-03-26 18:32:11,948 - INFO - 	Fold 6/10
+2025-03-26 18:32:20,927 - INFO - 	Model trained for 35 epochs, accuracy is 94.29%
+2025-03-26 18:32:22,413 - INFO - 	Fold 7/10
+2025-03-26 18:32:31,621 - INFO - 	Model trained for 36 epochs, accuracy is 95.71%
+2025-03-26 18:32:33,111 - INFO - 	Fold 8/10
+2025-03-26 18:32:46,353 - INFO - 	Model trained for 55 epochs, accuracy is 85.71%
+2025-03-26 18:32:47,849 - INFO - 	Fold 9/10
+2025-03-26 18:32:54,864 - INFO - 	Model trained for 26 epochs, accuracy is 94.29%
+2025-03-26 18:32:56,364 - INFO - 	Fold 10/10
+2025-03-26 18:33:04,266 - INFO - 	Model trained for 30 epochs, accuracy is 94.29%
+2025-03-26 18:33:05,812 - INFO - 	Mean accuracy over all folds is 93.16%
+2025-03-26 18:33:05,813 - INFO - Trying 0.31 dropout_rate
+2025-03-26 18:33:05,813 - INFO - 	Fold 1/10
+2025-03-26 18:33:12,866 - INFO - 	Model trained for 26 epochs, accuracy is 90.14%
+2025-03-26 18:33:14,376 - INFO - 	Fold 2/10
+2025-03-26 18:33:23,593 - INFO - 	Model trained for 36 epochs, accuracy is 97.14%
+2025-03-26 18:33:25,111 - INFO - 	Fold 3/10
+2025-03-26 18:33:38,037 - INFO - 	Model trained for 53 epochs, accuracy is 88.57%
+2025-03-26 18:33:39,561 - INFO - 	Fold 4/10
+2025-03-26 18:33:48,144 - INFO - 	Model trained for 33 epochs, accuracy is 92.86%
+2025-03-26 18:33:49,669 - INFO - 	Fold 5/10
+2025-03-26 18:33:58,644 - INFO - 	Model trained for 33 epochs, accuracy is 94.29%
+2025-03-26 18:34:00,175 - INFO - 	Fold 6/10
+2025-03-26 18:34:07,936 - INFO - 	Model trained for 29 epochs, accuracy is 92.86%
+2025-03-26 18:34:09,475 - INFO - 	Fold 7/10
+2025-03-26 18:34:26,648 - INFO - 	Model trained for 73 epochs, accuracy is 95.71%
+2025-03-26 18:34:28,193 - INFO - 	Fold 8/10
+2025-03-26 18:34:42,274 - INFO - 	Model trained for 58 epochs, accuracy is 91.43%
+2025-03-26 18:34:43,822 - INFO - 	Fold 9/10
+2025-03-26 18:34:57,041 - INFO - 	Model trained for 54 epochs, accuracy is 95.71%
+2025-03-26 18:34:58,586 - INFO - 	Fold 10/10
+2025-03-26 18:35:03,497 - INFO - 	Model trained for 16 epochs, accuracy is 65.71%
+2025-03-26 18:35:05,049 - INFO - 	Mean accuracy over all folds is 90.44%
+2025-03-26 18:35:05,050 - INFO - Trying 0.32 dropout_rate
+2025-03-26 18:35:05,050 - INFO - 	Fold 1/10
+2025-03-26 18:35:13,396 - INFO - 	Model trained for 32 epochs, accuracy is 88.73%
+2025-03-26 18:35:14,957 - INFO - 	Fold 2/10
+2025-03-26 18:35:24,569 - INFO - 	Model trained for 38 epochs, accuracy is 98.57%
+2025-03-26 18:35:26,131 - INFO - 	Fold 3/10
+2025-03-26 18:35:39,363 - INFO - 	Model trained for 54 epochs, accuracy is 90.00%
+2025-03-26 18:35:40,930 - INFO - 	Fold 4/10
+2025-03-26 18:35:48,412 - INFO - 	Model trained for 28 epochs, accuracy is 91.43%
+2025-03-26 18:35:49,991 - INFO - 	Fold 5/10
+2025-03-26 18:36:02,021 - INFO - 	Model trained for 49 epochs, accuracy is 94.29%
+2025-03-26 18:36:03,598 - INFO - 	Fold 6/10
+2025-03-26 18:36:11,969 - INFO - 	Model trained for 32 epochs, accuracy is 92.86%
+2025-03-26 18:36:13,552 - INFO - 	Fold 7/10
+2025-03-26 18:36:20,669 - INFO - 	Model trained for 26 epochs, accuracy is 95.71%
+2025-03-26 18:36:22,254 - INFO - 	Fold 8/10
+2025-03-26 18:36:29,083 - INFO - 	Model trained for 25 epochs, accuracy is 82.86%
+2025-03-26 18:36:30,673 - INFO - 	Fold 9/10
+2025-03-26 18:36:38,147 - INFO - 	Model trained for 28 epochs, accuracy is 90.00%
+2025-03-26 18:36:39,744 - INFO - 	Fold 10/10
+2025-03-26 18:36:46,779 - INFO - 	Model trained for 26 epochs, accuracy is 95.71%
+2025-03-26 18:36:48,381 - INFO - 	Mean accuracy over all folds is 92.02%
+2025-03-26 18:36:48,382 - INFO - Trying 0.33 dropout_rate
+2025-03-26 18:36:48,382 - INFO - 	Fold 1/10
+2025-03-26 18:36:56,731 - INFO - 	Model trained for 32 epochs, accuracy is 91.55%
+2025-03-26 18:36:58,334 - INFO - 	Fold 2/10
+2025-03-26 18:37:10,563 - INFO - 	Model trained for 50 epochs, accuracy is 97.14%
+2025-03-26 18:37:12,174 - INFO - 	Fold 3/10
+2025-03-26 18:37:21,066 - INFO - 	Model trained for 35 epochs, accuracy is 92.86%
+2025-03-26 18:37:22,681 - INFO - 	Fold 4/10
+2025-03-26 18:37:33,833 - INFO - 	Model trained for 45 epochs, accuracy is 90.00%
+2025-03-26 18:37:35,453 - INFO - 	Fold 5/10
+2025-03-26 18:37:48,573 - INFO - 	Model trained for 51 epochs, accuracy is 94.29%
+2025-03-26 18:37:50,196 - INFO - 	Fold 6/10
+2025-03-26 18:37:56,832 - INFO - 	Model trained for 24 epochs, accuracy is 92.86%
+2025-03-26 18:37:58,461 - INFO - 	Fold 7/10
+2025-03-26 18:38:06,203 - INFO - 	Model trained for 29 epochs, accuracy is 92.86%
+2025-03-26 18:38:07,835 - INFO - 	Fold 8/10
+2025-03-26 18:38:16,371 - INFO - 	Model trained for 33 epochs, accuracy is 85.71%
+2025-03-26 18:38:18,007 - INFO - 	Fold 9/10
+2025-03-26 18:38:25,266 - INFO - 	Model trained for 27 epochs, accuracy is 95.71%
+2025-03-26 18:38:26,905 - INFO - 	Fold 10/10
+2025-03-26 18:38:38,691 - INFO - 	Model trained for 48 epochs, accuracy is 95.71%
+2025-03-26 18:38:40,342 - INFO - 	Mean accuracy over all folds is 92.87%
+2025-03-26 18:38:40,343 - INFO - Trying 0.34 dropout_rate
+2025-03-26 18:38:40,344 - INFO - 	Fold 1/10
+2025-03-26 18:38:47,220 - INFO - 	Model trained for 25 epochs, accuracy is 92.96%
+2025-03-26 18:38:48,871 - INFO - 	Fold 2/10
+2025-03-26 18:38:58,532 - INFO - 	Model trained for 38 epochs, accuracy is 94.29%
+2025-03-26 18:39:00,190 - INFO - 	Fold 3/10
+2025-03-26 18:39:08,895 - INFO - 	Model trained for 33 epochs, accuracy is 88.57%
+2025-03-26 18:39:10,561 - INFO - 	Fold 4/10
+2025-03-26 18:39:23,352 - INFO - 	Model trained for 52 epochs, accuracy is 91.43%
+2025-03-26 18:39:25,016 - INFO - 	Fold 5/10
+2025-03-26 18:39:34,850 - INFO - 	Model trained for 39 epochs, accuracy is 97.14%
+2025-03-26 18:39:36,522 - INFO - 	Fold 6/10
+2025-03-26 18:39:58,047 - INFO - 	Model trained for 92 epochs, accuracy is 94.29%
+2025-03-26 18:39:59,767 - INFO - 	Fold 7/10
+2025-03-26 18:40:10,560 - INFO - 	Model trained for 43 epochs, accuracy is 94.29%
+2025-03-26 18:40:12,240 - INFO - 	Fold 8/10
+2025-03-26 18:40:17,128 - INFO - 	Model trained for 16 epochs, accuracy is 64.29%
+2025-03-26 18:40:18,819 - INFO - 	Fold 9/10
+2025-03-26 18:40:28,715 - INFO - 	Model trained for 39 epochs, accuracy is 95.71%
+2025-03-26 18:40:30,403 - INFO - 	Fold 10/10
+2025-03-26 18:40:36,994 - INFO - 	Model trained for 24 epochs, accuracy is 94.29%
+2025-03-26 18:40:38,692 - INFO - 	Mean accuracy over all folds is 90.72%
+2025-03-26 18:40:38,693 - INFO - Trying 0.35 dropout_rate
+2025-03-26 18:40:38,693 - INFO - 	Fold 1/10
+2025-03-26 18:40:46,769 - INFO - 	Model trained for 31 epochs, accuracy is 92.96%
+2025-03-26 18:40:48,466 - INFO - 	Fold 2/10
+2025-03-26 18:41:03,303 - INFO - 	Model trained for 62 epochs, accuracy is 97.14%
+2025-03-26 18:41:05,006 - INFO - 	Fold 3/10
+2025-03-26 18:41:13,373 - INFO - 	Model trained for 32 epochs, accuracy is 87.14%
+2025-03-26 18:41:15,084 - INFO - 	Fold 4/10
+2025-03-26 18:41:24,255 - INFO - 	Model trained for 36 epochs, accuracy is 90.00%
+2025-03-26 18:41:25,970 - INFO - 	Fold 5/10
+2025-03-26 18:41:39,415 - INFO - 	Model trained for 56 epochs, accuracy is 97.14%
+2025-03-26 18:41:41,134 - INFO - 	Fold 6/10
+2025-03-26 18:41:50,974 - INFO - 	Model trained for 39 epochs, accuracy is 94.29%
+2025-03-26 18:41:52,693 - INFO - 	Fold 7/10
+2025-03-26 18:42:02,712 - INFO - 	Model trained for 40 epochs, accuracy is 92.86%
+2025-03-26 18:42:04,441 - INFO - 	Fold 8/10
+2025-03-26 18:42:14,107 - INFO - 	Model trained for 38 epochs, accuracy is 82.86%
+2025-03-26 18:42:15,835 - INFO - 	Fold 9/10
+2025-03-26 18:42:24,606 - INFO - 	Model trained for 34 epochs, accuracy is 90.00%
+2025-03-26 18:42:26,346 - INFO - 	Fold 10/10
+2025-03-26 18:42:33,019 - INFO - 	Model trained for 24 epochs, accuracy is 94.29%
+2025-03-26 18:42:34,757 - INFO - 	Mean accuracy over all folds is 91.87%
+2025-03-26 18:42:34,758 - INFO - Trying 0.36 dropout_rate
+2025-03-26 18:42:34,758 - INFO - 	Fold 1/10
+2025-03-26 18:42:39,836 - INFO - 	Model trained for 17 epochs, accuracy is 90.14%
+2025-03-26 18:42:41,583 - INFO - 	Fold 2/10
+2025-03-26 18:42:50,878 - INFO - 	Model trained for 36 epochs, accuracy is 95.71%
+2025-03-26 18:42:52,627 - INFO - 	Fold 3/10
+2025-03-26 18:43:05,425 - INFO - 	Model trained for 53 epochs, accuracy is 85.71%
+2025-03-26 18:43:07,203 - INFO - 	Fold 4/10
+2025-03-26 18:43:21,334 - INFO - 	Model trained for 59 epochs, accuracy is 92.86%
+2025-03-26 18:43:23,096 - INFO - 	Fold 5/10
+2025-03-26 18:43:29,513 - INFO - 	Model trained for 23 epochs, accuracy is 94.29%
+2025-03-26 18:43:31,281 - INFO - 	Fold 6/10
+2025-03-26 18:43:43,675 - INFO - 	Model trained for 51 epochs, accuracy is 92.86%
+2025-03-26 18:43:45,448 - INFO - 	Fold 7/10
+2025-03-26 18:43:52,734 - INFO - 	Model trained for 27 epochs, accuracy is 92.86%
+2025-03-26 18:43:54,510 - INFO - 	Fold 8/10
+2025-03-26 18:44:02,889 - INFO - 	Model trained for 32 epochs, accuracy is 82.86%
+2025-03-26 18:44:04,671 - INFO - 	Fold 9/10
+2025-03-26 18:44:13,721 - INFO - 	Model trained for 33 epochs, accuracy is 94.29%
+2025-03-26 18:44:15,509 - INFO - 	Fold 10/10
+2025-03-26 18:44:24,481 - INFO - 	Model trained for 33 epochs, accuracy is 94.29%
+2025-03-26 18:44:26,270 - INFO - 	Mean accuracy over all folds is 91.59%
+2025-03-26 18:44:26,271 - INFO - Trying 0.37 dropout_rate
+2025-03-26 18:44:26,271 - INFO - 	Fold 1/10
+2025-03-26 18:44:34,892 - INFO - 	Model trained for 33 epochs, accuracy is 90.14%
+2025-03-26 18:44:36,690 - INFO - 	Fold 2/10
+2025-03-26 18:44:47,507 - INFO - 	Model trained for 43 epochs, accuracy is 97.14%
+2025-03-26 18:44:49,313 - INFO - 	Fold 3/10
+2025-03-26 18:44:53,969 - INFO - 	Model trained for 15 epochs, accuracy is 55.71%
+2025-03-26 18:44:55,777 - INFO - 	Fold 4/10
+2025-03-26 18:45:03,496 - INFO - 	Model trained for 29 epochs, accuracy is 91.43%
+2025-03-26 18:45:05,302 - INFO - 	Fold 5/10
+2025-03-26 18:45:14,148 - INFO - 	Model trained for 34 epochs, accuracy is 94.29%
+2025-03-26 18:45:15,959 - INFO - 	Fold 6/10
+2025-03-26 18:45:21,097 - INFO - 	Model trained for 17 epochs, accuracy is 91.43%
+2025-03-26 18:45:22,914 - INFO - 	Fold 7/10
+2025-03-26 18:45:35,091 - INFO - 	Model trained for 50 epochs, accuracy is 95.71%
+2025-03-26 18:45:36,912 - INFO - 	Fold 8/10
+2025-03-26 18:45:43,215 - INFO - 	Model trained for 22 epochs, accuracy is 80.00%
+2025-03-26 18:45:45,039 - INFO - 	Fold 9/10
+2025-03-26 18:45:54,888 - INFO - 	Model trained for 39 epochs, accuracy is 91.43%
+2025-03-26 18:45:56,729 - INFO - 	Fold 10/10
+2025-03-26 18:46:01,617 - INFO - 	Model trained for 16 epochs, accuracy is 65.71%
+2025-03-26 18:46:03,453 - INFO - 	Mean accuracy over all folds is 85.30%
+2025-03-26 18:46:03,454 - INFO - Trying 0.38 dropout_rate
+2025-03-26 18:46:03,454 - INFO - 	Fold 1/10
+2025-03-26 18:46:13,356 - INFO - 	Model trained for 39 epochs, accuracy is 90.14%
+2025-03-26 18:46:15,198 - INFO - 	Fold 2/10
+2025-03-26 18:46:23,581 - INFO - 	Model trained for 32 epochs, accuracy is 94.29%
+2025-03-26 18:46:25,429 - INFO - 	Fold 3/10
+2025-03-26 18:46:32,258 - INFO - 	Model trained for 25 epochs, accuracy is 91.43%
+2025-03-26 18:46:34,106 - INFO - 	Fold 4/10
+2025-03-26 18:46:52,411 - INFO - 	Model trained for 78 epochs, accuracy is 91.43%
+2025-03-26 18:46:54,264 - INFO - 	Fold 5/10
+2025-03-26 18:47:01,486 - INFO - 	Model trained for 27 epochs, accuracy is 95.71%
+2025-03-26 18:47:03,342 - INFO - 	Fold 6/10
+2025-03-26 18:47:12,890 - INFO - 	Model trained for 38 epochs, accuracy is 92.86%
+2025-03-26 18:47:14,757 - INFO - 	Fold 7/10
+2025-03-26 18:47:19,503 - INFO - 	Model trained for 15 epochs, accuracy is 72.86%
+2025-03-26 18:47:21,372 - INFO - 	Fold 8/10
+2025-03-26 18:47:29,929 - INFO - 	Model trained for 33 epochs, accuracy is 82.86%
+2025-03-26 18:47:31,803 - INFO - 	Fold 9/10
+2025-03-26 18:47:45,507 - INFO - 	Model trained for 57 epochs, accuracy is 94.29%
+2025-03-26 18:47:47,386 - INFO - 	Fold 10/10
+2025-03-26 18:47:53,764 - INFO - 	Model trained for 23 epochs, accuracy is 65.71%
+2025-03-26 18:47:55,648 - INFO - 	Mean accuracy over all folds is 87.16%
+2025-03-26 18:47:55,649 - INFO - Trying 0.39 dropout_rate
+2025-03-26 18:47:55,650 - INFO - 	Fold 1/10
+2025-03-26 18:48:05,934 - INFO - 	Model trained for 41 epochs, accuracy is 85.92%
+2025-03-26 18:48:07,825 - INFO - 	Fold 2/10
+2025-03-26 18:48:20,232 - INFO - 	Model trained for 51 epochs, accuracy is 94.29%
+2025-03-26 18:48:22,128 - INFO - 	Fold 3/10
+2025-03-26 18:48:30,489 - INFO - 	Model trained for 32 epochs, accuracy is 90.00%
+2025-03-26 18:48:32,401 - INFO - 	Fold 4/10
+2025-03-26 18:48:44,508 - INFO - 	Model trained for 49 epochs, accuracy is 90.00%
+2025-03-26 18:48:46,407 - INFO - 	Fold 5/10
+2025-03-26 18:48:52,181 - INFO - 	Model trained for 20 epochs, accuracy is 94.29%
+2025-03-26 18:48:54,084 - INFO - 	Fold 6/10
+2025-03-26 18:48:59,857 - INFO - 	Model trained for 20 epochs, accuracy is 94.29%
+2025-03-26 18:49:01,767 - INFO - 	Fold 7/10
+2025-03-26 18:49:11,512 - INFO - 	Model trained for 38 epochs, accuracy is 95.71%
+2025-03-26 18:49:13,430 - INFO - 	Fold 8/10
+2025-03-26 18:49:18,623 - INFO - 	Model trained for 17 epochs, accuracy is 64.29%
+2025-03-26 18:49:20,541 - INFO - 	Fold 9/10
+2025-03-26 18:49:27,604 - INFO - 	Model trained for 26 epochs, accuracy is 88.57%
+2025-03-26 18:49:29,530 - INFO - 	Fold 10/10
+2025-03-26 18:49:36,821 - INFO - 	Model trained for 27 epochs, accuracy is 65.71%
+2025-03-26 18:49:38,749 - INFO - 	Mean accuracy over all folds is 86.31%
+2025-03-26 18:49:38,750 - INFO - Trying 0.4 dropout_rate
+2025-03-26 18:49:38,750 - INFO - 	Fold 1/10
+2025-03-26 18:49:48,293 - INFO - 	Model trained for 37 epochs, accuracy is 92.96%
+2025-03-26 18:49:50,228 - INFO - 	Fold 2/10
+2025-03-26 18:49:57,468 - INFO - 	Model trained for 25 epochs, accuracy is 95.71%
+2025-03-26 18:49:59,407 - INFO - 	Fold 3/10
+2025-03-26 18:50:07,854 - INFO - 	Model trained for 33 epochs, accuracy is 91.43%
+2025-03-26 18:50:09,795 - INFO - 	Fold 4/10
+2025-03-26 18:50:16,614 - INFO - 	Model trained for 25 epochs, accuracy is 90.00%
+2025-03-26 18:50:18,564 - INFO - 	Fold 5/10
+2025-03-26 18:50:28,522 - INFO - 	Model trained for 39 epochs, accuracy is 95.71%
+2025-03-26 18:50:30,475 - INFO - 	Fold 6/10
+2025-03-26 18:50:37,820 - INFO - 	Model trained for 27 epochs, accuracy is 91.43%
+2025-03-26 18:50:39,778 - INFO - 	Fold 7/10
+2025-03-26 18:50:44,977 - INFO - 	Model trained for 17 epochs, accuracy is 72.86%
+2025-03-26 18:50:46,939 - INFO - 	Fold 8/10
+2025-03-26 18:50:55,180 - INFO - 	Model trained for 31 epochs, accuracy is 82.86%
+2025-03-26 18:50:57,146 - INFO - 	Fold 9/10
+2025-03-26 18:51:10,991 - INFO - 	Model trained for 57 epochs, accuracy is 94.29%
+2025-03-26 18:51:12,959 - INFO - 	Fold 10/10
+2025-03-26 18:51:18,321 - INFO - 	Model trained for 18 epochs, accuracy is 65.71%
+2025-03-26 18:51:20,296 - INFO - 	Mean accuracy over all folds is 87.30%
+2025-03-26 18:51:20,297 - INFO - Trying 0.41 dropout_rate
+2025-03-26 18:51:20,297 - INFO - 	Fold 1/10
+2025-03-26 18:51:32,009 - INFO - 	Model trained for 47 epochs, accuracy is 91.55%
+2025-03-26 18:51:33,992 - INFO - 	Fold 2/10
+2025-03-26 18:51:39,526 - INFO - 	Model trained for 19 epochs, accuracy is 94.29%
+2025-03-26 18:51:41,514 - INFO - 	Fold 3/10
+2025-03-26 18:51:54,780 - INFO - 	Model trained for 55 epochs, accuracy is 91.43%
+2025-03-26 18:51:56,771 - INFO - 	Fold 4/10
+2025-03-26 18:52:10,169 - INFO - 	Model trained for 55 epochs, accuracy is 92.86%
+2025-03-26 18:52:12,171 - INFO - 	Fold 5/10
+2025-03-26 18:52:19,060 - INFO - 	Model trained for 25 epochs, accuracy is 94.29%
+2025-03-26 18:52:21,057 - INFO - 	Fold 6/10
+2025-03-26 18:52:29,158 - INFO - 	Model trained for 31 epochs, accuracy is 92.86%
+2025-03-26 18:52:31,164 - INFO - 	Fold 7/10
+2025-03-26 18:52:36,298 - INFO - 	Model trained for 17 epochs, accuracy is 92.86%
+2025-03-26 18:52:38,312 - INFO - 	Fold 8/10
+2025-03-26 18:52:48,561 - INFO - 	Model trained for 41 epochs, accuracy is 87.14%
+2025-03-26 18:52:50,575 - INFO - 	Fold 9/10
+2025-03-26 18:52:56,045 - INFO - 	Model trained for 19 epochs, accuracy is 42.86%
+2025-03-26 18:52:58,069 - INFO - 	Fold 10/10
+2025-03-26 18:53:04,868 - INFO - 	Model trained for 25 epochs, accuracy is 94.29%
+2025-03-26 18:53:06,889 - INFO - 	Mean accuracy over all folds is 87.44%
+2025-03-26 18:53:06,890 - INFO - Trying 0.42 dropout_rate
+2025-03-26 18:53:06,890 - INFO - 	Fold 1/10
+2025-03-26 18:53:13,766 - INFO - 	Model trained for 25 epochs, accuracy is 88.73%
+2025-03-26 18:53:15,796 - INFO - 	Fold 2/10
+2025-03-26 18:53:31,966 - INFO - 	Model trained for 69 epochs, accuracy is 94.29%
+2025-03-26 18:53:33,999 - INFO - 	Fold 3/10
+2025-03-26 18:53:41,600 - INFO - 	Model trained for 29 epochs, accuracy is 92.86%
+2025-03-26 18:53:43,636 - INFO - 	Fold 4/10
+2025-03-26 18:53:53,495 - INFO - 	Model trained for 39 epochs, accuracy is 92.86%
+2025-03-26 18:53:55,538 - INFO - 	Fold 5/10
+2025-03-26 18:54:04,322 - INFO - 	Model trained for 34 epochs, accuracy is 94.29%
+2025-03-26 18:54:06,370 - INFO - 	Fold 6/10
+2025-03-26 18:54:15,940 - INFO - 	Model trained for 37 epochs, accuracy is 94.29%
+2025-03-26 18:54:17,990 - INFO - 	Fold 7/10
+2025-03-26 18:54:27,395 - INFO - 	Model trained for 37 epochs, accuracy is 94.29%
+2025-03-26 18:54:29,456 - INFO - 	Fold 8/10
+2025-03-26 18:54:39,337 - INFO - 	Model trained for 39 epochs, accuracy is 84.29%
+2025-03-26 18:54:41,405 - INFO - 	Fold 9/10
+2025-03-26 18:54:49,361 - INFO - 	Model trained for 30 epochs, accuracy is 91.43%
+2025-03-26 18:54:51,430 - INFO - 	Fold 10/10
+2025-03-26 18:54:57,481 - INFO - 	Model trained for 21 epochs, accuracy is 94.29%
+2025-03-26 18:54:59,553 - INFO - 	Mean accuracy over all folds is 92.16%
+2025-03-26 18:54:59,553 - INFO - Trying 0.43 dropout_rate
+2025-03-26 18:54:59,554 - INFO - 	Fold 1/10
+2025-03-26 18:55:10,293 - INFO - 	Model trained for 43 epochs, accuracy is 91.55%
+2025-03-26 18:55:12,373 - INFO - 	Fold 2/10
+2025-03-26 18:55:26,872 - INFO - 	Model trained for 60 epochs, accuracy is 97.14%
+2025-03-26 18:55:28,950 - INFO - 	Fold 3/10
+2025-03-26 18:55:38,434 - INFO - 	Model trained for 37 epochs, accuracy is 90.00%
+2025-03-26 18:55:40,520 - INFO - 	Fold 4/10
+2025-03-26 18:55:48,500 - INFO - 	Model trained for 30 epochs, accuracy is 91.43%
+2025-03-26 18:55:50,589 - INFO - 	Fold 5/10
+2025-03-26 18:55:58,547 - INFO - 	Model trained for 30 epochs, accuracy is 68.57%
+2025-03-26 18:56:00,648 - INFO - 	Fold 6/10
+2025-03-26 18:56:12,997 - INFO - 	Model trained for 50 epochs, accuracy is 94.29%
+2025-03-26 18:56:15,103 - INFO - 	Fold 7/10
+2025-03-26 18:56:28,124 - INFO - 	Model trained for 53 epochs, accuracy is 94.29%
+2025-03-26 18:56:30,233 - INFO - 	Fold 8/10
+2025-03-26 18:56:37,798 - INFO - 	Model trained for 28 epochs, accuracy is 87.14%
+2025-03-26 18:56:39,909 - INFO - 	Fold 9/10
+2025-03-26 18:56:52,107 - INFO - 	Model trained for 49 epochs, accuracy is 92.86%
+2025-03-26 18:56:54,220 - INFO - 	Fold 10/10
+2025-03-26 18:57:00,828 - INFO - 	Model trained for 24 epochs, accuracy is 65.71%
+2025-03-26 18:57:02,983 - INFO - 	Mean accuracy over all folds is 87.30%
+2025-03-26 18:57:02,984 - INFO - Trying 0.44 dropout_rate
+2025-03-26 18:57:02,985 - INFO - 	Fold 1/10
+2025-03-26 18:57:19,259 - INFO - 	Model trained for 68 epochs, accuracy is 97.18%
+2025-03-26 18:57:21,382 - INFO - 	Fold 2/10
+2025-03-26 18:57:28,372 - INFO - 	Model trained for 24 epochs, accuracy is 95.71%
+2025-03-26 18:57:30,499 - INFO - 	Fold 3/10
+2025-03-26 18:57:50,239 - INFO - 	Model trained for 84 epochs, accuracy is 90.00%
+2025-03-26 18:57:52,369 - INFO - 	Fold 4/10
+2025-03-26 18:57:58,592 - INFO - 	Model trained for 22 epochs, accuracy is 90.00%
+2025-03-26 18:58:00,729 - INFO - 	Fold 5/10
+2025-03-26 18:58:10,219 - INFO - 	Model trained for 37 epochs, accuracy is 95.71%
+2025-03-26 18:58:12,366 - INFO - 	Fold 6/10
+2025-03-26 18:58:18,835 - INFO - 	Model trained for 23 epochs, accuracy is 94.29%
+2025-03-26 18:58:20,985 - INFO - 	Fold 7/10
+2025-03-26 18:58:30,964 - INFO - 	Model trained for 39 epochs, accuracy is 94.29%
+2025-03-26 18:58:33,114 - INFO - 	Fold 8/10
+2025-03-26 18:58:42,209 - INFO - 	Model trained for 35 epochs, accuracy is 88.57%
+2025-03-26 18:58:44,371 - INFO - 	Fold 9/10
+2025-03-26 18:58:51,974 - INFO - 	Model trained for 28 epochs, accuracy is 92.86%
+2025-03-26 18:58:54,137 - INFO - 	Fold 10/10
+2025-03-26 18:59:05,738 - INFO - 	Model trained for 47 epochs, accuracy is 94.29%
+2025-03-26 18:59:07,902 - INFO - 	Mean accuracy over all folds is 93.29%
+2025-03-26 18:59:07,903 - INFO - Trying 0.45 dropout_rate
+2025-03-26 18:59:07,903 - INFO - 	Fold 1/10
+2025-03-26 18:59:17,208 - INFO - 	Model trained for 36 epochs, accuracy is 90.14%
+2025-03-26 18:59:19,382 - INFO - 	Fold 2/10
+2025-03-26 18:59:29,416 - INFO - 	Model trained for 39 epochs, accuracy is 97.14%
+2025-03-26 18:59:31,595 - INFO - 	Fold 3/10
+2025-03-26 18:59:41,105 - INFO - 	Model trained for 37 epochs, accuracy is 92.86%
+2025-03-26 18:59:43,283 - INFO - 	Fold 4/10
+2025-03-26 18:59:53,029 - INFO - 	Model trained for 38 epochs, accuracy is 91.43%
+2025-03-26 18:59:55,219 - INFO - 	Fold 5/10
+2025-03-26 19:00:04,923 - INFO - 	Model trained for 38 epochs, accuracy is 97.14%
+2025-03-26 19:00:07,119 - INFO - 	Fold 6/10
+2025-03-26 19:00:12,241 - INFO - 	Model trained for 17 epochs, accuracy is 91.43%
+2025-03-26 19:00:14,437 - INFO - 	Fold 7/10
+2025-03-26 19:00:30,376 - INFO - 	Model trained for 67 epochs, accuracy is 95.71%
+2025-03-26 19:00:32,572 - INFO - 	Fold 8/10
+2025-03-26 19:00:49,994 - INFO - 	Model trained for 74 epochs, accuracy is 88.57%
+2025-03-26 19:00:52,198 - INFO - 	Fold 9/10
+2025-03-26 19:01:03,457 - INFO - 	Model trained for 45 epochs, accuracy is 90.00%
+2025-03-26 19:01:05,669 - INFO - 	Fold 10/10
+2025-03-26 19:01:12,693 - INFO - 	Model trained for 26 epochs, accuracy is 92.86%
+2025-03-26 19:01:14,908 - INFO - 	Mean accuracy over all folds is 92.73%
+2025-03-26 19:01:14,909 - INFO - Trying 0.46 dropout_rate
+2025-03-26 19:01:14,909 - INFO - 	Fold 1/10
+2025-03-26 19:01:22,108 - INFO - 	Model trained for 27 epochs, accuracy is 88.73%
+2025-03-26 19:01:24,333 - INFO - 	Fold 2/10
+2025-03-26 19:01:33,038 - INFO - 	Model trained for 34 epochs, accuracy is 95.71%
+2025-03-26 19:01:35,258 - INFO - 	Fold 3/10
+2025-03-26 19:01:42,800 - INFO - 	Model trained for 28 epochs, accuracy is 91.43%
+2025-03-26 19:01:45,025 - INFO - 	Fold 4/10
+2025-03-26 19:01:56,799 - INFO - 	Model trained for 47 epochs, accuracy is 92.86%
+2025-03-26 19:01:59,040 - INFO - 	Fold 5/10
+2025-03-26 19:02:05,271 - INFO - 	Model trained for 22 epochs, accuracy is 95.71%
+2025-03-26 19:02:07,505 - INFO - 	Fold 6/10
+2025-03-26 19:02:16,946 - INFO - 	Model trained for 37 epochs, accuracy is 94.29%
+2025-03-26 19:02:19,190 - INFO - 	Fold 7/10
+2025-03-26 19:02:24,308 - INFO - 	Model trained for 17 epochs, accuracy is 72.86%
+2025-03-26 19:02:26,556 - INFO - 	Fold 8/10
+2025-03-26 19:02:34,415 - INFO - 	Model trained for 30 epochs, accuracy is 84.29%
+2025-03-26 19:02:36,665 - INFO - 	Fold 9/10
+2025-03-26 19:02:47,467 - INFO - 	Model trained for 42 epochs, accuracy is 92.86%
+2025-03-26 19:02:49,736 - INFO - 	Fold 10/10
+2025-03-26 19:03:05,186 - INFO - 	Model trained for 68 epochs, accuracy is 94.29%
+2025-03-26 19:03:07,439 - INFO - 	Mean accuracy over all folds is 90.30%
+2025-03-26 19:03:07,440 - INFO - Trying 0.47 dropout_rate
+2025-03-26 19:03:07,441 - INFO - 	Fold 1/10
+2025-03-26 19:03:14,808 - INFO - 	Model trained for 27 epochs, accuracy is 88.73%
+2025-03-26 19:03:17,071 - INFO - 	Fold 2/10
+2025-03-26 19:03:24,898 - INFO - 	Model trained for 29 epochs, accuracy is 97.14%
+2025-03-26 19:03:27,162 - INFO - 	Fold 3/10
+2025-03-26 19:03:34,135 - INFO - 	Model trained for 26 epochs, accuracy is 90.00%
+2025-03-26 19:03:36,407 - INFO - 	Fold 4/10
+2025-03-26 19:03:47,431 - INFO - 	Model trained for 43 epochs, accuracy is 90.00%
+2025-03-26 19:03:49,710 - INFO - 	Fold 5/10
+2025-03-26 19:03:56,963 - INFO - 	Model trained for 27 epochs, accuracy is 92.86%
+2025-03-26 19:03:59,280 - INFO - 	Fold 6/10
+2025-03-26 19:04:09,034 - INFO - 	Model trained for 38 epochs, accuracy is 94.29%
+2025-03-26 19:04:11,328 - INFO - 	Fold 7/10
+2025-03-26 19:04:17,430 - INFO - 	Model trained for 21 epochs, accuracy is 94.29%
+2025-03-26 19:04:19,728 - INFO - 	Fold 8/10
+2025-03-26 19:04:28,193 - INFO - 	Model trained for 32 epochs, accuracy is 85.71%
+2025-03-26 19:04:30,494 - INFO - 	Fold 9/10
+2025-03-26 19:04:42,956 - INFO - 	Model trained for 50 epochs, accuracy is 91.43%
+2025-03-26 19:04:45,255 - INFO - 	Fold 10/10
+2025-03-26 19:04:51,820 - INFO - 	Model trained for 23 epochs, accuracy is 92.86%
+2025-03-26 19:04:54,126 - INFO - 	Mean accuracy over all folds is 91.73%
+2025-03-26 19:04:54,127 - INFO - Trying 0.48 dropout_rate
+2025-03-26 19:04:54,128 - INFO - 	Fold 1/10
+2025-03-26 19:05:01,032 - INFO - 	Model trained for 25 epochs, accuracy is 90.14%
+2025-03-26 19:05:03,347 - INFO - 	Fold 2/10
+2025-03-26 19:05:19,572 - INFO - 	Model trained for 68 epochs, accuracy is 98.57%
+2025-03-26 19:05:21,892 - INFO - 	Fold 3/10
+2025-03-26 19:05:28,195 - INFO - 	Model trained for 22 epochs, accuracy is 92.86%
+2025-03-26 19:05:30,520 - INFO - 	Fold 4/10
+2025-03-26 19:05:35,072 - INFO - 	Model trained for 14 epochs, accuracy is 58.57%
+2025-03-26 19:05:37,395 - INFO - 	Fold 5/10
+2025-03-26 19:05:46,562 - INFO - 	Model trained for 35 epochs, accuracy is 97.14%
+2025-03-26 19:05:48,884 - INFO - 	Fold 6/10
+2025-03-26 19:06:00,967 - INFO - 	Model trained for 49 epochs, accuracy is 94.29%
+2025-03-26 19:06:03,327 - INFO - 	Fold 7/10
+2025-03-26 19:06:11,483 - INFO - 	Model trained for 31 epochs, accuracy is 94.29%
+2025-03-26 19:06:13,826 - INFO - 	Fold 8/10
+2025-03-26 19:06:21,680 - INFO - 	Model trained for 30 epochs, accuracy is 84.29%
+2025-03-26 19:06:24,032 - INFO - 	Fold 9/10
+2025-03-26 19:06:37,741 - INFO - 	Model trained for 57 epochs, accuracy is 92.86%
+2025-03-26 19:06:40,098 - INFO - 	Fold 10/10
+2025-03-26 19:06:52,186 - INFO - 	Model trained for 49 epochs, accuracy is 94.29%
+2025-03-26 19:06:54,555 - INFO - 	Mean accuracy over all folds is 89.73%
+2025-03-26 19:06:54,556 - INFO - Trying 0.49 dropout_rate
+2025-03-26 19:06:54,557 - INFO - 	Fold 1/10
+2025-03-26 19:07:05,551 - INFO - 	Model trained for 44 epochs, accuracy is 91.55%
+2025-03-26 19:07:07,914 - INFO - 	Fold 2/10
+2025-03-26 19:07:15,621 - INFO - 	Model trained for 29 epochs, accuracy is 95.71%
+2025-03-26 19:07:17,991 - INFO - 	Fold 3/10
+2025-03-26 19:07:26,577 - INFO - 	Model trained for 33 epochs, accuracy is 90.00%
+2025-03-26 19:07:28,948 - INFO - 	Fold 4/10
+2025-03-26 19:07:34,108 - INFO - 	Model trained for 17 epochs, accuracy is 58.57%
+2025-03-26 19:07:36,488 - INFO - 	Fold 5/10
+2025-03-26 19:07:49,445 - INFO - 	Model trained for 53 epochs, accuracy is 97.14%
+2025-03-26 19:07:51,835 - INFO - 	Fold 6/10
+2025-03-26 19:07:59,926 - INFO - 	Model trained for 30 epochs, accuracy is 92.86%
+2025-03-26 19:08:02,323 - INFO - 	Fold 7/10
+2025-03-26 19:08:10,047 - INFO - 	Model trained for 29 epochs, accuracy is 92.86%
+2025-03-26 19:08:12,441 - INFO - 	Fold 8/10
+2025-03-26 19:08:21,026 - INFO - 	Model trained for 33 epochs, accuracy is 87.14%
+2025-03-26 19:08:23,426 - INFO - 	Fold 9/10
+2025-03-26 19:08:31,626 - INFO - 	Model trained for 31 epochs, accuracy is 94.29%
+2025-03-26 19:08:34,024 - INFO - 	Fold 10/10
+2025-03-26 19:08:40,869 - INFO - 	Model trained for 24 epochs, accuracy is 94.29%
+2025-03-26 19:08:43,274 - INFO - 	Mean accuracy over all folds is 89.44%
+2025-03-26 19:08:43,275 - INFO - Trying 0.5 dropout_rate
+2025-03-26 19:08:43,275 - INFO - 	Fold 1/10
+2025-03-26 19:08:53,526 - INFO - 	Model trained for 40 epochs, accuracy is 90.14%
+2025-03-26 19:08:55,950 - INFO - 	Fold 2/10
+2025-03-26 19:09:01,257 - INFO - 	Model trained for 17 epochs, accuracy is 90.00%
+2025-03-26 19:09:03,674 - INFO - 	Fold 3/10
+2025-03-26 19:09:08,375 - INFO - 	Model trained for 15 epochs, accuracy is 55.71%
+2025-03-26 19:09:10,792 - INFO - 	Fold 4/10
+2025-03-26 19:09:23,840 - INFO - 	Model trained for 53 epochs, accuracy is 91.43%
+2025-03-26 19:09:26,267 - INFO - 	Fold 5/10
+2025-03-26 19:09:35,850 - INFO - 	Model trained for 37 epochs, accuracy is 97.14%
+2025-03-26 19:09:38,275 - INFO - 	Fold 6/10
+2025-03-26 19:09:50,053 - INFO - 	Model trained for 48 epochs, accuracy is 94.29%
+2025-03-26 19:09:52,485 - INFO - 	Fold 7/10
+2025-03-26 19:10:02,674 - INFO - 	Model trained for 40 epochs, accuracy is 94.29%
+2025-03-26 19:10:05,115 - INFO - 	Fold 8/10
+2025-03-26 19:10:18,418 - INFO - 	Model trained for 55 epochs, accuracy is 85.71%
+2025-03-26 19:10:20,857 - INFO - 	Fold 9/10
+2025-03-26 19:10:28,774 - INFO - 	Model trained for 30 epochs, accuracy is 95.71%
+2025-03-26 19:10:31,215 - INFO - 	Fold 10/10
+2025-03-26 19:10:52,596 - INFO - 	Model trained for 92 epochs, accuracy is 94.29%
+2025-03-26 19:10:55,041 - INFO - 	Mean accuracy over all folds is 88.87%
+2025-03-26 19:10:55,042 - INFO - Done sweeping dropout_rate
+
+2025-03-26 19:10:55,152 - INFO - Done!
