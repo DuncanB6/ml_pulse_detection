@@ -1,4 +1,7 @@
-
+"""
+Demo script for testing out the newest parameters and looking at some predictions. Trains a single model
+using mostly functions from the other scripts. Plots random plots and their predictions.
+"""
 
 import numpy as np
 from sklearn.model_selection import train_test_split
@@ -34,18 +37,21 @@ def model_eval(model_cfg, X_data, y_data):
     while (1):
         random_index = np.random.randint(0, len(X_test))
 
-        # Get the image/sample and its corresponding true label
         sample = X_test[random_index]
         true_label = y_test[random_index]
 
-        # Predict the label using the trained model
         y_pred = model.predict(np.expand_dims(sample, axis=0))
 
-        # Convert the prediction into the corresponding true/false label
-        pred_label = (y_pred > 0.5).astype(int)  # For binary classification, adjust this as needed
+        pred_label = int(y_pred >= 0.5)
 
-        # Plot the random sample
-        plt.plot(sample)
+        # set background according to correctness
+        if int(pred_label[0][0]) == int(true_label):
+            background_color = 'lightgreen'
+        else:
+            background_color = 'lightcoral'
+
+        plt.figure(facecolor=background_color)
+        plt.plot(sample, color='k')
         plt.title(f'True: {int(true_label)}, Pred: {int(pred_label[0][0])}')
         plt.axis('off')
         plt.show()
