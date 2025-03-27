@@ -42,7 +42,7 @@ def model_eval(model_cfg, X_data, y_data):
 
         y_pred = model.predict(np.expand_dims(sample, axis=0))
 
-        pred_label = int(y_pred >= 0.5)
+        pred_label = (y_pred >= 0.5).astype(int)
 
         # set background according to correctness
         if int(pred_label[0][0]) == int(true_label):
