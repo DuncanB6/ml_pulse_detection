@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from matplotlib import pyplot as plt
 
 from load_data import build_dataset
-from train_cnn import augment_data, train_model, ModelConfig
+from train_cnn import augment_data, train_model, preprocess_data, ModelConfig
 
 
 def model_eval(model_cfg, X_data, y_data):
@@ -55,6 +55,7 @@ def model_eval(model_cfg, X_data, y_data):
 if __name__ == "__main__":
 
     X_data, y_data = build_dataset()
+    X_data, y_data = preprocess_data(X_data, y_data)
 
     model_cfg = ModelConfig(conv_layers=4, dense_points=32, dropout_rate=0.44, l2_decay=0.045)
 
