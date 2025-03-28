@@ -2,3 +2,4 @@ logging/*.log
 models/*.keras
 figures/*.png
 results/*.csv
+test.py
