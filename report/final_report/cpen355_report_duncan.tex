@@ -1,28 +1,6 @@
 \documentclass{article}
 
-
-% if you need to pass options to natbib, use, e.g.:
-%     \PassOptionsToPackage{numbers, compress}{natbib}
-% before loading neurips_2025
-
-
-% ready for submission
-\usepackage{neurips_2025}
-
-
-% to compile a preprint version, e.g., for submission to arXiv, add add the
-% [preprint] option:
-%     \usepackage[preprint]{neurips_2025}
-
-
-% to compile a camera-ready version, add the [final] option, e.g.:
-%     \usepackage[final]{neurips_2025}
-
-
-% to avoid loading the natbib package, add option nonatbib:
-%    \usepackage[nonatbib]{neurips_2025}
-
-
+\usepackage[final]{neurips_2025}
 \usepackage[utf8]{inputenc} % allow utf-8 input
 \usepackage[T1]{fontenc}    % use 8-bit T1 fonts
 \usepackage{hyperref}       % hyperlinks
@@ -34,47 +12,12 @@
 \usepackage{xcolor}         % colors
 
 
-\title{LaTeX Formatting}
+\title{Performance Optimization of a Convolutional Neural Network for Real-Time Pulse Detection}
 
-
-% The \author macro works with any number of authors. There are two commands
-% used to separate the names and addresses of multiple authors: \And and \AND.
-%
-% Using \And between authors leaves it to LaTeX to determine where to break the
-% lines. Using \AND forces a line break at that point. So, if LaTeX puts 3 of 4
-% authors names on the first line, and the last on the second line, try using
-% \AND instead of \And before the third author name.
-
-
-\author{%
-  David S.~Hippocampus\thanks{Use footnote for providing further information
-    about author (webpage, alternative address)---\emph{not} for acknowledging
-    funding agencies.} \\
-  Department of Computer Science\\
-  Cranberry-Lemon University\\
-  Pittsburgh, PA 15213 \\
-  \texttt{hippo@cs.cranberry-lemon.edu} \\
-  % examples of more authors
-  % \And
-  % Coauthor \\
-  % Affiliation \\
-  % Address \\
-  % \texttt{email} \\
-  % \AND
-  % Coauthor \\
-  % Affiliation \\
-  % Address \\
-  % \texttt{email} \\
-  % \And
-  % Coauthor \\
-  % Affiliation \\
-  % Address \\
-  % \texttt{email} \\
-  % \And
-  % Coauthor \\
-  % Affiliation \\
-  % Address \\
-  % \texttt{email} \\
+\author{
+  Duncan A. Boyd, Bailey Boyd\thanks{This is my dog, I like using 'we' on formal papers.} \\
+  86101888 \\
+  \texttt{duncan@wapta.ca} \\
 }
 
 
@@ -85,39 +28,37 @@
 
 
 \begin{abstract}
-  The abstract paragraph should be indented \nicefrac{1}{2}~inch (3~picas) on
-  both the left- and right-hand margins. Use 10~point type, with a vertical
-  spacing (leading) of 11~points.  The word \textbf{Abstract} must be centered,
-  bold, and in point size 12. Two line spaces precede the abstract. The abstract
-  must be limited to one paragraph.
+  During CPR, automatically detecting pulse can save precious seconds compared to manual palpation. While devices exist for pulse detection \footnote{For example, my capstone group's device.}, there are limited options when it comes to rigourous detection algorithms. This paper will explore convolutional neural networks (CNNs) as an option for the real-time binary classification of a pulse reading. Using a pulse wave dataset, we swept several critical hyperparameters, optimizing for accuracy. Our final model has achieved an accuracy of [TODO]\%, indicating that the use of CNNs for pulse classification is viable for real-time detection.
 \end{abstract}
 
 
-\section{Submission of papers to NeurIPS 2025}
+\section{Data Description and Preparation} % [TODO] change this
 
 
-Please read the instructions below carefully and follow them faithfully.
+\subsection{Dataset Description}
 
 
-\subsection{Style}
+The dataset used for this work was collected as part of UBC ECE Capstone Group LS-15's project. It is a series of four second segments, each a time series of pulse data described as sensor values (arbitrary units). Data is sampled at 60Hz, meaning each sample is 240 points in length. A typical sample might look like the plot as shown in figure~\ref{fig:data_example}.
 
+\begin{figure}[h!]
+    \centering
+    \fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+    %\includegraphics{[TODO]}
+    \caption{Typical pulse sample}
+    \label{fig:data_example}
+\end{figure}
 
-Papers to be submitted to NeurIPS 2025 must be prepared according to the
-instructions presented here. Papers may only be up to {\bf nine} pages long,
-including figures.
-% Additional pages \emph{containing only acknowledgments and references} are allowed.
-Additional pages \emph{containing references, checklist, and the optional technical appendices} do not count as content pages.
-Papers that exceed the page limit will not be
-reviewed, or in any other way considered for presentation at the conference.
+Each data point (four second segment) is labelled by hand as either having, or not having a pulse. The sample in figure~\ref{fig:data_example} would be labelled as having a pulse. Labelling was performed by non-experts, and as such is expected to have some error.
 
+The dataset comprises of 701 data points, collected in a variety of test conditions. The distribution of the data is shown in figure \ref{fig:pulse_distro}.
 
-The margins in 2025 are the same as those in previous years.
-
-
-Authors are required to use the NeurIPS \LaTeX{} style files obtainable at the
-NeurIPS website as indicated below. Please make sure you use the current files
-and not previous versions. Tweaking the style files may be grounds for
-rejection.
+\begin{figure}[h!]
+    \centering
+    \fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
+    %\includegraphics{media/pulse_bar.png}
+    \caption{Dataset distribution}
+    \label{fig:pulse_distro}
+\end{figure}
 
 
 \subsection{Retrieval of style files}
