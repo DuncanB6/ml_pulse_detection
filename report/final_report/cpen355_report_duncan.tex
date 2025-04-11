@@ -10,9 +10,11 @@
 \usepackage{nicefrac}       % compact symbols for 1/2, etc.
 \usepackage{microtype}      % microtypography
 \usepackage{xcolor}         % colors
+\usepackage{graphicx}
+\usepackage{float}
 
 
-\title{testPerformance Optimization of a Convolutional Neural Network for Real-Time Pulse Detection}
+\title{Performance Optimization of a Convolutional Neural Network for Real-Time Pulse Detection}
 
 \author{
   Duncan A. Boyd, Bailey Boyd\thanks{This is my dog, I like using 'we' on formal papers.} \\
@@ -32,7 +34,7 @@
 \end{abstract}
 
 
-\section{Data Description and Preparation} % [TODO] change this
+\section{Input Data}
 
 
 \subsection{Dataset Description}
@@ -40,28 +42,56 @@
 
 The dataset used for this work was collected as part of UBC ECE Capstone Group LS-15's project. It is a series of four second segments, each a time series of pulse data described as sensor values (arbitrary units). Data is sampled at 60Hz, meaning each sample is 240 points in length. A typical sample might look like the plot as shown in figure~\ref{fig:data_example}.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-    %\includegraphics{[TODO]}
+    \includegraphics[width=0.5\textwidth]{../media/raw_pulse.png}
     \caption{Typical pulse sample}
     \label{fig:data_example}
 \end{figure}
 
 Each data point (four second segment) is labelled by hand as either having, or not having a pulse. The sample in figure~\ref{fig:data_example} would be labelled as having a pulse. Labelling was performed by non-experts, and as such is expected to have some error.
 
-The dataset comprises of 701 data points, collected in a variety of test conditions. The distribution of the data is shown in figure \ref{fig:pulse_distro}.
+The dataset comprises of 701 data points, collected in a variety of test conditions. The distribution of the data is shown in figure \ref{fig:pulse_distro}. 61\% of data has a pulse, while 39\% does not.
 
-\begin{figure}[h!]
+\begin{figure}[H]
     \centering
-    \fbox{\rule[-.5cm]{0cm}{4cm} \rule[-.5cm]{4cm}{0cm}}
-    %\includegraphics{media/pulse_bar.png}
+    \includegraphics[width=0.5\textwidth]{../media/pulse_bar.png}
     \caption{Dataset distribution}
     \label{fig:pulse_distro}
 \end{figure}
 
+Although many samples such as figure~\ref{fig:data_example} may have an easily visible pulse, some samples are more challenging, with spikes created by noise or weak pulse signals. 
 
-\subsection{Retrieval of style files}
+\subsection{Preprocessing}
+
+As seen in figure~\ref{fig:data_example}, data often has high and low frequency noise that we would like to filter. After flooring the data by setting the lowest value to 0, we apply a band pass filter as seen in figure~\ref{fig:bpf}. This passes frequencies from 0.5Hz to 5Hz, which translates to 30 BPM and 300 BPM, considered the possible range for the human heart rate.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../media/bpf.png}
+    \caption{Frequency response of band pass filter}
+    \label{fig:bpf}
+\end{figure}
+
+Data often has a strong baseline shift. To eliminate this, we fit a 4th degree polynomial to the data, and then remove that, treating it as a baseline. An example of a fitted polynomial can be found in figure~\ref{fig:poly}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../media/poly.png}
+    \caption{Polynomial fit to data sample}
+    \label{fig:poly}
+\end{figure}
+
+Finally, data is normalized. The full process makes our data more uniform, allowing for our CNN to focus on features that differentiate pulse.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{../media/bef_n_aft.png}
+    \caption{Polynomial fit to data sample}
+    \label{fig:bef_n_aft}
+\end{figure}
+
+Although this preprocessing can radically change data points, this results in clean data that performs well in our classification model.
 
 
 The style files for NeurIPS and other conference information are available on
