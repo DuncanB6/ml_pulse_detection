@@ -29,11 +29,6 @@ conda env export > ml_pulse_windows.yml
 conda env create -f ml_pulse_windows.yml
 conda activate ml_pulse
 
-## To Do
-
-- Sweep and find hyperparams
-- Add script for running model only once with detailed stats
-
 ## To Explore
 
 - skip connections
