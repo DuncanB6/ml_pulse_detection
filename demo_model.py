@@ -1,6 +1,10 @@
 """
 Demo script for testing out the newest parameters and looking at some predictions. Trains a single model
 using mostly functions from the other scripts. Plots random plots and their predictions.
+
+Duncan Boyd
+duncan@wapta.ca
+Apr 10, 2025
 """
 
 import numpy as np
@@ -34,7 +38,7 @@ def model_eval(model_cfg, X_data, y_data):
 
     print(f"Accuracy: {test_acc:.2f} | Loss: {test_loss:.2f}")
 
-    while (1):
+    while 1:
         random_index = np.random.randint(0, len(X_test))
 
         sample = X_test[random_index]
@@ -46,23 +50,26 @@ def model_eval(model_cfg, X_data, y_data):
 
         # set background according to correctness
         if int(pred_label[0][0]) == int(true_label):
-            background_color = 'lightgreen'
+            background_color = "lightgreen"
         else:
-            background_color = 'lightcoral'
+            background_color = "lightcoral"
 
         plt.figure(facecolor=background_color)
-        plt.plot(sample, color='k')
-        plt.title(f'True: {int(true_label)}, Pred: {int(pred_label[0][0])}')
-        plt.axis('off')
+        plt.plot(sample, color="k")
+        plt.title(f"True: {int(true_label)}, Pred: {int(pred_label[0][0])}")
+        plt.axis("off")
         plt.show()
 
     return
+
 
 if __name__ == "__main__":
 
     X_data, y_data = build_dataset()
     X_data, y_data = preprocess_data(X_data, y_data)
 
-    model_cfg = ModelConfig(conv_layers=4, dense_points=32, dropout_rate=0.44, l2_decay=0.045)
+    model_cfg = ModelConfig(
+        conv_layers=4, dense_points=32, dropout_rate=0.44, l2_decay=0.045
+    )
 
     model_eval(model_cfg, X_data, y_data)
