@@ -113,6 +113,25 @@ A typical 1D CNN structure was used, with convolutional layers followed by pooli
 \end{figure}
 
 
+\section{Model Training}
+
+
+Several steps were taken to train and evaluate this model accurately, especially considering the small dataset.
+
+\subsection{Data Augmentation}
+
+The dataset used is collected on few people, and includes only heartrates within a narrow range of possible values. To compensate for this, data augementation was used. The total size of the training dataset was doubled, raising it from 630 data points to 1260. For each sample, a variation was created with an amplitude and a timescale scaled by a random factor.
+
+
+
+\subsection{Data Splitting}
+
+Data is split into a training, test, and validation set. To mitigate large variations in results due to the small test set, 10 fold training was used. This means that the data was seperated into 10 random train test splits, then trained on each of these models. 
+
+
+
+
+
 \section{Hyperparameter Sweeps}
 
 Four hyperparameters were targetted for sweeping, convolutional layers, dense points, dropout rate, and L2 rate. See the sections below for more details about these parameters.
