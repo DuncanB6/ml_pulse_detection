@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  13 APR 2025 13:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  13 APR 2025 14:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -454,125 +454,135 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<../media/raw_pulse.png, id=70, 491.8375pt x 365.365pt>
+<../media/raw_pulse.png, id=74, 491.8375pt x 365.365pt>
 File: ../media/raw_pulse.png Graphic file (type png)
 <use ../media/raw_pulse.png>
-Package pdftex.def Info: ../media/raw_pulse.png  used on input line 49.
+Package pdftex.def Info: ../media/raw_pulse.png  used on input line 50.
 (pdftex.def)             Requested size: 198.7425pt x 147.63751pt.
-<../media/pulse_bar.png, id=74, 433.62pt x 216.81pt>
-File: ../media/pulse_bar.png Graphic file (type png)
-<use ../media/pulse_bar.png>
-Package pdftex.def Info: ../media/pulse_bar.png  used on input line 60.
-(pdftex.def)             Requested size: 198.7425pt x 99.3732pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [1
 
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <../media/raw_pulse.png>]
-<../media/bpf.png, id=92, 722.7pt x 361.35pt>
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+<../media/pulse_bar.png, id=91, 433.62pt x 216.81pt>
+File: ../media/pulse_bar.png Graphic file (type png)
+<use ../media/pulse_bar.png>
+Package pdftex.def Info: ../media/pulse_bar.png  used on input line 61.
+(pdftex.def)             Requested size: 198.7425pt x 99.3732pt.
+<../media/bpf.png, id=95, 722.7pt x 361.35pt>
 File: ../media/bpf.png Graphic file (type png)
 <use ../media/bpf.png>
-Package pdftex.def Info: ../media/bpf.png  used on input line 73.
+Package pdftex.def Info: ../media/bpf.png  used on input line 75.
 (pdftex.def)             Requested size: 317.9892pt x 158.99449pt.
-<../media/poly.png, id=94, 867.24pt x 433.62pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2 <../media/raw_pulse.png> <../media/pulse_bar.png>]
+<../media/poly.png, id=105, 867.24pt x 433.62pt>
 File: ../media/poly.png Graphic file (type png)
 <use ../media/poly.png>
-Package pdftex.def Info: ../media/poly.png  used on input line 82.
+Package pdftex.def Info: ../media/poly.png  used on input line 84.
 (pdftex.def)             Requested size: 317.9892pt x 158.99449pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2 <../media/pulse_bar.png> <../media/bpf.png>]
-<../media/bef_n_aft.png, id=104, 1011.78pt x 361.35pt>
+<../media/bef_n_aft.png, id=106, 1011.78pt x 361.35pt>
 File: ../media/bef_n_aft.png Graphic file (type png)
 <use ../media/bef_n_aft.png>
-Package pdftex.def Info: ../media/bef_n_aft.png  used on input line 91.
+Package pdftex.def Info: ../media/bef_n_aft.png  used on input line 93.
 (pdftex.def)             Requested size: 397.48499pt x 141.96251pt.
-<../media/model.png, id=106, 979.66pt x 551.05875pt>
+ [3 <../media/bpf.png> <../media/poly.png> <../media/bef_n_aft.png>]
+<../media/model.png, id=117, 979.66pt x 551.05875pt>
 File: ../media/model.png Graphic file (type png)
 <use ../media/model.png>
-Package pdftex.def Info: ../media/model.png  used on input line 110.
+Package pdftex.def Info: ../media/model.png  used on input line 111.
 (pdftex.def)             Requested size: 397.48499pt x 223.58116pt.
+<../media/aug.png, id=118, 722.7pt x 361.35pt>
+File: ../media/aug.png Graphic file (type png)
+<use ../media/aug.png>
+Package pdftex.def Info: ../media/aug.png  used on input line 128.
+(pdftex.def)             Requested size: 317.9892pt x 158.99449pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5681) has occurred while \output is active []
 
- [3 <../media/poly.png> <../media/bef_n_aft.png>] [4 <../media/model.png>]
-<../media/conv_layers_sweep.png, id=122, 462.528pt x 346.896pt>
+ [4 <../media/model.png>]
+<../media/conv_layers_sweep.png, id=127, 462.528pt x 346.896pt>
 File: ../media/conv_layers_sweep.png Graphic file (type png)
 <use ../media/conv_layers_sweep.png>
-Package pdftex.def Info: ../media/conv_layers_sweep.png  used on input line 167.
+Package pdftex.def Info: ../media/conv_layers_sweep.png  used on input line 178.
 (pdftex.def)             Requested size: 317.9892pt x 238.50099pt.
-<../media/dense_points_sweep.png, id=123, 462.528pt x 346.896pt>
+ [5 <../media/aug.png>]
+<../media/dense_points_sweep.png, id=135, 462.528pt x 346.896pt>
 File: ../media/dense_points_sweep.png Graphic file (type png)
 <use ../media/dense_points_sweep.png>
-Package pdftex.def Info: ../media/dense_points_sweep.png  used on input line 180.
+Package pdftex.def Info: ../media/dense_points_sweep.png  used on input line 192.
 (pdftex.def)             Requested size: 317.9892pt x 238.50099pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <../media/conv_layers_sweep.png>]
-<../media/dropout_rate_sweep.png, id=131, 462.528pt x 346.896pt>
+ [6 <../media/conv_layers_sweep.png>]
+<../media/dropout_rate_sweep.png, id=143, 462.528pt x 346.896pt>
 File: ../media/dropout_rate_sweep.png Graphic file (type png)
 <use ../media/dropout_rate_sweep.png>
-Package pdftex.def Info: ../media/dropout_rate_sweep.png  used on input line 191.
+Package pdftex.def Info: ../media/dropout_rate_sweep.png  used on input line 204.
 (pdftex.def)             Requested size: 317.9892pt x 238.50099pt.
-<../media/l2_rate_sweep.png, id=132, 462.528pt x 346.896pt>
+<../media/l2_rate_sweep.png, id=144, 462.528pt x 346.896pt>
 File: ../media/l2_rate_sweep.png Graphic file (type png)
 <use ../media/l2_rate_sweep.png>
-Package pdftex.def Info: ../media/l2_rate_sweep.png  used on input line 202.
+Package pdftex.def Info: ../media/l2_rate_sweep.png  used on input line 216.
 (pdftex.def)             Requested size: 317.9892pt x 238.50099pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <../media/dense_points_sweep.png> <../media/dropout_rate_sweep.png>]
-<../media/pulse_1.png, id=141, 462.528pt x 346.896pt>
+ [7 <../media/dense_points_sweep.png> <../media/dropout_rate_sweep.png>]
+<../media/pulse_1.png, id=154, 462.528pt x 346.896pt>
 File: ../media/pulse_1.png Graphic file (type png)
 <use ../media/pulse_1.png>
-Package pdftex.def Info: ../media/pulse_1.png  used on input line 234.
+Package pdftex.def Info: ../media/pulse_1.png  used on input line 249.
 (pdftex.def)             Requested size: 190.79109pt x 143.09636pt.
-<../media/no_pulse_1.png, id=142, 462.528pt x 346.896pt>
+<../media/no_pulse_1.png, id=155, 462.528pt x 346.896pt>
 File: ../media/no_pulse_1.png Graphic file (type png)
 <use ../media/no_pulse_1.png>
-Package pdftex.def Info: ../media/no_pulse_1.png  used on input line 238.
+Package pdftex.def Info: ../media/no_pulse_1.png  used on input line 253.
 (pdftex.def)             Requested size: 190.79109pt x 143.09636pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <../media/l2_rate_sweep.png>]
-<../media/wrong_2.png, id=151, 462.528pt x 346.896pt>
+ [8 <../media/l2_rate_sweep.png>]
+<../media/wrong_2.png, id=164, 462.528pt x 346.896pt>
 File: ../media/wrong_2.png Graphic file (type png)
 <use ../media/wrong_2.png>
-Package pdftex.def Info: ../media/wrong_2.png  used on input line 246.
+Package pdftex.def Info: ../media/wrong_2.png  used on input line 261.
 (pdftex.def)             Requested size: 198.7425pt x 149.0565pt.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 260.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 276.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-<../media/bailey.JPG, id=153, 1376.0208pt x 1032.0156pt>
+) [9 <../media/pulse_1.png> <../media/no_pulse_1.png> <../media/wrong_2.png>] [10]
+<../media/bailey.JPG, id=180, 1376.0208pt x 1032.0156pt>
 File: ../media/bailey.JPG Graphic file (type jpg)
 <use ../media/bailey.JPG>
-Package pdftex.def Info: ../media/bailey.JPG  used on input line 274.
+Package pdftex.def Info: ../media/bailey.JPG  used on input line 302.
 (pdftex.def)             Requested size: 317.9892pt x 238.4924pt.
- [8 <../media/pulse_1.png> <../media/no_pulse_1.png> <../media/wrong_2.png>] [9 <../media/bailey.JPG>] (./cpen355_report_duncan.aux)
+ [11 <../media/bailey.JPG>] (./cpen355_report_duncan.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `cpen355_report_duncan.out' has not changed.
-(rerunfilecheck)             Checksum: 8B729261EA550CF8C9FC71E326C091A4;1902.
+(rerunfilecheck)             Checksum: A0B47C86C04DD2E72C1ECF2AAB2FAE48;2009.
  ) 
 Here is how much of TeX's memory you used:
- 14094 strings out of 474116
- 228700 string characters out of 5743682
- 1936187 words of memory out of 5000000
- 36085 multiletter control sequences out of 15000+600000
- 591448 words of font info for 158 fonts, out of 8000000 for 9000
+ 14117 strings out of 474116
+ 229024 string characters out of 5743682
+ 1937187 words of memory out of 5000000
+ 36095 multiletter control sequences out of 15000+600000
+ 591840 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,79p,1094b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on cpen355_report_duncan.pdf (9 pages, 5437103 bytes).
+Output written on cpen355_report_duncan.pdf (11 pages, 5490290 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 38087 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 224 PDF objects out of 1000 (max. 8388607)
+ 170 compressed objects within 2 object streams
+ 48 named destinations out of 1000 (max. 500000)
+ 38100 words of extra memory for PDF output out of 42996 (max. 10000000)
 
