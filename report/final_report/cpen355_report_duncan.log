@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  13 APR 2025 13:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.10)  13 APR 2025 13:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -271,31 +271,55 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box52
 \@float@everytoks=\toks26
 \@floatcapt=\box53
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen169
+\captionmargin=\dimen170
+\caption@leftmargin=\dimen171
+\caption@rightmargin=\dimen172
+\caption@width=\dimen173
+\caption@indent=\dimen174
+\caption@parindent=\dimen175
+\caption@hangindent=\dimen176
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count285
+\c@continuedfloat=\count286
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+) (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count287
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count288
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count285
+\l__color_backend_stack_int=\count289
 \l__pdf_internal_box=\box54
 ) (./cpen355_report_duncan.aux)
 \openout1 = `cpen355_report_duncan.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -363,24 +387,24 @@ LaTeX Font Info:    ... okay on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 28.
 (./cpen355_report_duncan.out) (./cpen355_report_duncan.out)
 \@outlinefile=\write3
 \openout3 = `cpen355_report_duncan.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 26.
-Package microtype Info: Applying patch `item' on input line 26.
-Package microtype Info: Applying patch `toc' on input line 26.
-Package microtype Info: Applying patch `eqnum' on input line 26.
-Package microtype Info: Applying patch `footnote' on input line 26.
-Package microtype Info: Applying patch `verbatim' on input line 26.
+LaTeX Info: Redefining \microtypecontext on input line 28.
+Package microtype Info: Applying patch `item' on input line 28.
+Package microtype Info: Applying patch `toc' on input line 28.
+Package microtype Info: Applying patch `eqnum' on input line 28.
+Package microtype Info: Applying patch `footnote' on input line 28.
+Package microtype Info: Applying patch `verbatim' on input line 28.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 26.
+LaTeX Info: Redefining \showhyphens on input line 28.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -388,38 +412,41 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 ) (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count286
-\scratchdimen=\dimen169
+\scratchcounter=\count290
+\scratchdimen=\dimen177
 \scratchbox=\box55
-\nofMPsegments=\count287
-\nofMParguments=\count288
+\nofMPsegments=\count291
+\nofMParguments=\count292
 \everyMPshowfont=\toks27
-\MPscratchCnt=\count289
-\MPscratchDim=\dimen170
-\MPnumerator=\count290
-\makeMPintoPDFobject=\count291
+\MPscratchCnt=\count293
+\MPscratchDim=\dimen178
+\MPnumerator=\count294
+\makeMPintoPDFobject=\count295
 \everyMPtoPDFconversion=\toks28
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-)) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 30.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 30.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 32.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
@@ -427,147 +454,126 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<../media/raw_pulse.png, id=94, 491.8375pt x 365.365pt>
+<../media/raw_pulse.png, id=58, 491.8375pt x 365.365pt>
 File: ../media/raw_pulse.png Graphic file (type png)
 <use ../media/raw_pulse.png>
-Package pdftex.def Info: ../media/raw_pulse.png  used on input line 47.
+Package pdftex.def Info: ../media/raw_pulse.png  used on input line 49.
 (pdftex.def)             Requested size: 198.7425pt x 147.63751pt.
-<../media/pulse_bar.png, id=98, 433.62pt x 216.81pt>
+<../media/pulse_bar.png, id=62, 433.62pt x 216.81pt>
 File: ../media/pulse_bar.png Graphic file (type png)
 <use ../media/pulse_bar.png>
-Package pdftex.def Info: ../media/pulse_bar.png  used on input line 58.
+Package pdftex.def Info: ../media/pulse_bar.png  used on input line 60.
 (pdftex.def)             Requested size: 198.7425pt x 99.3732pt.
  [1
 
 
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.61 \end{figure}
-                  <../media/raw_pulse.png>]
-<../media/bpf.png, id=115, 722.7pt x 361.35pt>
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc} <../media/raw_pulse.png>]
+<../media/bpf.png, id=80, 722.7pt x 361.35pt>
 File: ../media/bpf.png Graphic file (type png)
 <use ../media/bpf.png>
-Package pdftex.def Info: ../media/bpf.png  used on input line 71.
+Package pdftex.def Info: ../media/bpf.png  used on input line 73.
 (pdftex.def)             Requested size: 317.9892pt x 158.99449pt.
-<../media/poly.png, id=117, 867.24pt x 433.62pt>
+<../media/poly.png, id=82, 867.24pt x 433.62pt>
 File: ../media/poly.png Graphic file (type png)
 <use ../media/poly.png>
-Package pdftex.def Info: ../media/poly.png  used on input line 80.
+Package pdftex.def Info: ../media/poly.png  used on input line 82.
 (pdftex.def)             Requested size: 317.9892pt x 158.99449pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2
-pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.84 
-     
-pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.84 
-      <../media/pulse_bar.png> <../media/bpf.png>]
-<../media/bef_n_aft.png, id=127, 1011.78pt x 361.35pt>
+ [2 <../media/pulse_bar.png> <../media/bpf.png>]
+<../media/bef_n_aft.png, id=92, 1011.78pt x 361.35pt>
 File: ../media/bef_n_aft.png Graphic file (type png)
 <use ../media/bef_n_aft.png>
-Package pdftex.def Info: ../media/bef_n_aft.png  used on input line 89.
+Package pdftex.def Info: ../media/bef_n_aft.png  used on input line 91.
 (pdftex.def)             Requested size: 397.48499pt x 141.96251pt.
-<../media/model.png, id=129, 979.66pt x 551.05875pt>
+<../media/model.png, id=94, 979.66pt x 551.05875pt>
 File: ../media/model.png Graphic file (type png)
 <use ../media/model.png>
-Package pdftex.def Info: ../media/model.png  used on input line 108.
+Package pdftex.def Info: ../media/model.png  used on input line 110.
 (pdftex.def)             Requested size: 397.48499pt x 223.58116pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3
-pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.112 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.112 
-       <../media/poly.png> <../media/bef_n_aft.png>]
-<../media/conv_layers_sweep.png, id=139, 462.528pt x 346.896pt>
+ [3 <../media/poly.png> <../media/bef_n_aft.png>]
+<../media/conv_layers_sweep.png, id=104, 462.528pt x 346.896pt>
 File: ../media/conv_layers_sweep.png Graphic file (type png)
 <use ../media/conv_layers_sweep.png>
-Package pdftex.def Info: ../media/conv_layers_sweep.png  used on input line 146.
+Package pdftex.def Info: ../media/conv_layers_sweep.png  used on input line 148.
 (pdftex.def)             Requested size: 317.9892pt x 238.50099pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [4
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.150 
-      
-pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.150 
-       <../media/model.png>]
-<../media/dense_points_sweep.png, id=146, 462.528pt x 346.896pt>
+ [4 <../media/model.png>]
+<../media/dense_points_sweep.png, id=111, 462.528pt x 346.896pt>
 File: ../media/dense_points_sweep.png Graphic file (type png)
 <use ../media/dense_points_sweep.png>
-Package pdftex.def Info: ../media/dense_points_sweep.png  used on input line 159.
+Package pdftex.def Info: ../media/dense_points_sweep.png  used on input line 161.
 (pdftex.def)             Requested size: 317.9892pt x 238.50099pt.
- [5
-pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.171 \begin{center}
-                    
-pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.171 \begin{center}
-                     <../media/conv_layers_sweep.png> <../media/dense_points_sweep.png>] [6] [7]
-Underfull \hbox (badness 3579) in paragraph at lines 401--402
-\T1/cmtt/m/n/10 503 / why-[]is-[]preferable-[]to$[] \T1/ptm/m/n/10 (+20) and []$\T1/cmtt/m/n/10 https : / / tex . stackexchange . com / questions / 40492 /
- []
+ [5 <../media/conv_layers_sweep.png> <../media/dense_points_sweep.png>]
+<../media/dropout_rate_sweep.png, id=121, 462.528pt x 346.896pt>
+File: ../media/dropout_rate_sweep.png Graphic file (type png)
+<use ../media/dropout_rate_sweep.png>
+Package pdftex.def Info: ../media/dropout_rate_sweep.png  used on input line 172.
+(pdftex.def)             Requested size: 317.9892pt x 238.50099pt.
+<../media/l2_rate_sweep.png, id=122, 462.528pt x 346.896pt>
+File: ../media/l2_rate_sweep.png Graphic file (type png)
+<use ../media/l2_rate_sweep.png>
+Package pdftex.def Info: ../media/l2_rate_sweep.png  used on input line 183.
+(pdftex.def)             Requested size: 317.9892pt x 238.50099pt.
 
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.419 F
-       onts were the main cause of problems in the past years. Your PDF file...
-pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.419 F
-       onts were the main cause of problems in the past years. Your PDF file...]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 427.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <../media/dropout_rate_sweep.png>]
+<../media/pulse_1.png, id=129, 462.528pt x 346.896pt>
+File: ../media/pulse_1.png Graphic file (type png)
+<use ../media/pulse_1.png>
+Package pdftex.def Info: ../media/pulse_1.png  used on input line 215.
+(pdftex.def)             Requested size: 190.79109pt x 143.09636pt.
+<../media/no_pulse_1.png, id=130, 462.528pt x 346.896pt>
+File: ../media/no_pulse_1.png Graphic file (type png)
+<use ../media/no_pulse_1.png>
+Package pdftex.def Info: ../media/no_pulse_1.png  used on input line 219.
+(pdftex.def)             Requested size: 190.79109pt x 143.09636pt.
+<../media/wrong_2.png, id=131, 462.528pt x 346.896pt>
+File: ../media/wrong_2.png Graphic file (type png)
+<use ../media/wrong_2.png>
+Package pdftex.def Info: ../media/wrong_2.png  used on input line 227.
+(pdftex.def)             Requested size: 198.7425pt x 149.0565pt.
+ [7 <../media/l2_rate_sweep.png> <../media/pulse_1.png> <../media/no_pulse_1.png>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 241.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [9] [10] [11] [12] [13] [14] [15] [16] [17] (./cpen355_report_duncan.aux)
+)
+<../media/bailey.JPG, id=144, 1376.0208pt x 1032.0156pt>
+File: ../media/bailey.JPG Graphic file (type jpg)
+<use ../media/bailey.JPG>
+Package pdftex.def Info: ../media/bailey.JPG  used on input line 255.
+(pdftex.def)             Requested size: 317.9892pt x 238.4924pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <../media/wrong_2.png>] [9 <../media/bailey.JPG>] (./cpen355_report_duncan.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `cpen355_report_duncan.out' has not changed.
-(rerunfilecheck)             Checksum: 36D981C7E7BFC90A28686C5E0D437466;3286.
+(rerunfilecheck)             Checksum: 27A101AC8EB2E821B9C664AFB049C18D;1508.
  ) 
 Here is how much of TeX's memory you used:
- 12788 strings out of 474116
- 201317 string characters out of 5743682
- 1942187 words of memory out of 5000000
- 34652 multiletter control sequences out of 15000+600000
- 607253 words of font info for 226 fonts, out of 8000000 for 9000
+ 14079 strings out of 474116
+ 228545 string characters out of 5743682
+ 1936187 words of memory out of 5000000
+ 36082 multiletter control sequences out of 15000+600000
+ 591058 words of font info for 152 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,79p,1094b,726s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on cpen355_report_duncan.pdf (17 pages, 519807 bytes).
+ 75i,10n,79p,1094b,527s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on cpen355_report_duncan.pdf (9 pages, 5435970 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 277 compressed objects within 3 object streams
- 79 named destinations out of 1000 (max. 500000)
- 54489 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 194 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
+ 40 named destinations out of 1000 (max. 500000)
+ 38063 words of extra memory for PDF output out of 42996 (max. 10000000)
 
