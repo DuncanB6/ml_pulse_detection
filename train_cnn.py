@@ -174,7 +174,7 @@ def augment_data(X, y):
 
         # randomly scale the amplitude of the data
         scale_factor = np.random.uniform(0.5, 2.0)
-        new_series = series * scale_factor
+        new_series = new_series * scale_factor
 
         augmented_X.append(new_series)
         augmented_y.append(label)
