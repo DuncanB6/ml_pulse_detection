@@ -93,6 +93,78 @@ Finally, data is normalized. The full process makes our data more uniform, allow
 
 Although this preprocessing can radically change data points, this results in clean data that performs well in our classification model.
 
+Finally, when data is loaded for model training, it is shuffled randomly to mix up different sections of the dataset.
+
+
+\section{Model Structure}
+
+
+To classify four second signals into either a pulse or pulseless category, a 1D CNN was chosen. 1D CNNs are suitable for real time pulse detection because of their efficient feature extraction, resistance to noise, and potential for deployment on a compact architecture. These advantages come at the cost of needing a large, diverse dataset to avoid overfitting.
+
+A typical 1D CNN structure was used, with convolutional layers followed by pooling layers followed by dense layers. A dropout layer was added to test the effectiveness of setting some inputs to zero. As seen in figure~\ref{fig:model}, the number of convolutional and max pooling layers is dependant on the hyperparameter N.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{../media/model.png}
+    \caption{Structure of 1D CNN}
+    \label{fig:model}
+\end{figure}
+
+
+\section{Hyperparameter Sweeps}
+
+Four hyperparameters were targetted for sweeping, convolutional layers, dense points, dropout rate, and L2 rate. See the sections below for more details about these parameters.
+
+When sweeping a parameter, the remaining parameters were set to the following values. These default values were established during preliminary sweeps.
+
+\begin{table}[H]
+    \caption{Default parameters}
+    \label{parameters}
+    \centering
+    \begin{tabular}{lll}
+      \toprule
+      Parameter     & Value  \\
+      \midrule
+      Convolutional Layers & 3     \\
+      Dense Points     & 128     \\
+      Dropout Rate     & 0.2  \\
+      L2 Rate     & 0.06  \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
+
+Sweeps were evaluated based on the accuracy of each model, as determined in the [TODO] section above. 
+
+\subsection{Convolutional Layers}
+
+The number of convolutional layers is varied by adding N convolutional layers to the model, each followed by a max pooling layer (see figure~\ref{fig:model}). The number of filter of each subsequent convolutional layer is doubled, starting from 64 filters. This means that a model with N = 3 would have three convolutional layers with 64, 128, and 256 filters each.
+
+The number of convolutional layers was swept from N = 1 to N = 6. The results of this sweep showed that having more layers was generally better. The best performing model used four layers for an accuracy of 95\%. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../media/conv_layers_sweep.png}
+    \caption{Convolutional Layers Sweep Results}
+    \label{fig:conv}
+\end{figure}
+
+\subsection{Dense Points}
+
+The number of dense points in the first two dense layers was swept. A ratio of 2:1 was maintained between the first and second layer  while the number of dense points was swept from 32 to 2042, incrementing in powers of two. This means when testing 256 points, the second dense layer has 256 points while the first has 512 points. 
+
+Surprisingly, the results of this sweep showed that having fewer dense points was generally better. This may be due to overfitting with more dense points. The best performing model used 32 and 64 dense points for an accuracy of 93\%. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../media/dense_points_sweep.png}
+    \caption{Dense Points Sweep Results}
+    \label{fig:dense}
+\end{figure}
+
+\subsection{Dropout Rate}
+
+
+
 
 The style files for NeurIPS and other conference information are available on
 the website at
