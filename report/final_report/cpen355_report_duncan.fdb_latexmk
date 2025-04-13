@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1744580423.63149 "/Users/duncanboyd/Documents/GitRepos/ml_pulse_detection/report/final_report/cpen355_report_duncan.tex" "cpen355_report_duncan.pdf" "cpen355_report_duncan" 1744580426.15422 0
+["pdflatex"] 1744580451.59065 "/Users/duncanboyd/Documents/GitRepos/ml_pulse_detection/report/final_report/cpen355_report_duncan.tex" "cpen355_report_duncan.pdf" "cpen355_report_duncan" 1744580454.2403 0
   "../media/aug.png" 1744578341.58585 56260 d319b87ca42f6af6f5ef9666d693e0e5 ""
   "../media/bailey.JPG" 1744576657 4877496 a516336dd35dad9e9b61122eb48b33f3 ""
   "../media/bef_n_aft.png" 1744347754.62822 85920 69a40a65be5dd9be0f933d19bcd3dd5f ""
@@ -15,7 +15,7 @@
   "../media/pulse_bar.png" 1744324058.57201 8786 66272a021493ae8a29928cef63eb4677 ""
   "../media/raw_pulse.png" 1744345969.46553 230295 fc7e03cfd40e6f5094bc842693baf1c6 ""
   "../media/wrong_2.png" 1744345267.51792 24664 b4b2ffdc78efac6c5ba2da3b2a65683d ""
-  "/Users/duncanboyd/Documents/GitRepos/ml_pulse_detection/report/final_report/cpen355_report_duncan.tex" 1744580423.32671 15254 4637067e2afa6762c0ac52d3061f08e3 ""
+  "/Users/duncanboyd/Documents/GitRepos/ml_pulse_detection/report/final_report/cpen355_report_duncan.tex" 1744580451.32681 15253 95162fe26ebd6b967f90b9ea3f798083 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -121,9 +121,9 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1739231603.14793 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1739231537 8221418 4d78abde80f1a9d9b36c1b66dde5d41b ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "cpen355_report_duncan.aux" 1744580426.0212 6101 3ab7a2a541ff327da54f38ae0b982998 "pdflatex"
-  "cpen355_report_duncan.out" 1744580426.02272 2009 a0b47c86c04dd2e72c1ecf2aab2fae48 "pdflatex"
-  "cpen355_report_duncan.tex" 1744580423.32671 15254 4637067e2afa6762c0ac52d3061f08e3 ""
+  "cpen355_report_duncan.aux" 1744580454.08173 6101 3ab7a2a541ff327da54f38ae0b982998 "pdflatex"
+  "cpen355_report_duncan.out" 1744580454.08374 2009 a0b47c86c04dd2e72c1ecf2aab2fae48 "pdflatex"
+  "cpen355_report_duncan.tex" 1744580451.32681 15253 95162fe26ebd6b967f90b9ea3f798083 ""
   "neurips_2025.sty" 1744321204.50892 11625 f7e2fe2e3bd969ad40f98ca077af79fe ""
   (generated)
   "cpen355_report_duncan.aux"

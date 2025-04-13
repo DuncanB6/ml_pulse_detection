@@ -560,7 +560,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 <../media/bailey.JPG, id=180, 1376.0208pt x 1032.0156pt>
 File: ../media/bailey.JPG Graphic file (type jpg)
 <use ../media/bailey.JPG>
-Package pdftex.def Info: ../media/bailey.JPG  used on input line 302.
+Package pdftex.def Info: ../media/bailey.JPG  used on input line 301.
 (pdftex.def)             Requested size: 317.9892pt x 238.4924pt.
  [11 <../media/bailey.JPG>] (./cpen355_report_duncan.aux)
  ***********
