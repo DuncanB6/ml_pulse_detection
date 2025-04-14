@@ -6,7 +6,7 @@ Although originally started because I was interested to see how ML would perform
 use this as my final project for CPEN 355. As such, it focuses more on the optimization of model accuracy for this data than
 optimization for use in an embedded systems.
 
-See the [report I created for this project](https://github.com/DuncanB6/ml_pulse_detection/report/final_report/cpen355_report_duncan.pdf)) for a detailed look at what I've done!
+See the [report I created for this project](https://github.com/DuncanB6/ml_pulse_detection/blob/main/report/final_report/cpen355_report_duncan.pdf) for a detailed look at what I've done!
 
 Duncan Boyd
 duncan@wapta.ca
