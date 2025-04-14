@@ -310,7 +310,7 @@ if __name__ == "__main__":
 
     # configure sweeps
     conv_sweep = list(range(1, 6 + 1))  # 1 - 6, 1 increments
-    dense_sweep = [32 * (2**i) for i in range(79)]  # 32 - 1024, power of 2 increments
+    dense_sweep = [32 * (2**i) for i in range(7)]  # 32 - 1024, power of 2 increments
     dropout_sweep = list(np.arange(0.0, 0.500001, 0.01))
     dropout_sweep = np.round(dropout_sweep, 2)  # 0.0 - 0.5, 0.001 increments
     l2_sweep = list(np.arange(0, 0.100001, 0.005))
@@ -333,10 +333,11 @@ if __name__ == "__main__":
             writer = csv.writer(file)
             writer.writerow(headers)
 
+    # best to only do one sweep at a time, otherwise memory issues and potential stops can ruin a trial
     logging.info("Beginning sweeps...\n")
-    sweep_param("conv_layers", conv_sweep, csv_path, X_data, y_data)
+    #sweep_param("conv_layers", conv_sweep, csv_path, X_data, y_data)
     #sweep_param("dense_points", dense_sweep, csv_path, X_data, y_data)
     #sweep_param("dropout_rate", dropout_sweep, csv_path, X_data, y_data)
-    #sweep_param("l2_rate", l2_sweep, csv_path, X_data, y_data)
+    sweep_param("l2_rate", l2_sweep, csv_path, X_data, y_data)
 
     logging.info("Done!")

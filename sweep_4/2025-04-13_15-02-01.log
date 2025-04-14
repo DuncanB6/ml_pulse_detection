@@ -1,0 +1,162 @@
+2025-04-13 15:02:01,966 - INFO - ---------- 1D CNN Training ----------
+2025-04-13 15:02:02,702 - INFO - Loaded 701 datapoints
+2025-04-13 15:02:02,702 - INFO - Beginning sweeps...
+
+2025-04-13 15:02:02,704 - INFO - Sweeping dense_points...
+2025-04-13 15:02:02,704 - INFO - Trying 32 dense_points
+2025-04-13 15:02:02,705 - INFO - 	Fold 1/10
+2025-04-13 15:02:12,555 - INFO - 	Model trained for 39 epochs, accuracy is 90.14%
+2025-04-13 15:02:12,628 - INFO - 	Fold 2/10
+2025-04-13 15:02:21,108 - INFO - 	Model trained for 42 epochs, accuracy is 94.29%
+2025-04-13 15:02:21,205 - INFO - 	Fold 3/10
+2025-04-13 15:02:30,649 - INFO - 	Model trained for 52 epochs, accuracy is 90.00%
+2025-04-13 15:02:30,750 - INFO - 	Fold 4/10
+2025-04-13 15:02:37,011 - INFO - 	Model trained for 32 epochs, accuracy is 92.86%
+2025-04-13 15:02:37,118 - INFO - 	Fold 5/10
+2025-04-13 15:02:42,446 - INFO - 	Model trained for 26 epochs, accuracy is 95.71%
+2025-04-13 15:02:42,557 - INFO - 	Fold 6/10
+2025-04-13 15:02:48,054 - INFO - 	Model trained for 27 epochs, accuracy is 92.86%
+2025-04-13 15:02:48,180 - INFO - 	Fold 7/10
+2025-04-13 15:02:54,436 - INFO - 	Model trained for 32 epochs, accuracy is 94.29%
+2025-04-13 15:02:54,556 - INFO - 	Fold 8/10
+2025-04-13 15:03:00,508 - INFO - 	Model trained for 30 epochs, accuracy is 81.43%
+2025-04-13 15:03:00,635 - INFO - 	Fold 9/10
+2025-04-13 15:03:06,147 - INFO - 	Model trained for 27 epochs, accuracy is 91.43%
+2025-04-13 15:03:06,277 - INFO - 	Fold 10/10
+2025-04-13 15:03:12,051 - INFO - 	Model trained for 29 epochs, accuracy is 94.29%
+2025-04-13 15:03:12,195 - INFO - 	Mean accuracy over all folds is 91.73%
+2025-04-13 15:03:12,196 - INFO - Trying 64 dense_points
+2025-04-13 15:03:12,196 - INFO - 	Fold 1/10
+2025-04-13 15:03:19,575 - INFO - 	Model trained for 37 epochs, accuracy is 90.14%
+2025-04-13 15:03:19,714 - INFO - 	Fold 2/10
+2025-04-13 15:03:25,121 - INFO - 	Model trained for 25 epochs, accuracy is 97.14%
+2025-04-13 15:03:25,265 - INFO - 	Fold 3/10
+2025-04-13 15:03:29,943 - INFO - 	Model trained for 21 epochs, accuracy is 88.57%
+2025-04-13 15:03:30,091 - INFO - 	Fold 4/10
+2025-04-13 15:03:37,521 - INFO - 	Model trained for 37 epochs, accuracy is 94.29%
+2025-04-13 15:03:37,674 - INFO - 	Fold 5/10
+2025-04-13 15:03:41,925 - INFO - 	Model trained for 18 epochs, accuracy is 68.57%
+2025-04-13 15:03:42,083 - INFO - 	Fold 6/10
+2025-04-13 15:03:51,254 - INFO - 	Model trained for 46 epochs, accuracy is 91.43%
+2025-04-13 15:03:51,416 - INFO - 	Fold 7/10
+2025-04-13 15:03:58,154 - INFO - 	Model trained for 33 epochs, accuracy is 94.29%
+2025-04-13 15:03:58,320 - INFO - 	Fold 8/10
+2025-04-13 15:04:03,714 - INFO - 	Model trained for 25 epochs, accuracy is 82.86%
+2025-04-13 15:04:03,886 - INFO - 	Fold 9/10
+2025-04-13 15:04:10,059 - INFO - 	Model trained for 30 epochs, accuracy is 92.86%
+2025-04-13 15:04:10,236 - INFO - 	Fold 10/10
+2025-04-13 15:04:14,593 - INFO - 	Model trained for 19 epochs, accuracy is 65.71%
+2025-04-13 15:04:14,774 - INFO - 	Mean accuracy over all folds is 86.59%
+2025-04-13 15:04:14,775 - INFO - Trying 128 dense_points
+2025-04-13 15:04:14,775 - INFO - 	Fold 1/10
+2025-04-13 15:04:19,134 - INFO - 	Model trained for 17 epochs, accuracy is 57.75%
+2025-04-13 15:04:19,320 - INFO - 	Fold 2/10
+2025-04-13 15:04:23,515 - INFO - 	Model trained for 16 epochs, accuracy is 62.86%
+2025-04-13 15:04:23,707 - INFO - 	Fold 3/10
+2025-04-13 15:04:31,415 - INFO - 	Model trained for 35 epochs, accuracy is 90.00%
+2025-04-13 15:04:31,611 - INFO - 	Fold 4/10
+2025-04-13 15:04:39,086 - INFO - 	Model trained for 34 epochs, accuracy is 92.86%
+2025-04-13 15:04:39,285 - INFO - 	Fold 5/10
+2025-04-13 15:04:47,414 - INFO - 	Model trained for 37 epochs, accuracy is 94.29%
+2025-04-13 15:04:47,616 - INFO - 	Fold 6/10
+2025-04-13 15:04:55,192 - INFO - 	Model trained for 34 epochs, accuracy is 94.29%
+2025-04-13 15:04:55,401 - INFO - 	Fold 7/10
+2025-04-13 15:05:04,928 - INFO - 	Model trained for 45 epochs, accuracy is 91.43%
+2025-04-13 15:05:05,141 - INFO - 	Fold 8/10
+2025-04-13 15:05:09,507 - INFO - 	Model trained for 17 epochs, accuracy is 64.29%
+2025-04-13 15:05:09,724 - INFO - 	Fold 9/10
+2025-04-13 15:05:15,406 - INFO - 	Model trained for 24 epochs, accuracy is 94.29%
+2025-04-13 15:05:15,630 - INFO - 	Fold 10/10
+2025-04-13 15:05:24,269 - INFO - 	Model trained for 40 epochs, accuracy is 95.71%
+2025-04-13 15:05:24,495 - INFO - 	Mean accuracy over all folds is 83.77%
+2025-04-13 15:05:24,496 - INFO - Trying 256 dense_points
+2025-04-13 15:05:24,497 - INFO - 	Fold 1/10
+2025-04-13 15:05:30,016 - INFO - 	Model trained for 19 epochs, accuracy is 57.75%
+2025-04-13 15:05:30,248 - INFO - 	Fold 2/10
+2025-04-13 15:05:38,725 - INFO - 	Model trained for 32 epochs, accuracy is 95.71%
+2025-04-13 15:05:38,961 - INFO - 	Fold 3/10
+2025-04-13 15:05:44,691 - INFO - 	Model trained for 20 epochs, accuracy is 55.71%
+2025-04-13 15:05:44,933 - INFO - 	Fold 4/10
+2025-04-13 15:05:50,682 - INFO - 	Model trained for 20 epochs, accuracy is 58.57%
+2025-04-13 15:05:50,929 - INFO - 	Fold 5/10
+2025-04-13 15:05:55,592 - INFO - 	Model trained for 15 epochs, accuracy is 68.57%
+2025-04-13 15:05:55,842 - INFO - 	Fold 6/10
+2025-04-13 15:05:59,757 - INFO - 	Model trained for 12 epochs, accuracy is 61.43%
+2025-04-13 15:06:00,014 - INFO - 	Fold 7/10
+2025-04-13 15:06:03,755 - INFO - 	Model trained for 11 epochs, accuracy is 72.86%
+2025-04-13 15:06:04,019 - INFO - 	Fold 8/10
+2025-04-13 15:06:08,188 - INFO - 	Model trained for 13 epochs, accuracy is 64.29%
+2025-04-13 15:06:08,452 - INFO - 	Fold 9/10
+2025-04-13 15:06:18,009 - INFO - 	Model trained for 37 epochs, accuracy is 92.86%
+2025-04-13 15:06:18,280 - INFO - 	Fold 10/10
+2025-04-13 15:06:30,064 - INFO - 	Model trained for 47 epochs, accuracy is 92.86%
+2025-04-13 15:06:30,339 - INFO - 	Mean accuracy over all folds is 72.06%
+2025-04-13 15:06:30,340 - INFO - Trying 512 dense_points
+2025-04-13 15:06:30,341 - INFO - 	Fold 1/10
+2025-04-13 15:06:34,392 - INFO - 	Model trained for 9 epochs, accuracy is 57.75%
+2025-04-13 15:06:34,676 - INFO - 	Fold 2/10
+2025-04-13 15:06:40,976 - INFO - 	Model trained for 16 epochs, accuracy is 62.86%
+2025-04-13 15:06:41,261 - INFO - 	Fold 3/10
+2025-04-13 15:06:45,958 - INFO - 	Model trained for 11 epochs, accuracy is 55.71%
+2025-04-13 15:06:46,248 - INFO - 	Fold 4/10
+2025-04-13 15:06:50,946 - INFO - 	Model trained for 11 epochs, accuracy is 58.57%
+2025-04-13 15:06:51,241 - INFO - 	Fold 5/10
+2025-04-13 15:06:56,899 - INFO - 	Model trained for 14 epochs, accuracy is 68.57%
+2025-04-13 15:06:57,198 - INFO - 	Fold 6/10
+2025-04-13 15:07:05,682 - INFO - 	Model trained for 23 epochs, accuracy is 61.43%
+2025-04-13 15:07:05,986 - INFO - 	Fold 7/10
+2025-04-13 15:07:11,952 - INFO - 	Model trained for 15 epochs, accuracy is 72.86%
+2025-04-13 15:07:12,272 - INFO - 	Fold 8/10
+2025-04-13 15:07:17,579 - INFO - 	Model trained for 13 epochs, accuracy is 64.29%
+2025-04-13 15:07:17,893 - INFO - 	Fold 9/10
+2025-04-13 15:07:23,502 - INFO - 	Model trained for 14 epochs, accuracy is 42.86%
+2025-04-13 15:07:23,819 - INFO - 	Fold 10/10
+2025-04-13 15:07:31,964 - INFO - 	Model trained for 22 epochs, accuracy is 65.71%
+2025-04-13 15:07:32,284 - INFO - 	Mean accuracy over all folds is 61.06%
+2025-04-13 15:07:32,285 - INFO - Trying 1024 dense_points
+2025-04-13 15:07:32,285 - INFO - 	Fold 1/10
+2025-04-13 15:07:44,402 - INFO - 	Model trained for 21 epochs, accuracy is 57.75%
+2025-04-13 15:07:44,733 - INFO - 	Fold 2/10
+2025-04-13 15:07:54,798 - INFO - 	Model trained for 17 epochs, accuracy is 62.86%
+2025-04-13 15:07:55,132 - INFO - 	Fold 3/10
+2025-04-13 15:08:03,693 - INFO - 	Model trained for 14 epochs, accuracy is 55.71%
+2025-04-13 15:08:04,032 - INFO - 	Fold 4/10
+2025-04-13 15:08:12,536 - INFO - 	Model trained for 14 epochs, accuracy is 58.57%
+2025-04-13 15:08:12,879 - INFO - 	Fold 5/10
+2025-04-13 15:08:20,935 - INFO - 	Model trained for 13 epochs, accuracy is 68.57%
+2025-04-13 15:08:21,285 - INFO - 	Fold 6/10
+2025-04-13 15:08:33,971 - INFO - 	Model trained for 22 epochs, accuracy is 61.43%
+2025-04-13 15:08:34,327 - INFO - 	Fold 7/10
+2025-04-13 15:08:41,319 - INFO - 	Model trained for 11 epochs, accuracy is 72.86%
+2025-04-13 15:08:41,680 - INFO - 	Fold 8/10
+2025-04-13 15:08:48,180 - INFO - 	Model trained for 10 epochs, accuracy is 64.29%
+2025-04-13 15:08:48,548 - INFO - 	Fold 9/10
+2025-04-13 15:08:57,604 - INFO - 	Model trained for 15 epochs, accuracy is 42.86%
+2025-04-13 15:08:57,980 - INFO - 	Fold 10/10
+2025-04-13 15:09:09,603 - INFO - 	Model trained for 20 epochs, accuracy is 65.71%
+2025-04-13 15:09:09,982 - INFO - 	Mean accuracy over all folds is 61.06%
+2025-04-13 15:09:09,983 - INFO - Trying 2048 dense_points
+2025-04-13 15:09:09,984 - INFO - 	Fold 1/10
+2025-04-13 15:09:24,484 - INFO - 	Model trained for 13 epochs, accuracy is 57.75%
+2025-04-13 15:09:24,874 - INFO - 	Fold 2/10
+2025-04-13 15:09:45,510 - INFO - 	Model trained for 19 epochs, accuracy is 62.86%
+2025-04-13 15:09:45,905 - INFO - 	Fold 3/10
+2025-04-13 15:09:57,416 - INFO - 	Model trained for 10 epochs, accuracy is 55.71%
+2025-04-13 15:09:57,810 - INFO - 	Fold 4/10
+2025-04-13 15:10:14,242 - INFO - 	Model trained for 15 epochs, accuracy is 58.57%
+2025-04-13 15:10:14,647 - INFO - 	Fold 5/10
+2025-04-13 15:10:32,147 - INFO - 	Model trained for 16 epochs, accuracy is 68.57%
+2025-04-13 15:10:32,551 - INFO - 	Fold 6/10
+2025-04-13 15:10:47,082 - INFO - 	Model trained for 13 epochs, accuracy is 61.43%
+2025-04-13 15:10:47,488 - INFO - 	Fold 7/10
+2025-04-13 15:11:07,963 - INFO - 	Model trained for 19 epochs, accuracy is 72.86%
+2025-04-13 15:11:08,373 - INFO - 	Fold 8/10
+2025-04-13 15:11:23,784 - INFO - 	Model trained for 14 epochs, accuracy is 64.29%
+2025-04-13 15:11:24,199 - INFO - 	Fold 9/10
+2025-04-13 15:11:42,656 - INFO - 	Model trained for 17 epochs, accuracy is 42.86%
+2025-04-13 15:11:43,078 - INFO - 	Fold 10/10
+2025-04-13 15:12:00,527 - INFO - 	Model trained for 16 epochs, accuracy is 65.71%
+2025-04-13 15:12:00,952 - INFO - 	Mean accuracy over all folds is 61.06%
+2025-04-13 15:12:00,953 - INFO - Done sweeping dense_points
+
+2025-04-13 15:12:01,069 - INFO - Done!
