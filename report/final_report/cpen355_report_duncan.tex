@@ -32,7 +32,7 @@
 
 
 \begin{abstract}
-  During CPR, automatically detecting pulse can save precious seconds compared to manual palpation. While devices exist for pulse detection \footnote{For example, my capstone group's device. Note that although it was inspired by it, this work was NOT done as part of my capstone project, which used another algorithm.}, there are limited options when it comes to rigourous detection algorithms. This paper will explore convolutional neural networks (CNNs) as an option for the real-time binary classification of a pulse reading. Using a pulse wave dataset, we swept several critical hyperparameters, optimizing for accuracy. Our final model has achieved an accuracy of [TODO]\%, indicating that the use of CNNs for pulse classification is viable for real-time detection.
+  During CPR, automatically detecting pulse can save precious seconds compared to manual palpation. While devices exist for pulse detection \footnote{For example, my capstone group's device. Note that although it was inspired by it, this work was NOT done as part of my capstone project, which used another algorithm.}, there are limited options when it comes to rigourous detection algorithms. This paper will explore convolutional neural networks (CNNs) as an option for the real-time binary classification of a pulse reading. Using a pulse wave dataset, we swept several critical hyperparameters, optimizing for accuracy. Our final model has achieved an accuracy of 95\%, indicating that the use of CNNs for pulse classification is viable for real-time detection.
 \end{abstract}
 
 \section{Introduction}
@@ -171,7 +171,7 @@ Sweeps were evaluated based on the accuracy of each model, as determined in sect
 
 The number of convolutional layers is varied by adding N convolutional layers to the model, each followed by a max pooling layer (see figure~\ref{fig:model}). The number of filter of each subsequent convolutional layer is doubled, starting from 64 filters. This means that a model with N = 3 would have three convolutional layers with 64, 128, and 256 filters each.
 
-The number of convolutional layers was swept from N = 1 to N = 6. The results of this sweep showed that having more layers was generally better. The best performing model used four layers for an accuracy of 95\%. 
+The number of convolutional layers was swept from N = 1 to N = 6. The results of this sweep showed that having more layers was generally better. The best performing model used four layers for an accuracy of 93\%. 
 
 \begin{figure}[H]
     \centering
@@ -185,7 +185,7 @@ The number of convolutional layers was swept from N = 1 to N = 6. The results of
 
 The number of dense points in the first two dense layers was swept. A ratio of 2:1 was maintained between the first and second layer  while the number of dense points was swept from 32 to 2042, incrementing in powers of two. This means when testing 256 points, the second dense layer has 256 points while the first has 512 points. 
 
-Surprisingly, the results of this sweep showed that having fewer dense points was generally better. This may be due to overfitting with more dense points. The best performing model used 32 and 64 dense points for an accuracy of 93\%. 
+Surprisingly, the results of this sweep showed that having fewer dense points was generally better. This may be due to overfitting with more dense points. The best performing model used 32 and 64 dense points for an accuracy of 92\%. 
 
 \begin{figure}[H]
     \centering
@@ -197,7 +197,7 @@ Surprisingly, the results of this sweep showed that having fewer dense points wa
 
 \subsection{Dropout Rate}
 
-Dropout rate was varied in the dropout layer (see figure~\ref{fig:model}). The rate was varied from 0 to 0.5 with 0.01 increments. The results have little trend for this parameter, with small variance in accuracy compared to previous parameters. The best dropout rate was found to be 0.44, with an accuracy of 93\%.
+Dropout rate was varied in the dropout layer (see figure~\ref{fig:model}). The rate was varied from 0 to 0.5 with 0.01 increments. The results have little trend for this parameter, with smaller variance in accuracy compared to previous parameters. The best dropout rate was found to be 0.21, with an accuracy of 92\%.
 
 \begin{figure}[H]
     \centering
@@ -209,7 +209,7 @@ Dropout rate was varied in the dropout layer (see figure~\ref{fig:model}). The r
 
 \subsection{L2 Rate}
 
-L2 decay rate was used in the first two dropout layers. The rate was varied from 0 to 0.1 with increments of 0.005. It seems that a lower L2 rate leads to higher and more consistent accuracy. The best L2 rate was found to be 0.045, with an accuracy of 93\%.
+L2 decay rate was used in the first two dropout layers. The rate was varied from 0 to 0.1 with increments of 0.005. It seems that a lower L2 rate leads to higher and more consistent accuracy. The best L2 rate was found to be 0.0, with an accuracy of 92\%.
 
 \begin{figure}[H]
     \centering
@@ -233,13 +233,13 @@ The hyperparameters as determined by the hyperparameter sweeps are shown in the 
       \midrule
       Convolutional Layers & 4     \\
       Dense Points     & 32     \\
-      Dropout Rate     & 0.44  \\
-      L2 Rate     & 0.045  \\
+      Dropout Rate     & 0.21  \\
+      L2 Rate     & 0.0  \\
       \bottomrule
     \end{tabular}
   \end{table}
 
-After training a model with these parameters, the final model has an accuracy of 96\%. This exceeds any of the accuracies achieved on the parameter sweeps, indicating that this combination is effective.
+After training a model with these parameters, the final model has an accuracy of 95\%. This exceeds any of the accuracies achieved on the parameter sweeps, indicating that this combination is effective.
 
 Some examples of pulse data and the predictions of this model are displayed in the figures below.
 

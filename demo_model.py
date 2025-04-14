@@ -69,7 +69,7 @@ if __name__ == "__main__":
     X_data, y_data = preprocess_data(X_data, y_data)
 
     model_cfg = ModelConfig(
-        conv_layers=4, dense_points=32, dropout_rate=0.44, l2_decay=0.045
+        conv_layers=4, dense_points=32, dropout_rate=0.21, l2_decay=0.0
     )
 
     model_eval(model_cfg, X_data, y_data)
