@@ -19,7 +19,7 @@
 \title{Performance Optimization of a Convolutional Neural Network for Real-Time Pulse Detection}
 
 \author{
-  Duncan A. Boyd, Bailey Boyd\thanks{This is my dog, I like using 'we' on formal papers.} \\
+  Duncan Boyd, Bailey Boyd\thanks{See appendix A. I like using 'we' on formal papers.} \\
   86101888 \\
   \texttt{duncan@wapta.ca} \\
 }
@@ -32,15 +32,16 @@
 
 
 \begin{abstract}
-  During CPR, automatically detecting pulse can save precious seconds compared to manual palpation. While devices exist for pulse detection \footnote{For example, my capstone group's device.}, there are limited options when it comes to rigourous detection algorithms. This paper will explore convolutional neural networks (CNNs) as an option for the real-time binary classification of a pulse reading. Using a pulse wave dataset, we swept several critical hyperparameters, optimizing for accuracy. Our final model has achieved an accuracy of [TODO]\%, indicating that the use of CNNs for pulse classification is viable for real-time detection.
+  During CPR, automatically detecting pulse can save precious seconds compared to manual palpation. While devices exist for pulse detection \footnote{For example, my capstone group's device. Note that although it was inspired by it, this work was NOT done as part of my capstone project, which used another algorithm.}, there are limited options when it comes to rigourous detection algorithms. This paper will explore convolutional neural networks (CNNs) as an option for the real-time binary classification of a pulse reading. Using a pulse wave dataset, we swept several critical hyperparameters, optimizing for accuracy. Our final model has achieved an accuracy of [TODO]\%, indicating that the use of CNNs for pulse classification is viable for real-time detection.
 \end{abstract}
 
+\section{Introduction}
+
+Cardiopulmonary resuscitation (CPR) is one of the key interventions in cases of cardiac arrest. One of the critical steps during CPR is checking for the return of spontaneous cardiac activity by manually palpating the patient's pulse. Pulse check pauses greater than 10 seconds, the current limit recommended by the Canadian Heart and Stroke Foundation, are associated with increased mortality and morbidity [1]. The purpose of this project is to explore a real time algorithm for pulse detection during CPR. Our goal is to develop an algorithm that is superior to manual palpation (~90\% accurate [2]). This project documents the development and tuning of a 1D CNN that can beat manual palpation in the detection of the pulse in real time.
 
 \section{Input Data}
 
-
 \subsection{Dataset Description}
-
 
 The dataset used for this work was collected as part of UBC ECE Capstone Group LS-15's project. It is a series of four second segments, each a time series of pulse data described as sensor values (arbitrary units). Data is sampled at 60Hz, meaning each sample is 240 points in length. A typical sample might look like the plot as shown in figure~\ref{fig:data_example}.
 
@@ -63,6 +64,7 @@ The dataset comprises of 701 data points, collected in a variety of test conditi
 \end{figure}
 
 Although many samples such as figure~\ref{fig:data_example} may have an easily visible pulse, some samples are more challenging, with spikes created by noise or weak pulse signals. 
+
 
 \subsection{Preprocessing}
 
@@ -100,7 +102,6 @@ Finally, when data is loaded for model training, it is shuffled randomly to mix 
 
 \section{Model Structure}
 
-
 To classify four second signals into either a pulse or pulseless category, a 1D CNN was chosen. 1D CNNs are suitable for real time pulse detection because of their efficient feature extraction, resistance to noise, and potential for deployment on a compact architecture. These advantages come at the cost of needing a large, diverse dataset to avoid overfitting.
 
 A typical 1D CNN structure was used, with convolutional layers followed by pooling layers followed by dense layers. A dropout layer was added to test the effectiveness of setting some inputs to zero. As seen in figure~\ref{fig:model}, the number of convolutional and max pooling layers is dependant on the hyperparameter N.
@@ -113,23 +114,32 @@ A typical 1D CNN structure was used, with convolutional layers followed by pooli
 \end{figure}
 
 
-\section{Model Training}
+\section{Model Training} \label{training}
 
+Training was performed using a desktop PC equiped with a Nvidia 1660 Super GPU. Because of limited compatibility with software designed to take advantage of this hardware,  Tensorflow 2.0 was used. Several steps were taken to train and evaluate this model accurately, especially considering the small dataset.
 
-Several steps were taken to train and evaluate this model accurately, especially considering the small dataset.
 
 \subsection{Data Augmentation}
 
 The dataset used is collected on few people, and includes only heartrates within a narrow range of possible values. To compensate for this, data augementation was used. The total size of the training dataset was doubled, raising it from 630 data points to 1260. For each sample, a variation was created with an amplitude and a timescale scaled by a random factor.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{../media/aug.png}
+    \caption{Example of augmented data}
+    \label{fig:augmentation}
+\end{figure}
 
 
 \subsection{Data Splitting}
 
-Data is split into a training, test, and validation set. To mitigate large variations in results due to the small test set, 10 fold training was used. This means that the data was seperated into 10 random train test splits, then trained on each of these models. 
+Data is split into a training, test, and validation set. This results in a training set of 1008 points (augmented), a validation set of 252 points (augemented), and a test set of 71 points (not augmented). To mitigate large variations in results due to the small test set, 10 fold training was used. This means that the data was seperated into 10 random train test splits, then trained on each of these models. 
 
+\subsection{Evaluation}
 
+For each set of hyperparameters that we want to test, 10 models are trained using 10 different data splits. The accuracies of these 10 models are averaged to get the accuracy for a given set of hyperparameters.
 
+Models are trained with the Adam optimizer and binary crossentropy loss, common choices for this type of model. Models are trained for a maximum of 200 epochs, but training will be stopped early if no improvements to loss are seen after 5 epochs.
 
 
 \section{Hyperparameter Sweeps}
@@ -154,7 +164,8 @@ When sweeping a parameter, the remaining parameters were set to the following va
     \end{tabular}
   \end{table}
 
-Sweeps were evaluated based on the accuracy of each model, as determined in the [TODO] section above. 
+Sweeps were evaluated based on the accuracy of each model, as determined in section~\ref{training} above. 
+
 
 \subsection{Convolutional Layers}
 
@@ -169,6 +180,7 @@ The number of convolutional layers was swept from N = 1 to N = 6. The results of
     \label{fig:conv}
 \end{figure}
 
+
 \subsection{Dense Points}
 
 The number of dense points in the first two dense layers was swept. A ratio of 2:1 was maintained between the first and second layer  while the number of dense points was swept from 32 to 2042, incrementing in powers of two. This means when testing 256 points, the second dense layer has 256 points while the first has 512 points. 
@@ -182,6 +194,7 @@ Surprisingly, the results of this sweep showed that having fewer dense points wa
     \label{fig:dense}
 \end{figure}
 
+
 \subsection{Dropout Rate}
 
 Dropout rate was varied in the dropout layer (see figure~\ref{fig:model}). The rate was varied from 0 to 0.5 with 0.01 increments. The results have little trend for this parameter, with small variance in accuracy compared to previous parameters. The best dropout rate was found to be 0.44, with an accuracy of 93\%.
@@ -193,6 +206,7 @@ Dropout rate was varied in the dropout layer (see figure~\ref{fig:model}). The r
     \label{fig:dropout}
 \end{figure}
 
+
 \subsection{L2 Rate}
 
 L2 decay rate was used in the first two dropout layers. The rate was varied from 0 to 0.1 with increments of 0.005. It seems that a lower L2 rate leads to higher and more consistent accuracy. The best L2 rate was found to be 0.045, with an accuracy of 93\%.
@@ -203,6 +217,7 @@ L2 decay rate was used in the first two dropout layers. The rate was varied from
     \caption{L2 Rate Sweep Results}
     \label{fig:l2}
 \end{figure}
+
 
 \section{Results}
 
@@ -250,9 +265,10 @@ Some examples of pulse data and the predictions of this model are displayed in t
 
 As seen from figure~\ref{fig:wrongo}, the data sample may actually have been labelled incorrectly, but identified correctly by this machine learning model. Many incorrect guesses seem to be on samples that from a human perspective may or may not have a pulse.
 
+
 \section{Discussion}
 
-These results seem extremely promising, with an accuracy that far exceeds many conventional pulse detection methods. This seems to be a suitable model to implement in a setting where real-time pulse detection is needed and limited data is available. 
+These results seem extremely promising, with an accuracy that far exceeds many conventional pulse detection methods . This seems to be a suitable model to implement in a setting where real-time pulse detection is needed and limited data is available. 
 
 There are however some limitations that need to be investigated:
 \begin{itemize}
@@ -265,9 +281,20 @@ There are however some limitations that need to be investigated:
 
 Despite these limitations, this model has yielded extremely impressive results, especially considering the small and somewhat imperfect dataset. There is much potential in using 1D CNNs for pulse detection.
 
-\section{Appendix}
+\newpage
+\section*{References}
+{
+\small
 
-\subsection{Appendix A}
+[1]	P. A. Meaney et al.\ “Cardiopulmonary Resuscitation Quality: Improving Cardiac Resuscitation Outcomes Both Inside and Outside the Hospital,”\ Circulation, vol. 128, no. 4, pp. 417–435\ Jul. 2013, doi: 10.1161/CIR.0b013e31829d8654.
+
+[2]	L. M. Cunningham, A. Mattu, R. E. O’Connor, and W. J. Brady, “Cardiopulmonary resuscitation for cardiac arrest: the importance of uninterrupted chest compressions in cardiac arrest resuscitation,” The American Journal of Emergency Medicine, vol. 30, no. 8, pp. 1630–1638, Oct. 2012, doi: 10.1016/j.ajem.2012.02.015.
+}
+
+\newpage
+\appendix
+
+\section{Co-author}
 
 \begin{figure}[H]
     \centering
